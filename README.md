@@ -1,95 +1,231 @@
 # RAG Advisor
 
-## Description
+## What This Project Is
 
-RAG Advisor is a student-focused advising search app built on top of a local RAG pipeline.
-It reads indexed UTA advising PDFs, lets a user choose a program such as Computer Science or Software Engineering, and returns a cleaner course recommendation from the stored degree-plan content.
+RAG Advisor is a UTA advising assistant project.
+It combines:
 
-The current Streamlit UI is designed for fast local use:
+- a React frontend for a student-friendly chat experience
+- a lightweight Python backend for fast course-plan retrieval
+- a larger RAG pipeline for parsing and indexing advising documents when needed
 
-- choose a program
-- ask a question in chat style
-- optionally narrow the search with a course code such as `CSE 4344`
-- get a student-friendly response based on the indexed advising data
+The current recommended app flow is:
 
-## What The Code Does
+1. Run the lightweight backend
+2. Run the React frontend
+3. Ask advising questions such as semester planning, prerequisites, and follow-up course choices
 
-This project has two main parts.
+## Project Modes
 
-1. Indexing and storage
+### 1. Lightweight React + API Mode
 
-The code in [src/cli/rebuild.py](/Users/rashmigowda/Downloads/RAG-Advisor/src/cli/rebuild.py) and [src/cli/add.py](/Users/rashmigowda/Downloads/RAG-Advisor/src/cli/add.py) processes PDF documents from `data/sources` and stores parsed content plus retrieval artifacts in `rag_storage`.
+This is the easiest and fastest way to run the project.
 
-2. Retrieval and answering
+- frontend: `frontend/`
+- backend: `src/api/light_rag_api.py`
+- compact data store: `data/light_rag/course_catalog.json`
 
-The app in [src/ui/streamlit_app.py](/Users/rashmigowda/Downloads/RAG-Advisor/src/ui/streamlit_app.py) loads the indexed content, filters it by selected program, ranks the most relevant chunks, extracts semester tables and course rows when possible, and shows the result in a chat-style UI.
+This mode is best for:
 
-There are also CLI tools for retrieval:
+- demos
+- UI development
+- advisor-style chat flow
+- smaller storage
+- faster local development
 
-- [src/cli/quick_rag.py](/Users/rashmigowda/Downloads/RAG-Advisor/src/cli/quick_rag.py): simple retrieval over stored chunks
-- [src/cli/graph_rag.py](/Users/rashmigowda/Downloads/RAG-Advisor/src/cli/graph_rag.py): graph-assisted retrieval with optional OpenAI summary
+### 2. Full RAG Build Mode
 
-## Project Flow
+This uses the heavier parsing and indexing pipeline.
 
-1. Put advising PDFs into `data/sources`
-2. Build or rebuild the index
-3. Launch the Streamlit app
-4. Select a program and ask a question
-5. The app searches the indexed chunks and formats the answer more like an advisor response
+- parser/build tools: `src/cli/rebuild.py`, `src/cli/add.py`
+- heavier storage: `rag_storage/`
+- parsed cache: `data/parsed_cache/`
+
+This mode is useful when you want:
+
+- full document parsing
+- richer retrieval artifacts
+- experiments with graph/vector-based RAG
+- deeper AI-project functionality
+
+## Important Note About `.gitignore`
+
+The `.gitignore` is intentional and should not break the code flow.
+
+These folders are ignored because they are generated locally and can become very large:
+
+- `.venv/`
+- `data/parsed_cache/`
+- `rag_storage/`
+- `output/`
+- `frontend/node_modules/`
+- `frontend/dist/`
+
+Why this is okay:
+
+- these are build/cache/runtime folders
+- they do not need to be committed to git
+- they can be recreated locally
+- the lightweight app can still work if `data/light_rag/course_catalog.json` is present
+
+If a teammate clones the repo and those ignored folders are missing, they just need to follow the setup steps below.
 
 ## Folder Overview
 
-- `data/sources`: source PDFs
-- `data/parsed_cache`: parsed document outputs
-- `rag_storage`: retrieval artifacts and cached data
-- `src/cli`: command-line indexing and retrieval tools
-- `src/core`: shared config and model helpers
-- `src/ui`: Streamlit UI
+- `frontend/`: React UI
+- `src/api/`: lightweight API backend
+- `src/light_rag/`: compact retrieval logic
+- `src/cli/`: heavier RAG build/index commands
+- `data/sources/`: UTA advising PDFs
+- `data/light_rag/`: compact lightweight retrieval store
+- `data/parsed_cache/`: generated parsing cache
+- `rag_storage/`: generated heavy RAG storage
 
-## What Can Be Ignored In Git
+## Full Setup From Scratch
 
-These folders are generated locally and do not need to be pushed to git:
+### Step 1: Install Python Environment
 
-- `.venv`: local virtual environment
-- `data/parsed_cache`: generated parsing cache
-- `rag_storage`: generated retrieval storage and local search artifacts
-- `output`: local output files
-- `__pycache__`, `.streamlit`, `.DS_Store`, logs
-
-This does not break the code flow.
-You can still keep using the same project folder locally.
-The app will continue to work as long as those files exist on your machine.
-They are just excluded from git so the repository stays smaller.
-
-The current [`.gitignore`](/Users/rashmigowda/Downloads/RAG-Advisor/.gitignore) already ignores these generated folders.
-
-## Setup
-
-### macOS / VS Code Terminal
+From the project root:
 
 ```bash
+cd /Users/rashmigowda/Downloads/RAG-Advisor
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
 
-### Windows CMD
+### Step 2: Install Homebrew on Mac
+
+If `brew` is missing:
 
 ```bash
-conda create -p .\.venv python=3.10 -y
-conda activate .\.venv
-python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-## Optional OpenAI Key
+Then add it to your shell:
 
-The Streamlit UI does not require an OpenAI key for its current local retrieval flow.
+```bash
+echo >> /Users/rashmigowda/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv zsh)"' >> /Users/rashmigowda/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv zsh)"
+```
 
-The OpenAI key is only needed if you want to use the OpenAI-powered CLI commands such as `graph_rag` summary mode.
+### Step 3: Install Node.js
 
-If needed, create a `.env` file and add:
+```bash
+brew install node
+```
+
+Verify:
+
+```bash
+node -v
+npm -v
+```
+
+## Run The Recommended Lightweight App
+
+### Terminal 1: Start Backend
+
+```bash
+cd /Users/rashmigowda/Downloads/RAG-Advisor
+source .venv/bin/activate
+python -m uvicorn src.api.light_rag_api:app --reload
+```
+
+Backend URL:
+
+```text
+http://localhost:8000
+```
+
+### Terminal 2: Start React Frontend
+
+```bash
+cd /Users/rashmigowda/Downloads/RAG-Advisor/frontend
+npm install
+npm run dev
+```
+
+Frontend URL:
+
+```text
+http://localhost:5173
+```
+
+The frontend is already configured to call:
+
+```text
+http://localhost:8000
+```
+
+by default.
+
+## How The Lightweight Backend Works
+
+The lightweight backend uses:
+
+- `src/light_rag/compact_store.py`
+- `data/light_rag/course_catalog.json`
+
+This compact store is much smaller than full `rag_storage`.
+It is designed for:
+
+- semester recommendations
+- year/semester questions like `junior spring`
+- course-follow-up questions like `after CSE 4344`
+- faster UI responses
+
+## If `data/light_rag/course_catalog.json` Is Missing
+
+If the lightweight store is missing but `rag_storage/kv_store_text_chunks.json` exists, the backend can build the compact store automatically.
+
+You can also build it manually:
+
+```bash
+cd /Users/rashmigowda/Downloads/RAG-Advisor
+source .venv/bin/activate
+python - <<'PY'
+from src.light_rag.compact_store import build_compact_store
+print(build_compact_store())
+PY
+```
+
+## If You Want To Use The Full RAG Pipeline
+
+The full build pipeline still exists, but it is heavier.
+
+Run:
+
+```bash
+cd /Users/rashmigowda/Downloads/RAG-Advisor
+source .venv/bin/activate
+python -m src.cli.rebuild
+```
+
+This creates large generated folders such as:
+
+- `data/parsed_cache/`
+- `rag_storage/`
+
+These are intentionally ignored by git.
+
+## OpenAI Key
+
+The lightweight React + API mode does not depend on the heavy OpenAI graph/vector retrieval flow for every request.
+
+But some heavier build commands still need the API key, especially:
+
+- `python -m src.cli.rebuild`
+
+Put your key in:
+
+```text
+.env
+```
+
+Example:
 
 ```env
 OPENAI_API_KEY=sk-...
@@ -99,84 +235,110 @@ LLM_MODEL=gpt-4o-mini
 WORKING_DIR=./rag_storage
 ```
 
-## Build The Index
+## Frontend API Contract
 
-Place your PDFs in `data/sources`, then run:
-
-```bash
-python -m src.cli.rebuild
-```
-
-To add one new PDF:
-
-```bash
-python -m src.cli.add data/sources/your_file.pdf
-```
-
-## Run The Streamlit UI
-
-From the project root:
-
-```bash
-source .venv/bin/activate
-streamlit run src/ui/streamlit_app.py
-```
-
-## If Git Is Still Trying To Push Large Files
-
-If these folders were already committed in the past, `.gitignore` alone is not enough.
-You need to stop tracking them once, while keeping the files in the same folder on your computer.
-
-Run these commands from the project root:
-
-```bash
-git rm -r --cached .venv data/parsed_cache rag_storage output
-git add .gitignore
-git commit -m "Stop tracking generated files"
-```
-
-After that:
-
-- the files stay in your local folder
-- your app flow is unchanged
-- future commits will not include those generated folders
-
-If your old git history is already very large, you may still need to push to a fresh branch or clean old history later, but the commands above are the correct first step.
-
-## How To Use The UI
-
-1. Open the app in your browser
-2. Choose a program such as `Computer Science`
-3. Optionally enter a course filter like `CSE 3318`
-4. Ask a question such as:
+The React frontend sends:
 
 ```text
-What are the recommended spring courses for a third-year Computer Science student?
+POST /advisor/query
 ```
 
-Example follow-up questions:
+Request body:
 
-- `If I take CSE 4344 in fall, what should I take in spring?`
-- `What courses are listed for junior spring in CSE?`
-- `What classes need CSE 3318 as a prerequisite?`
+```json
+{
+  "program": "CSE",
+  "question": "What are the recommended spring courses for a third-year Computer Science student?",
+  "course_filter": "CSE 4344"
+}
+```
 
-## CLI Examples
+Response body:
 
-### Quick Retrieval
+```json
+{
+  "summary": "Student-friendly answer here",
+  "recommendations": [
+    {
+      "course": "CSE 3380",
+      "title": "Linear Algebra for CSE",
+      "hours": "3"
+    }
+  ],
+  "notes": ["Helpful note"],
+  "sources": ["2025-CSE.pdf"],
+  "mode": "light-rag"
+}
+```
+
+## Suggested Next Project Steps
+
+If you are building this for an AI project, a good next roadmap is:
+
+1. Keep the React frontend
+2. Keep the lightweight backend for fast advisor UX
+3. Keep the full RAG pipeline as your advanced retrieval layer
+4. Add user login and chat history storage
+5. Add evaluation and comparison between lightweight mode and full RAG mode
+
+## DB Recommendation For User Logins And Chat History
+
+Best simple option:
+
+- `SQLite`
+
+Why:
+
+- free
+- lightweight
+- no setup cost
+- easy for local development
+- good for storing user profiles and chat history
+
+Good next hosted option later:
+
+- `Supabase`
+
+Why:
+
+- free tier
+- auth included
+- managed Postgres
+- easier if you want multiple users and deployment
+
+## Troubleshooting
+
+### `npm: command not found`
+
+Install Node first:
 
 ```bash
-python -m src.cli.quick_rag -q "What are the recommended courses for the spring semester for a third year Computer Science student?" -k 20 --with-summary
+brew install node
 ```
 
-### Graph Retrieval
+### `FileNotFoundError: ... rag_storage/vdb_chunks.json`
+
+That means the heavy index is missing.
+Either:
+
+- use the lightweight React backend flow instead
+- or rebuild the heavy index with `python -m src.cli.rebuild`
+
+### Frontend loads but answers are demo-like
+
+Make sure the backend is running:
 
 ```bash
-python -m src.cli.graph_rag -q "What are the recommended courses for the spring semester for a third year Computer Science student?" -k 10 --with-summary --graphml ./rag_storage/graph_chunk_entity_relation.graphml --hops 1 --graph-max-neighbors 4 --graph-weight 0.3
+python -m uvicorn src.api.light_rag_api:app --reload
 ```
 
-## Notes
+### Backend starts but compact store is missing
 
-- The UI is optimized for local advising search, not full conversational reasoning with an LLM.
-- Responses depend on the documents already indexed into `rag_storage`.
-- If the answer feels too broad, select the correct program and use a course code or semester phrase in the question.
-- Streamlit UI works without an OpenAI key in the current local retrieval flow.
+Build it manually with:
+
+```bash
+python - <<'PY'
+from src.light_rag.compact_store import build_compact_store
+print(build_compact_store())
+PY
+```
