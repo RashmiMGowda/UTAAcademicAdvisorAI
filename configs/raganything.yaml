@@ -1,0 +1,23 @@
+parser: ${PARSER}
+parse_method: ${PARSE_METHOD}
+enable_image_processing: true
+enable_table_processing: true
+enable_equation_processing: true
+
+working_dir: ${WORKING_DIR}
+parsed_dir: ${PARSED_DIR}
+
+embedding:
+  provider: openai
+  model: ${EMBED_MODEL}
+  dim: 3072
+  max_token_size: 8192
+
+retrieval:
+  top_k: ${TOP_K}
+  mode: hybrid   # hybrid | local | global | naive (repo query modes)
+
+generation:
+  llm_provider: openai
+  llm_model: ${LLM_MODEL}
+  multimodal: true   # VLM enhanced when vision model is provided

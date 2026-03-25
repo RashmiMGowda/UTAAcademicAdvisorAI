@@ -1,0 +1,28 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# Install these in the current conda/venv (Windows CMD uses double quotes):
+#   pip install "raganything[all]"     ← All optional features, includes MinerU integration
+#   pip install openai                 ← OpenAI client (LLM + embeddings)
+#   pip install mineru                 ← (Normally pulled in by [all], listed here for clarity)
+# ──────────────────────────────────────────────────────────────────────────────
+
+raganything[all]>=1.2.8
+openai>=1.54.0
+mineru
+# Local vector store (no external DB):
+faiss-cpu>=1.8.0
+
+# LightRAG (RAG-Anything examples interoperate with LightRAG storages : Use direction from README):
+
+# Utilities (small footprint, common in examples):
+python-dotenv>=1.0.1
+pydantic>=2.9.2
+orjson>=3.10.7
+rapidfuzz>=3.9.7
+
+
+numpy 
+scipy 
+scikit-learn 
+networkx
+streamlit>=1.42.0
+
