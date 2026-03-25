@@ -14,3 +14,5 @@ __pycache__/
 data/parsed_cache/
 rag_storage/
 output/
+frontend/node_modules/
+frontend/dist/
