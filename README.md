@@ -281,31 +281,6 @@ If you are building this for an AI project, a good next roadmap is:
 4. Add user login and chat history storage
 5. Add evaluation and comparison between lightweight mode and full RAG mode
 
-## DB Recommendation For User Logins And Chat History
-
-Best simple option:
-
-- `SQLite`
-
-Why:
-
-- free
-- lightweight
-- no setup cost
-- easy for local development
-- good for storing user profiles and chat history
-
-Good next hosted option later:
-
-- `Supabase`
-
-Why:
-
-- free tier
-- auth included
-- managed Postgres
-- easier if you want multiple users and deployment
-
 ## Troubleshooting
 
 ### `npm: command not found`
