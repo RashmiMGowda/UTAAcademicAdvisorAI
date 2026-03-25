@@ -46,6 +46,23 @@ There are also CLI tools for retrieval:
 - `src/core`: shared config and model helpers
 - `src/ui`: Streamlit UI
 
+## What Can Be Ignored In Git
+
+These folders are generated locally and do not need to be pushed to git:
+
+- `.venv`: local virtual environment
+- `data/parsed_cache`: generated parsing cache
+- `rag_storage`: generated retrieval storage and local search artifacts
+- `output`: local output files
+- `__pycache__`, `.streamlit`, `.DS_Store`, logs
+
+This does not break the code flow.
+You can still keep using the same project folder locally.
+The app will continue to work as long as those files exist on your machine.
+They are just excluded from git so the repository stays smaller.
+
+The current [`.gitignore`](/Users/rashmigowda/Downloads/RAG-Advisor/.gitignore) already ignores these generated folders.
+
 ## Setup
 
 ### macOS / VS Code Terminal
@@ -105,6 +122,27 @@ source .venv/bin/activate
 streamlit run src/ui/streamlit_app.py
 ```
 
+## If Git Is Still Trying To Push Large Files
+
+If these folders were already committed in the past, `.gitignore` alone is not enough.
+You need to stop tracking them once, while keeping the files in the same folder on your computer.
+
+Run these commands from the project root:
+
+```bash
+git rm -r --cached .venv data/parsed_cache rag_storage output
+git add .gitignore
+git commit -m "Stop tracking generated files"
+```
+
+After that:
+
+- the files stay in your local folder
+- your app flow is unchanged
+- future commits will not include those generated folders
+
+If your old git history is already very large, you may still need to push to a fresh branch or clean old history later, but the commands above are the correct first step.
+
 ## How To Use The UI
 
 1. Open the app in your browser
@@ -141,3 +179,4 @@ python -m src.cli.graph_rag -q "What are the recommended courses for the spring 
 - The UI is optimized for local advising search, not full conversational reasoning with an LLM.
 - Responses depend on the documents already indexed into `rag_storage`.
 - If the answer feels too broad, select the correct program and use a course code or semester phrase in the question.
+- Streamlit UI works without an OpenAI key in the current local retrieval flow.
