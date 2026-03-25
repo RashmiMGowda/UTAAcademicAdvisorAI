@@ -3,21 +3,14 @@ __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
+*.jsonl
+*.log
 
 .env
 .env.local
-
 .DS_Store
-
 .streamlit/
 
-rag_storage/chat_ui/
-rag_storage/chat_memory.json
+data/parsed_cache/
 rag_storage/
-.venv/
-__pycache__/
-*.jsonl
-
 output/
-
-*.log
