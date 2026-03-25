@@ -13,6 +13,10 @@ __pycache__/
 
 rag_storage/chat_ui/
 rag_storage/chat_memory.json
+rag_storage/
+.venv/
+__pycache__/
+*.jsonl
 
 output/
 
