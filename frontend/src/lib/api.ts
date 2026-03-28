@@ -1,20 +1,8 @@
-export interface Recommendation {
-  course: string;
-  title: string;
-  hours: number;
-}
-
-export interface AdvisorResponse {
-  summary: string;
-  recommendations: Recommendation[];
-  notes: string[];
-  sources: string[];
-  mode?: string;
-}
+import { AdvisorResponse, AdvisorQueryParams } from "../types";
 
 interface DemoReply {
   summary: string;
-  recommendations: Recommendation[];
+  recommendations: { course: string; title: string; hours: number }[];
   notes: string[];
   sources: string[];
 }
@@ -57,11 +45,7 @@ function delay(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-export interface AdvisorQueryParams {
-  program: string;
-  question: string;
-  courseFilter: string;
-}
+
 
 export async function askAdvisor({
   program,
