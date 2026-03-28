@@ -1,4 +1,25 @@
-const demoReplies = {
+export interface Recommendation {
+  course: string;
+  title: string;
+  hours: number;
+}
+
+export interface AdvisorResponse {
+  summary: string;
+  recommendations: Recommendation[];
+  notes: string[];
+  sources: string[];
+  mode?: string;
+}
+
+interface DemoReply {
+  summary: string;
+  recommendations: Recommendation[];
+  notes: string[];
+  sources: string[];
+}
+
+const demoReplies: Record<string, DemoReply> = {
   CSE: {
     summary:
       "For a typical junior spring in Computer Science, a balanced plan often includes core systems, software, math, and communication requirements.",
@@ -32,11 +53,21 @@ const demoReplies = {
   }
 };
 
-function delay(ms) {
+function delay(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-export async function askAdvisor({ program, question, courseFilter }) {
+export interface AdvisorQueryParams {
+  program: string;
+  question: string;
+  courseFilter: string;
+}
+
+export async function askAdvisor({
+  program,
+  question,
+  courseFilter
+}: AdvisorQueryParams): Promise<AdvisorResponse> {
   const apiBase = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000";
 
   if (apiBase) {
