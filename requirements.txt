@@ -18,11 +18,13 @@ python-dotenv>=1.0.1
 pydantic>=2.9.2
 orjson>=3.10.7
 rapidfuzz>=3.9.7
+fastapi>=0.115.0
+uvicorn>=0.32.0
+google-auth>=2.36.0
 
 
 numpy 
 scipy 
 scikit-learn 
 networkx
-streamlit>=1.42.0
 

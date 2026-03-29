@@ -1,9 +1,9 @@
 # --- path bootstrap ---
 if __name__ == "__main__" and __package__ is None:
     import os, sys, pathlib
-    project_root = str(pathlib.Path(__file__).resolve().parents[2])
+    project_root = str(pathlib.Path(__file__).resolve().parents[4])
     if project_root not in sys.path: sys.path.insert(0, project_root)
-    src_root = str(pathlib.Path(__file__).resolve().parents[1])
+    src_root = str(pathlib.Path(__file__).resolve().parents[3])
     if src_root not in sys.path: sys.path.insert(0, src_root)
 
 import os, sys, time, asyncio
@@ -30,13 +30,13 @@ async def _await_with_heartbeat(coro, label: str):
 async def main():
     load_dotenv()
     if len(sys.argv) < 2:
-        print("Usage: python -m src.cli.add path\\to\\new.pdf")
+        print("Usage: python -m src.advisor.rag.heavy.add path\\to\\new.pdf")
         sys.exit(1)
     fpath = sys.argv[1]
 
     rag = RAGAnything(
         config=RAGAnythingConfig(
-            working_dir=os.getenv("WORKING_DIR","./rag_storage"),
+            working_dir=os.getenv("WORKING_DIR","./storage/rag_storage"),
             parser=os.getenv("PARSER","mineru"),
             parse_method=os.getenv("PARSE_METHOD","auto"),
             enable_image_processing=True,

@@ -1,4 +1,4 @@
-# src/cli/graph_rag.py
+# src/advisor/rag/heavy/graph_rag.py
 import os
 import json
 import zlib
@@ -23,7 +23,13 @@ try:
 except Exception:
     load_dotenv = lambda *a, **k: None
 
-from src.core.openai_utils import create_openai_client
+try:
+    from openai import OpenAI
+except Exception as e:
+    raise RuntimeError(
+        "OpenAI python package not found. Install it:\n"
+        "  pip install --upgrade openai python-dotenv\n"
+    ) from e
 
 
 # ------------------------------ utils ------------------------------
@@ -134,7 +140,7 @@ def cosine_sim(a: np.ndarray, b: np.ndarray) -> np.ndarray:
 
 def embed_query_openai(text: str, ensure_dim: int) -> np.ndarray:
     model = env_str("EMBED_MODEL", "text-embedding-3-large")
-    client = create_openai_client()
+    client = OpenAI()
     resp = client.embeddings.create(model=model, input=text)
     vec = np.array(resp.data[0].embedding, dtype=np.float32)
     if vec.shape[0] != ensure_dim:
@@ -204,7 +210,7 @@ def print_raw(hits: List[Tuple[float, str]], kv: Dict[str, Dict]):
 
 def summarize(question: str, hits: List[Tuple[float, str]], kv: Dict[str, Dict]) -> str:
     model = env_str("LLM_MODEL", "gpt-4o-mini")
-    client = create_openai_client()
+    client = OpenAI()
 
     max_ctx = 8
     ctx = []
@@ -236,9 +242,9 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("-q", "--question", type=str, required=True)
     parser.add_argument("-k", "--topk", type=int, default=env_int("TOP_K", 10))
-    parser.add_argument("--workdir", type=str, default=env_str("WORKING_DIR", "./rag_storage"))
+    parser.add_argument("--workdir", type=str, default=env_str("WORKING_DIR", "./storage/rag_storage"))
     parser.add_argument("--with-summary", action="store_true")
-    parser.add_argument("--graphml", type=str, default=str(Path(env_str("WORKING_DIR", "./rag_storage")) / "graph_chunk_entity_relation.graphml"))
+    parser.add_argument("--graphml", type=str, default=str(Path(env_str("WORKING_DIR", "./storage/rag_storage")) / "graph_chunk_entity_relation.graphml"))
     parser.add_argument("--hops", type=int, default=1)
     parser.add_argument("--graph-max-neighbors", type=int, default=4)
     parser.add_argument("--graph-weight", type=float, default=0.3, help="0..1; blend weight for graph-boosted scores")

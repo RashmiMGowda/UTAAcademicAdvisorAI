@@ -2,7 +2,7 @@ import json, re, pathlib
 
 PHRASE = "If an employee is injured because he or she trips on the family dog while rushing to answer a work phone call, the case is not considered work-related.".lower()
 
-p = pathlib.Path("rag_storage/kv_store_text_chunks.json")
+p = pathlib.Path("storage/rag_storage/kv_store_text_chunks.json")
 data = json.loads(p.read_text(encoding="utf-8"))
 
 hits = 0

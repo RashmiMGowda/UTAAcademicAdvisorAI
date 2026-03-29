@@ -1,0 +1,2529 @@
+{
+  "format_version": 3,
+  "generated_at": "2026-03-29T18:23:57",
+  "programs": {
+    "CM": {
+      "label": "Construction Management",
+      "semester_plans": [
+        {
+          "semester": "None",
+          "courses": [
+            {
+              "course": "ANTH 2322",
+              "title": "ANTH 2322",
+              "hours": "Global Cultures"
+            },
+            {
+              "course": "ARAB 2310",
+              "title": "ARAB 2310",
+              "hours": "Arabic Culture in the World"
+            },
+            {
+              "course": "ARAB 2314",
+              "title": "ARAB 2314",
+              "hours": "Intermediate Arabic II"
+            },
+            {
+              "course": "ARCH 2300",
+              "title": "ARCH 2300",
+              "hours": "Masterworks of Western Architecture"
+            },
+            {
+              "course": "ART 1317",
+              "title": "ART 1317",
+              "hours": "The Art of Non-Western Traditions"
+            },
+            {
+              "course": "CHIN 2310",
+              "title": "CHIN 2310",
+              "hours": "Chinese Culture in the World"
+            },
+            {
+              "course": "CHIN 2314",
+              "title": "CHIN 2314",
+              "hours": "Intermediate Chinese II"
+            },
+            {
+              "course": "CLAS 1300",
+              "title": "CLAS 1300",
+              "hours": "Introduction to Classical Mythology"
+            },
+            {
+              "course": "ENGL 2303",
+              "title": "ENGL 2303",
+              "hours": "Topics in Literature"
+            },
+            {
+              "course": "ENGL 2309",
+              "title": "ENGL 2309",
+              "hours": "World Literature"
+            },
+            {
+              "course": "ENGL 2319",
+              "title": "ENGL 2319",
+              "hours": "British Literature"
+            },
+            {
+              "course": "ENGL 2329",
+              "title": "ENGL 2329",
+              "hours": "American Literature"
+            },
+            {
+              "course": "FREN 2310",
+              "title": "FREN 2310",
+              "hours": "French and Francophone Cultures in the World"
+            },
+            {
+              "course": "World",
+              "title": "World",
+              "hours": ""
+            },
+            {
+              "course": "FREN 2314",
+              "title": "FREN 2314",
+              "hours": "Intermediate French II"
+            },
+            {
+              "course": "GERM 2310",
+              "title": "GERM 2310",
+              "hours": "German Culture in the World"
+            },
+            {
+              "course": "GERM 2314",
+              "title": "GERM 2314",
+              "hours": "Intermediate German II"
+            },
+            {
+              "course": "GLOBAL 2301",
+              "title": "GLOBAL 2301",
+              "hours": "Introduction to Global Studies"
+            },
+            {
+              "course": "GREK 2314",
+              "title": "GREK 2314",
+              "hours": "Greek Level IV"
+            }
+          ],
+          "source": "2022-CM.pdf",
+          "chunk_id": "chunk-a3e9f39422e11b90df60540d967632f8",
+          "search_text": "None ANTH 2322 ANTH 2322 Global Cultures ARAB 2310 ARAB 2310 Arabic Culture in the World ARAB 2314 ARAB 2314 Intermediate Arabic II ARCH 2300 ARCH 2300 Masterworks of Western Architecture ART 1317 ART 1317 The Art of Non-Western Traditions CHIN 2310 CHIN 2310 Chinese Culture in the World CHIN 2314 CHIN 2314 Intermediate Chinese II CLAS 1300 CLAS 1300 Introduction to Classical Mythology ENGL 2303 ENGL 2303 Topics in Literature ENGL 2309 ENGL 2309 World Literature ENGL 2319 ENGL 2319 British Literature ENGL 2329 ENGL 2329 American Literature FREN 2310 FREN 2310 French and Francophone Cultures in the World World World FREN 2314 FREN 2314 Intermediate French II GERM 2310 GERM 2310 German Culture in the World GERM 2314 GERM 2314 Intermediate German II GLOBAL 2301 GLOBAL 2301 Introduction to Global Studies GREK 2314 GREK 2314 Greek Level IV",
+          "season": "unknown",
+          "year": 2
+        }
+      ],
+      "notes": [
+        {
+          "text": "First Year Fall Semester – 16 Semester Credit Hours CM 1311 Construction Drafting ENGL 1301 Rhetoric and Composition I ENGR 1101 Entrance to Engineering for Transfer Students or UNIV 1131 HIST 13XX U.S. History Elective MATH 1302 College Algebra Creative Arts Elective Second Year Fall Semester – 16 Semester Credit Hours ACCT 2301 Principles of Accounting I CM 2311 Introduction to Construction Management CM 2315 Introduction to Mechanics for Construction PHYS 1442 General College Physics II Foundation Component Elective Third Year Fall Semester – 15 Semester Credit Hours CM 3315 Construction Law & Ethics CM 3331 Mechanical & Electrical Systems CM 3335 Soils & Foundations in Construction MANA ",
+          "source": "2022-CM.pdf",
+          "chunk_id": "chunk-d4291c2e8ac4bef90d5e30d424cb8cc2",
+          "search_text": "First Year Fall Semester – 16 Semester Credit Hours CM 1311 Construction Drafting ENGL 1301 Rhetoric and Composition I ENGR 1101 Entrance to Engineering for Transfer Students or UNIV 1131 HIST 13XX U.S. History Elective MATH 1302 College Algebra Creative Arts Elective Second Year Fall Semester – 16 Semester Credit Hours ACCT 2301 Principles of Accounting I CM 2311 Introduction to Construction Management CM 2315 Introduction to Mechanics for Construction PHYS 1442 General College Physics II Foundation Component Elective Third Year Fall Semester – 15 Semester Credit Hours CM 3315 Construction Law & Ethics CM 3331 Mechanical & Electrical Systems CM 3335 Soils & Foundations in Construction MANA "
+        },
+        {
+          "text": "1 General College Physics I Communication Elective General Education Courses: US History Elective Sophomore Year, Fall Semester 16 Semester Credit Hours Pre-Professional Courses: ACCT 2301 Principles of Accounting I – Prerequisite: 30 Semester Credit Hours CM 2311 Introduction to Construction Management CM 2315 Introduction to Mechanics for Construction – Prerequisite: MATH 1303 & PHYS 1441 PHYS 1442 General College Physics II – Prerequisite: PHYS 1441 General Education Courses: Foundational Component Elective Sophomore Year, Spring Semester 15 Semester Credit Hours Pre-Professional Courses: CM 2313 Construction Materials & Methods – Prerequisite: CM 2311 CM 2331 Construction Documents & Con",
+          "source": "2022-CM.pdf",
+          "chunk_id": "chunk-71a15fffbc740ef73d1156faf4ced72a",
+          "search_text": "1 General College Physics I Communication Elective General Education Courses: US History Elective Sophomore Year, Fall Semester 16 Semester Credit Hours Pre-Professional Courses: ACCT 2301 Principles of Accounting I – Prerequisite: 30 Semester Credit Hours CM 2311 Introduction to Construction Management CM 2315 Introduction to Mechanics for Construction – Prerequisite: MATH 1303 & PHYS 1441 PHYS 1442 General College Physics II – Prerequisite: PHYS 1441 General Education Courses: Foundational Component Elective Sophomore Year, Spring Semester 15 Semester Credit Hours Pre-Professional Courses: CM 2313 Construction Materials & Methods – Prerequisite: CM 2311 CM 2331 Construction Documents & Con"
+        }
+      ]
+    },
+    "EE": {
+      "label": "Electrical Engineering",
+      "semester_plans": [],
+      "notes": [
+        {
+          "text": "BSEE Degree Plan (2024 – 2025) Student Name UTA ID Number Prerequisite Prerequisite or Concurrent Enrollment Note: 17 Hours 18 Hours 16 Hours 17 Hours 16 Hours 14 Hours * Approved lists are available at the EE Advising Office ** This requirement will be waived if the student has 2 High School Units of foreign language. ***EE4240 must be taken the semester before EE4149 and after completing all prerequisites. An EE proficiency exam will be administered prior to admission to this course and may determine concurrent enrollment in additional courses. 14 Hours 13 Hours",
+          "source": "2024-EE.pdf",
+          "chunk_id": "chunk-8d98819bc97f21a3ebc2917b0c008285",
+          "search_text": "BSEE Degree Plan (2024 – 2025) Student Name UTA ID Number Prerequisite Prerequisite or Concurrent Enrollment Note: 17 Hours 18 Hours 16 Hours 17 Hours 16 Hours 14 Hours * Approved lists are available at the EE Advising Office ** This requirement will be waived if the student has 2 High School Units of foreign language. ***EE4240 must be taken the semester before EE4149 and after completing all prerequisites. An EE proficiency exam will be administered prior to admission to this course and may determine concurrent enrollment in additional courses. 14 Hours 13 Hours"
+        },
+        {
+          "text": "(3) UNIV 1131 for Freshman only; for transfer student: ENGR 1101",
+          "source": "2024-EE.pdf",
+          "chunk_id": "chunk-20dc89fd422dcf25628a379e641d32a8",
+          "search_text": "(3) UNIV 1131 for Freshman only; for transfer student: ENGR 1101"
+        },
+        {
+          "text": "(4) Can be substituted with HIST 1331 and HIST 1332",
+          "source": "2024-EE.pdf",
+          "chunk_id": "chunk-20dc89fd422dcf25628a379e641d32a8",
+          "search_text": "(4) Can be substituted with HIST 1331 and HIST 1332"
+        }
+      ]
+    },
+    "AE": {
+      "label": "Aerospace Engineering",
+      "semester_plans": [],
+      "notes": []
+    },
+    "AREN": {
+      "label": "Architectural Engineering",
+      "semester_plans": [],
+      "notes": [
+        {
+          "text": "First Year Fall Semester – 14 Semester Credit Hours ARCH 1301 Introduction to Architecture and Interior Design Creative Arts Elective AREN 1205 Intro to Architectural Engineering ENGR 1101 Entrance to Engineering for Transfer Students or UNIV 1131 MATH 1426 Calculus I CHEM 1465 Chemistry for Engineers Second Year Fall Semester – 15 Semester Credit Hours COMS 2302 Professional & Technical Communications for Scientists & Engineers AREN 2312 Statics & Dynamics MATH 2326 Calculus III AREN 2213 Building Science PHYS 1444 General Technical Physics II Third Year Fall Semester – 15 Semester Credit Hours HIST 13XX U.S. History Elective AREN 3346 Electrical Systems & Lighting for AREN AREN 3305 Basic ",
+          "source": "2025-AREN.pdf",
+          "chunk_id": "chunk-3d81180bae4868b0191280876ca84287",
+          "search_text": "First Year Fall Semester – 14 Semester Credit Hours ARCH 1301 Introduction to Architecture and Interior Design Creative Arts Elective AREN 1205 Intro to Architectural Engineering ENGR 1101 Entrance to Engineering for Transfer Students or UNIV 1131 MATH 1426 Calculus I CHEM 1465 Chemistry for Engineers Second Year Fall Semester – 15 Semester Credit Hours COMS 2302 Professional & Technical Communications for Scientists & Engineers AREN 2312 Statics & Dynamics MATH 2326 Calculus III AREN 2213 Building Science PHYS 1444 General Technical Physics II Third Year Fall Semester – 15 Semester Credit Hours HIST 13XX U.S. History Elective AREN 3346 Electrical Systems & Lighting for AREN AREN 3305 Basic "
+        },
+        {
+          "text": "• A course number shown with an asterisk (HIST 1311*) is a General Education course. These courses are neither pre-professional nor professional program Architectural Engineering courses.",
+          "source": "2025-AREN.pdf",
+          "chunk_id": "chunk-e0ebd053560c02d51846704fade7d6c5",
+          "search_text": "• A course number shown with an asterisk (HIST 1311*) is a General Education course. These courses are neither pre-professional nor professional program Architectural Engineering courses."
+        },
+        {
+          "text": "• A course number shown with normal weight and without an asterisk (AREN 1205) is an Architectural Engineering pre-professional course. A grade of C or better must be earned in each Architectural Engineering pre-professional course.",
+          "source": "2025-AREN.pdf",
+          "chunk_id": "chunk-e0ebd053560c02d51846704fade7d6c5",
+          "search_text": "• A course number shown with normal weight and without an asterisk (AREN 1205) is an Architectural Engineering pre-professional course. A grade of C or better must be earned in each Architectural Engineering pre-professional course."
+        },
+        {
+          "text": "A course number shown in bold (AREN 3341) is an Architectural Engineering professional program course. Enrollment in a 3000 or 4000 level Architectural Engineering professional program course requires admission to the Architectural Engineering professional program or written permission from the department academic advisor.",
+          "source": "2025-AREN.pdf",
+          "chunk_id": "chunk-e0ebd053560c02d51846704fade7d6c5",
+          "search_text": "A course number shown in bold (AREN 3341) is an Architectural Engineering professional program course. Enrollment in a 3000 or 4000 level Architectural Engineering professional program course requires admission to the Architectural Engineering professional program or written permission from the department academic advisor."
+        },
+        {
+          "text": "Requisite courses are shown in parentheses (MATH 1323). A requisite course designated co (MATH 1421co) may be taken concurrently at UTA. A requisite course designated cr (AREN 3143cr) must be taken concurrently at UTA. All other requisite course are prerequisites. Architectural Engineering majors (AREN, AREN Intended, and AREN UCOL) may not attempt a course before earning a grade of C or better in all prerequisite courses.",
+          "source": "2025-AREN.pdf",
+          "chunk_id": "chunk-e0ebd053560c02d51846704fade7d6c5",
+          "search_text": "Requisite courses are shown in parentheses (MATH 1323). A requisite course designated co (MATH 1421co) may be taken concurrently at UTA. A requisite course designated cr (AREN 3143cr) must be taken concurrently at UTA. All other requisite course are prerequisites. Architectural Engineering majors (AREN, AREN Intended, and AREN UCOL) may not attempt a course before earning a grade of C or better in all prerequisite courses."
+        },
+        {
+          "text": "Students majoring in Architectural Engineering must take ARCH 1301, which is a Creative Arts elective option. If a student has taken a different course from the approved Creative Arts elective list, it will be counted as part of your core curriculum. However, ARCH 1301 will also need to be completed to satisfy the course requirement for the Architectural Engineering degree plan.",
+          "source": "2025-AREN.pdf",
+          "chunk_id": "chunk-471475bafa478236b69cfe5a65d9af31",
+          "search_text": "Students majoring in Architectural Engineering must take ARCH 1301, which is a Creative Arts elective option. If a student has taken a different course from the approved Creative Arts elective list, it will be counted as part of your core curriculum. However, ARCH 1301 will also need to be completed to satisfy the course requirement for the Architectural Engineering degree plan."
+        },
+        {
+          "text": "Students majoring in Architectural Engineering must take IE 2308, which is a Social & Behavioral Sciences elective option. If a student has taken a different course from the approved Social & Behavioral Sciences elective list, it will be counted as part of your core curriculum. However, IE 2308 will also need to be completed to satisfy the course requirement for the Architectural Engineering degree plan.",
+          "source": "2025-AREN.pdf",
+          "chunk_id": "chunk-471475bafa478236b69cfe5a65d9af31",
+          "search_text": "Students majoring in Architectural Engineering must take IE 2308, which is a Social & Behavioral Sciences elective option. If a student has taken a different course from the approved Social & Behavioral Sciences elective list, it will be counted as part of your core curriculum. However, IE 2308 will also need to be completed to satisfy the course requirement for the Architectural Engineering degree plan."
+        }
+      ]
+    },
+    "BE-IMAGING": {
+      "label": "Bioengineering Imaging",
+      "semester_plans": [
+        {
+          "semester": "Fall Semester – 17 Total Hours",
+          "courses": [
+            {
+              "course": "BE 1105",
+              "title": "Medical Applications of Engineering",
+              "hours": "1"
+            },
+            {
+              "course": "ENGR 1101",
+              "title": "Entrance to ENGR for Transfers OR UNIV 1131 – Student Success",
+              "hours": "1"
+            },
+            {
+              "course": "MATH 1426",
+              "title": "Calculus I",
+              "hours": "4"
+            },
+            {
+              "course": "CHEM 1441",
+              "title": "General Chemistry I",
+              "hours": "4"
+            },
+            {
+              "course": "BIOL 1441",
+              "title": "Biology for Science Majors I",
+              "hours": "4"
+            },
+            {
+              "course": "BE 1325",
+              "title": "Intro to Bioengineering",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-BE-Imaging.pdf",
+          "chunk_id": "chunk-9f200a60dab42bdd70c5c5af16365546",
+          "search_text": "Fall Semester – 17 Total Hours BE 1105 Medical Applications of Engineering 1 ENGR 1101 Entrance to ENGR for Transfers OR UNIV 1131 – Student Success 1 MATH 1426 Calculus I 4 CHEM 1441 General Chemistry I 4 BIOL 1441 Biology for Science Majors I 4 BE 1325 Intro to Bioengineering 3",
+          "season": "fall",
+          "year": 1
+        },
+        {
+          "semester": "Fall Semester – 17 Total Hours",
+          "courses": [
+            {
+              "course": "PHYS 1444",
+              "title": "Technical Physics II",
+              "hours": "4"
+            },
+            {
+              "course": "MATH 2326",
+              "title": "Calculus III",
+              "hours": "3"
+            },
+            {
+              "course": "BE 3415",
+              "title": "Fundamentals of Biomolecular Engineering",
+              "hours": "4"
+            },
+            {
+              "course": "MATH 3316",
+              "title": "Statistical Inference or Engineering Probability",
+              "hours": "3"
+            },
+            {
+              "course": "COMS 2302",
+              "title": "Professional & Technical Communication for Science and ENGR",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-BE-Imaging.pdf",
+          "chunk_id": "chunk-5f0d15e8b265d7d7834decaee29fe4d1",
+          "search_text": "Fall Semester – 17 Total Hours PHYS 1444 Technical Physics II 4 MATH 2326 Calculus III 3 BE 3415 Fundamentals of Biomolecular Engineering 4 MATH 3316 Statistical Inference or Engineering Probability 3 COMS 2302 Professional & Technical Communication for Science and ENGR 3",
+          "season": "fall",
+          "year": 2
+        },
+        {
+          "semester": "Spring Semester – 18 Total Hours",
+          "courses": [
+            {
+              "course": "PHYS 1443",
+              "title": "Technical Physics I",
+              "hours": "4"
+            },
+            {
+              "course": "MATH 2425",
+              "title": "Calculus II",
+              "hours": "4"
+            },
+            {
+              "course": "CHEM 1442",
+              "title": "General Chemistry II",
+              "hours": "4"
+            },
+            {
+              "course": "BE 2315",
+              "title": "Intro to Computational Tools for BE",
+              "hours": "3"
+            },
+            {
+              "course": "ENGL 1301",
+              "title": "Rhetoric & Composition",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-BE-Imaging.pdf",
+          "chunk_id": "chunk-f40f3bf758c9c9c111295886ebfac311",
+          "search_text": "Spring Semester – 18 Total Hours PHYS 1443 Technical Physics I 4 MATH 2425 Calculus II 4 CHEM 1442 General Chemistry II 4 BE 2315 Intro to Computational Tools for BE 3 ENGL 1301 Rhetoric & Composition 3",
+          "season": "spring",
+          "year": 1
+        },
+        {
+          "semester": "Spring Semester – 16 Total Hours",
+          "courses": [
+            {
+              "course": "EE 2440",
+              "title": "Circuit Analysis w/Lab",
+              "hours": "4"
+            },
+            {
+              "course": "MATH 3319",
+              "title": "Differential Equations & Lin Algebra",
+              "hours": "3"
+            },
+            {
+              "course": "BE 3320",
+              "title": "Biomedical Signal Acquisition and Analysis",
+              "hours": "3"
+            },
+            {
+              "course": "HIST 1301",
+              "title": "US History to 1865 (or HIST 1331)",
+              "hours": "3"
+            },
+            {
+              "course": "BE 2310",
+              "title": "Engineering Appr. To Solving Clinical Challenges (Optional, counts as BE Tech Elective)",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-BE-Imaging.pdf",
+          "chunk_id": "chunk-09ca324d940218599ee6d1e197a01564",
+          "search_text": "Spring Semester – 16 Total Hours EE 2440 Circuit Analysis w/Lab 4 MATH 3319 Differential Equations & Lin Algebra 3 BE 3320 Biomedical Signal Acquisition and Analysis 3 HIST 1301 US History to 1865 (or HIST 1331) 3 BE 2310 Engineering Appr. To Solving Clinical Challenges (Optional, counts as BE Tech Elective) 3",
+          "season": "spring",
+          "year": 2
+        },
+        {
+          "semester": "Fall Semester - 17 Total Hours (if with option A - BE 3101 & BE 3191)",
+          "courses": [
+            {
+              "course": "BE 4382",
+              "title": "Lab Principles",
+              "hours": "3"
+            },
+            {
+              "course": "BE 3380",
+              "title": "Human Physiology in BE",
+              "hours": "3"
+            },
+            {
+              "course": "BE 3346",
+              "title": "Medical Imaging",
+              "hours": "3"
+            },
+            {
+              "course": "BE 3317",
+              "title": "Linear Systems in Bioengineering",
+              "hours": "3"
+            },
+            {
+              "course": "BE 3101",
+              "title": "Seminar in BE (see Note #2)",
+              "hours": "1"
+            },
+            {
+              "course": "BE 3191",
+              "title": "Directed Research in BE (see Notes #2)",
+              "hours": "1"
+            },
+            {
+              "course": "POLS 2311",
+              "title": "US Government",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-BE-Imaging.pdf",
+          "chunk_id": "chunk-76a098a8a8ef9d75702a3dfaa624df4f",
+          "search_text": "Fall Semester - 17 Total Hours (if with option A - BE 3101 & BE 3191) BE 4382 Lab Principles 3 BE 3380 Human Physiology in BE 3 BE 3346 Medical Imaging 3 BE 3317 Linear Systems in Bioengineering 3 BE 3101 Seminar in BE (see Note #2) 1 BE 3191 Directed Research in BE (see Notes #2) 1 POLS 2311 US Government 3",
+          "season": "fall",
+          "year": 3
+        },
+        {
+          "semester": "Fall Semester – 15 Total Hours",
+          "courses": [
+            {
+              "course": "BE 3352",
+              "title": "Digital Processing of Biological Signals",
+              "hours": "3"
+            },
+            {
+              "course": "BE 4350",
+              "title": "Senior Design I",
+              "hours": "3"
+            },
+            {
+              "course": "BE Technical Elective",
+              "title": "BE Technical Elective",
+              "hours": "3"
+            },
+            {
+              "course": "PHIL 1304",
+              "title": "Contemporary Moral Problems",
+              "hours": "3"
+            },
+            {
+              "course": "HIST 1302",
+              "title": "US History II (or HIST 1332)",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-BE-Imaging.pdf",
+          "chunk_id": "chunk-94095c91f6b1b10a15be765940c4b086",
+          "search_text": "Fall Semester – 15 Total Hours BE 3352 Digital Processing of Biological Signals 3 BE 4350 Senior Design I 3 BE Technical Elective BE Technical Elective 3 PHIL 1304 Contemporary Moral Problems 3 HIST 1302 US History II (or HIST 1332) 3",
+          "season": "fall",
+          "year": 2
+        },
+        {
+          "semester": "Spring Semester – 14 Total Hours (if with Option B - BE 3280)",
+          "courses": [
+            {
+              "course": "BE 3344",
+              "title": "Bioinstrumentation",
+              "hours": "3"
+            },
+            {
+              "course": "BE 3301",
+              "title": "Cell Physiology",
+              "hours": "3"
+            },
+            {
+              "course": "BE Technical Elective",
+              "title": "BE Technical Elective",
+              "hours": "3"
+            },
+            {
+              "course": "BE 3280",
+              "title": "Intro to Med Dev Regulations, Requirements & Quality Standards (see Notes #2)",
+              "hours": "2"
+            },
+            {
+              "course": "POLS 2312",
+              "title": "State & Local Government",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-BE-Imaging.pdf",
+          "chunk_id": "chunk-52ba8e734c87174131e28f730d62390a",
+          "search_text": "Spring Semester – 14 Total Hours (if with Option B - BE 3280) BE 3344 Bioinstrumentation 3 BE 3301 Cell Physiology 3 BE Technical Elective BE Technical Elective 3 BE 3280 Intro to Med Dev Regulations, Requirements & Quality Standards (see Notes #2) 2 POLS 2312 State & Local Government 3",
+          "season": "spring",
+          "year": 3
+        },
+        {
+          "semester": "Spring Semester – 15 Total Hours",
+          "courses": [
+            {
+              "course": "BE 4324",
+              "title": "Biomedical Optics Lab",
+              "hours": "3"
+            },
+            {
+              "course": "BE 4355",
+              "title": "Senior Design II",
+              "hours": "3"
+            },
+            {
+              "course": "BE Technical Elective",
+              "title": "BE Technical Elective",
+              "hours": "3"
+            },
+            {
+              "course": "Creative Arts Elective",
+              "title": "Creative Arts Elective",
+              "hours": "3"
+            },
+            {
+              "course": "Social/Behavioral Science Elective",
+              "title": "Social/Behavioral Science Elective",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-BE-Imaging.pdf",
+          "chunk_id": "chunk-5880f102f3b384c24af90803c7420aec",
+          "search_text": "Spring Semester – 15 Total Hours BE 4324 Biomedical Optics Lab 3 BE 4355 Senior Design II 3 BE Technical Elective BE Technical Elective 3 Creative Arts Elective Creative Arts Elective 3 Social/Behavioral Science Elective Social/Behavioral Science Elective 3",
+          "season": "spring",
+          "year": 4
+        }
+      ],
+      "notes": [
+        {
+          "text": "2025-2026 Bachelor of Science in Biomedical Engineering (Imaging Track) University of Texas at Arlington – Four Year Course Sequence First Year Second Year Third Year Fourth Year Notes",
+          "source": "2025-BE-Imaging.pdf",
+          "chunk_id": "chunk-2a25d127547ab0f4de0acd509524a478",
+          "search_text": "2025-2026 Bachelor of Science in Biomedical Engineering (Imaging Track) University of Texas at Arlington – Four Year Course Sequence First Year Second Year Third Year Fourth Year Notes"
+        },
+        {
+          "text": "2. In Third year, students choose either Option A - BE 3101 & BE 3191 in Fall semester or Option B - BE 3280 in Spring semester",
+          "source": "2025-BE-Imaging.pdf",
+          "chunk_id": "chunk-9bf8abcca2f99a1d32b1737b5e763c9b",
+          "search_text": "2. In Third year, students choose either Option A - BE 3101 & BE 3191 in Fall semester or Option B - BE 3280 in Spring semester"
+        }
+      ]
+    },
+    "BE-IMAGING_FC": {
+      "label": "BE-IMAGING_FC",
+      "semester_plans": [],
+      "notes": []
+    },
+    "BE": {
+      "label": "Bioengineering",
+      "semester_plans": [],
+      "notes": []
+    },
+    "BEC": {
+      "label": "Biomedical Engineering",
+      "semester_plans": [
+        {
+          "semester": "Fall Semester – 17 Total Hours",
+          "courses": [
+            {
+              "course": "BE 1105",
+              "title": "Medical Applications of Engineering",
+              "hours": "1"
+            },
+            {
+              "course": "UNIV 1131",
+              "title": "Student Success or ENGR 1101 – Entrance to ENGR for Transfers",
+              "hours": "1"
+            },
+            {
+              "course": "MATH 1426",
+              "title": "Calculus I",
+              "hours": "4"
+            },
+            {
+              "course": "CHEM 1441",
+              "title": "General Chemistry I",
+              "hours": "4"
+            },
+            {
+              "course": "BIOL 1441",
+              "title": "Biology for Science Majors I",
+              "hours": "4"
+            },
+            {
+              "course": "BE 1325",
+              "title": "Intro to Bioengineering",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-BEC.pdf",
+          "chunk_id": "chunk-cd0ddd5074a978bf133ff6de00c29c42",
+          "search_text": "Fall Semester – 17 Total Hours BE 1105 Medical Applications of Engineering 1 UNIV 1131 Student Success or ENGR 1101 – Entrance to ENGR for Transfers 1 MATH 1426 Calculus I 4 CHEM 1441 General Chemistry I 4 BIOL 1441 Biology for Science Majors I 4 BE 1325 Intro to Bioengineering 3",
+          "season": "fall",
+          "year": 1
+        },
+        {
+          "semester": "Fall Semester – 17 Total Hours",
+          "courses": [
+            {
+              "course": "PHYS 1444",
+              "title": "Technical Physics II",
+              "hours": "4"
+            },
+            {
+              "course": "MATH 2326",
+              "title": "Calculus III",
+              "hours": "3"
+            },
+            {
+              "course": "BE 3415",
+              "title": "Fundamentals of Biomolecular Engineering",
+              "hours": "4"
+            },
+            {
+              "course": "MATH 3316",
+              "title": "Statistical Inference or Engineering Probability",
+              "hours": "3"
+            },
+            {
+              "course": "COMS 2302",
+              "title": "Professional & Technical Communication for Science and ENGR",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-BEC.pdf",
+          "chunk_id": "chunk-19fa7579d162a5a86ca3d78e0ecff17e",
+          "search_text": "Fall Semester – 17 Total Hours PHYS 1444 Technical Physics II 4 MATH 2326 Calculus III 3 BE 3415 Fundamentals of Biomolecular Engineering 4 MATH 3316 Statistical Inference or Engineering Probability 3 COMS 2302 Professional & Technical Communication for Science and ENGR 3",
+          "season": "fall",
+          "year": 2
+        },
+        {
+          "semester": "Fall Semester – 17 Total Hours (with option A – BE 3101 & BE 3191)",
+          "courses": [
+            {
+              "course": "BE 4382",
+              "title": "Lab Principles",
+              "hours": "3"
+            },
+            {
+              "course": "BE 3380",
+              "title": "Human Physiology in BE",
+              "hours": "3"
+            },
+            {
+              "course": "BE 4368",
+              "title": "BE 4368 or BE 4364 or BE 4372 (choose one)",
+              "hours": "3"
+            },
+            {
+              "course": "BE 3317",
+              "title": "Linear Systems in Bioengineering",
+              "hours": "3"
+            },
+            {
+              "course": "BE 3101",
+              "title": "BE 3101 Seminar in BE (Option A, see note 2)",
+              "hours": "1"
+            },
+            {
+              "course": "BE 3191",
+              "title": "Directed Research in BE (option A, see note 2)",
+              "hours": "1"
+            },
+            {
+              "course": "POLS 2311",
+              "title": "US Government",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-BEC.pdf",
+          "chunk_id": "chunk-58d2b83fc4f6d5d35359ac32a9e00178",
+          "search_text": "Fall Semester – 17 Total Hours (with option A – BE 3101 & BE 3191) BE 4382 Lab Principles 3 BE 3380 Human Physiology in BE 3 BE 4368 BE 4368 or BE 4364 or BE 4372 (choose one) 3 BE 3317 Linear Systems in Bioengineering 3 BE 3101 BE 3101 Seminar in BE (Option A, see note 2) 1 BE 3191 Directed Research in BE (option A, see note 2) 1 POLS 2311 US Government 3",
+          "season": "fall",
+          "year": 3
+        },
+        {
+          "semester": "Fall Semester – 15 Total Hours",
+          "courses": [
+            {
+              "course": "BE 4337",
+              "title": "Transport Phenomena or Biomedical Implants (Choose one)",
+              "hours": "3"
+            },
+            {
+              "course": "BE 4350",
+              "title": "Senior Design I",
+              "hours": "3"
+            },
+            {
+              "course": "BE Technical Elective",
+              "title": "BE Technical Elective",
+              "hours": "3"
+            },
+            {
+              "course": "PHIL 1304",
+              "title": "Contemporary Moral Problems",
+              "hours": "3"
+            },
+            {
+              "course": "HIST 1302",
+              "title": "US History II (or HIST 1332)",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-BEC.pdf",
+          "chunk_id": "chunk-558197ab5e8db7c94899767a2f320c5b",
+          "search_text": "Fall Semester – 15 Total Hours BE 4337 Transport Phenomena or Biomedical Implants (Choose one) 3 BE 4350 Senior Design I 3 BE Technical Elective BE Technical Elective 3 PHIL 1304 Contemporary Moral Problems 3 HIST 1302 US History II (or HIST 1332) 3",
+          "season": "fall",
+          "year": 2
+        },
+        {
+          "semester": "Spring Semester – 18 Total Hours",
+          "courses": [
+            {
+              "course": "PHYS 1443",
+              "title": "Technical Physics I",
+              "hours": "4"
+            },
+            {
+              "course": "MATH 2425",
+              "title": "Calculus II",
+              "hours": "4"
+            },
+            {
+              "course": "CHEM 1442",
+              "title": "General Chemistry II",
+              "hours": "4"
+            },
+            {
+              "course": "BE 2315",
+              "title": "Intro to Computational Tools for BE",
+              "hours": "3"
+            },
+            {
+              "course": "ENGL 1301",
+              "title": "Rhetoric & Composition",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-BEC.pdf",
+          "chunk_id": "chunk-d13e31cd083f9b5dfe5069ffc606a7cf",
+          "search_text": "Spring Semester – 18 Total Hours PHYS 1443 Technical Physics I 4 MATH 2425 Calculus II 4 CHEM 1442 General Chemistry II 4 BE 2315 Intro to Computational Tools for BE 3 ENGL 1301 Rhetoric & Composition 3",
+          "season": "spring",
+          "year": 1
+        },
+        {
+          "semester": "Spring Semester – 16 Total Hours",
+          "courses": [
+            {
+              "course": "EE 2440",
+              "title": "Circuit Analysis w/Lab",
+              "hours": "4"
+            },
+            {
+              "course": "MATH 3319",
+              "title": "Differential Equations & Lin Algebra",
+              "hours": "3"
+            },
+            {
+              "course": "BE 3320",
+              "title": "Measurement Lab",
+              "hours": "3"
+            },
+            {
+              "course": "HIST 1301",
+              "title": "US History to 1865 (or HIST 1331)",
+              "hours": "3"
+            },
+            {
+              "course": "BE 2310",
+              "title": "Engineering Appr. To Solving Clinical Challenges (Optional, counts as BE Tech Elective)",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-BEC.pdf",
+          "chunk_id": "chunk-9526c342d6870ae0cd50ceff5986f980",
+          "search_text": "Spring Semester – 16 Total Hours EE 2440 Circuit Analysis w/Lab 4 MATH 3319 Differential Equations & Lin Algebra 3 BE 3320 Measurement Lab 3 HIST 1301 US History to 1865 (or HIST 1331) 3 BE 2310 Engineering Appr. To Solving Clinical Challenges (Optional, counts as BE Tech Elective) 3",
+          "season": "spring",
+          "year": 2
+        },
+        {
+          "semester": "Spring Semester – 14 Total Hours (with Option B – BE 3280)",
+          "courses": [
+            {
+              "course": "BE 3310",
+              "title": "Biomechanics & Fluid Flow or Tissue Biomechanics",
+              "hours": "3"
+            },
+            {
+              "course": "BE 3301",
+              "title": "Cell Physiology",
+              "hours": "3"
+            },
+            {
+              "course": "BE 3367",
+              "title": "BE 3367 or BE 4373 (choose one)",
+              "hours": "3"
+            },
+            {
+              "course": "BE 3280",
+              "title": "Intro to Med Dev Regulations, Requirements & Quality Standards (See note #2)",
+              "hours": "2"
+            },
+            {
+              "course": "POLS 2312",
+              "title": "State & Local Government",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-BEC.pdf",
+          "chunk_id": "chunk-2edd98a820e5f7e92ea3fc9dae8a8d24",
+          "search_text": "Spring Semester – 14 Total Hours (with Option B – BE 3280) BE 3310 Biomechanics & Fluid Flow or Tissue Biomechanics 3 BE 3301 Cell Physiology 3 BE 3367 BE 3367 or BE 4373 (choose one) 3 BE 3280 Intro to Med Dev Regulations, Requirements & Quality Standards (See note #2) 2 POLS 2312 State & Local Government 3",
+          "season": "spring",
+          "year": 3
+        },
+        {
+          "semester": "Spring Semester – 15 Total Hours",
+          "courses": [
+            {
+              "course": "BE 4333",
+              "title": "Nano Biomaterials or Biopolymers & Biocompatibility (choose one)",
+              "hours": "3"
+            },
+            {
+              "course": "BE 4355",
+              "title": "Senior Design II",
+              "hours": "3"
+            },
+            {
+              "course": "BE Technical Elective",
+              "title": "BE Technical Elective",
+              "hours": "3"
+            },
+            {
+              "course": "Creative Arts Elective",
+              "title": "Creative Arts Elective",
+              "hours": "3"
+            },
+            {
+              "course": "Social/Behavioral Science Elective",
+              "title": "Social/Behavioral Science Elective",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-BEC.pdf",
+          "chunk_id": "chunk-e5d48b925c4ef4c8ee70db911d7517c1",
+          "search_text": "Spring Semester – 15 Total Hours BE 4333 Nano Biomaterials or Biopolymers & Biocompatibility (choose one) 3 BE 4355 Senior Design II 3 BE Technical Elective BE Technical Elective 3 Creative Arts Elective Creative Arts Elective 3 Social/Behavioral Science Elective Social/Behavioral Science Elective 3",
+          "season": "spring",
+          "year": 4
+        }
+      ],
+      "notes": [
+        {
+          "text": "2025-2026 Bachelor of Science in Biomedical Engineering (Tissue Track) University of Texas at Arlington – Four Year Course Sequence First Year Second Year Third Year Fourth Year Notes",
+          "source": "2025-BEC.pdf",
+          "chunk_id": "chunk-62a759ad908b5ea5ba6a62b57aca4aae",
+          "search_text": "2025-2026 Bachelor of Science in Biomedical Engineering (Tissue Track) University of Texas at Arlington – Four Year Course Sequence First Year Second Year Third Year Fourth Year Notes"
+        },
+        {
+          "text": "2. In third year, students choose either Option A – BE 3101 & BE 3191 in Fall semester or option B – BE 3280 in Spring Semester",
+          "source": "2025-BEC.pdf",
+          "chunk_id": "chunk-e63c8a0b2df42fa3d00da96657a08821",
+          "search_text": "2. In third year, students choose either Option A – BE 3101 & BE 3191 in Fall semester or option B – BE 3280 in Spring Semester"
+        }
+      ]
+    },
+    "CSE": {
+      "label": "Computer Science",
+      "semester_plans": [
+        {
+          "semester": "Fall Semester – 17 Total Hours",
+          "courses": [
+            {
+              "course": "CSE 1310",
+              "title": "Intro to Programming",
+              "hours": "3"
+            },
+            {
+              "course": "ENGR 1101",
+              "title": "Intro to Engineering",
+              "hours": "1"
+            },
+            {
+              "course": "UNIV 1131",
+              "title": "Student Success",
+              "hours": ""
+            },
+            {
+              "course": "MATH 1426",
+              "title": "Calculus 1",
+              "hours": "4"
+            },
+            {
+              "course": "Language, Philosophy, Culture Elective",
+              "title": "Language, Philosophy, Culture Elective",
+              "hours": "3"
+            },
+            {
+              "course": "ENGL 1301",
+              "title": "Rhetoric & Composition",
+              "hours": "3"
+            },
+            {
+              "course": "U.S. History Elective 1",
+              "title": "U.S. History Elective 1",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-CSE.pdf",
+          "chunk_id": "chunk-43be2f908ca2872439920e428288c760",
+          "search_text": "Fall Semester – 17 Total Hours CSE 1310 Intro to Programming 3 ENGR 1101 Intro to Engineering 1 UNIV 1131 Student Success MATH 1426 Calculus 1 4 Language, Philosophy, Culture Elective Language, Philosophy, Culture Elective 3 ENGL 1301 Rhetoric & Composition 3 U.S. History Elective 1 U.S. History Elective 1 3",
+          "season": "fall",
+          "year": 1
+        },
+        {
+          "semester": "Fall Semester – 16 Total Hours",
+          "courses": [
+            {
+              "course": "CSE 1325",
+              "title": "Object-Oriented Programming",
+              "hours": "3"
+            },
+            {
+              "course": "CSE 2312",
+              "title": "Computer Organization",
+              "hours": "3"
+            },
+            {
+              "course": "CSE 3318",
+              "title": "Algorithms and Data Structures",
+              "hours": "3"
+            },
+            {
+              "course": "PHYS 1444",
+              "title": "General Technical Physics 2",
+              "hours": "4"
+            },
+            {
+              "course": "U.S. History Elective 2",
+              "title": "U.S. History Elective 2",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-CSE.pdf",
+          "chunk_id": "chunk-91154871411b532218a2684f2da02e9e",
+          "search_text": "Fall Semester – 16 Total Hours CSE 1325 Object-Oriented Programming 3 CSE 2312 Computer Organization 3 CSE 3318 Algorithms and Data Structures 3 PHYS 1444 General Technical Physics 2 4 U.S. History Elective 2 U.S. History Elective 2 3",
+          "season": "fall",
+          "year": 2
+        },
+        {
+          "semester": "Fall Semester – 15 Total Hours",
+          "courses": [
+            {
+              "course": "CSE 3302",
+              "title": "Programming Languages",
+              "hours": "3"
+            },
+            {
+              "course": "CSE 3330",
+              "title": "Databases",
+              "hours": "3"
+            },
+            {
+              "course": "CSE 3315",
+              "title": "Theoretical CS",
+              "hours": "3"
+            },
+            {
+              "course": "IE 3301",
+              "title": "Probability and Statistics",
+              "hours": "3"
+            },
+            {
+              "course": "POLS 2311",
+              "title": "Govt of the United States",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-CSE.pdf",
+          "chunk_id": "chunk-284536c66d0b5a52940c8e0b8d4876e1",
+          "search_text": "Fall Semester – 15 Total Hours CSE 3302 Programming Languages 3 CSE 3330 Databases 3 CSE 3315 Theoretical CS 3 IE 3301 Probability and Statistics 3 POLS 2311 Govt of the United States 3",
+          "season": "fall",
+          "year": 3
+        },
+        {
+          "semester": "Fall Semester – 15 Total Hours",
+          "courses": [
+            {
+              "course": "CSE 3314",
+              "title": "Professional Practices",
+              "hours": "3"
+            },
+            {
+              "course": "CSE 4316",
+              "title": "Senior Design I",
+              "hours": "3"
+            },
+            {
+              "course": "CSE 4303",
+              "title": "Computer Graphics OR CSE 4305 – Compliers OR CSE 4360 – Robotics",
+              "hours": "3"
+            },
+            {
+              "course": "Technical Elective 3",
+              "title": "Technical Elective 3",
+              "hours": "3"
+            },
+            {
+              "course": "ECON 2305",
+              "title": "Principles of Macroeconomics OR IE 2308 – Economics for Engineers",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-CSE.pdf",
+          "chunk_id": "chunk-257b26f7f0cc67b95a9e7ceecac3ed48",
+          "search_text": "Fall Semester – 15 Total Hours CSE 3314 Professional Practices 3 CSE 4316 Senior Design I 3 CSE 4303 Computer Graphics OR CSE 4305 – Compliers OR CSE 4360 – Robotics 3 Technical Elective 3 Technical Elective 3 3 ECON 2305 Principles of Macroeconomics OR IE 2308 – Economics for Engineers 3",
+          "season": "fall",
+          "year": 3
+        },
+        {
+          "semester": "Spring Semester – 15 Total Hours",
+          "courses": [
+            {
+              "course": "CSE 1106",
+              "title": "Intro to CSE",
+              "hours": "1"
+            },
+            {
+              "course": "CSE 1320",
+              "title": "Intermediate Programming",
+              "hours": "3"
+            },
+            {
+              "course": "MATH 2425",
+              "title": "Calculus 2",
+              "hours": "4"
+            },
+            {
+              "course": "PHYS 1443",
+              "title": "General Technical Physics 1",
+              "hours": "4"
+            },
+            {
+              "course": "CSE 2315",
+              "title": "Discrete Structures",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-CSE.pdf",
+          "chunk_id": "chunk-dd6da1463e74251f73cb923c8ff6ca9d",
+          "search_text": "Spring Semester – 15 Total Hours CSE 1106 Intro to CSE 1 CSE 1320 Intermediate Programming 3 MATH 2425 Calculus 2 4 PHYS 1443 General Technical Physics 1 4 CSE 2315 Discrete Structures 3",
+          "season": "spring",
+          "year": 1
+        },
+        {
+          "semester": "Spring Semester – 15 Total Hours",
+          "courses": [
+            {
+              "course": "CSE 3380",
+              "title": "Linear Algebra for CSE",
+              "hours": "3"
+            },
+            {
+              "course": "CSE 3310",
+              "title": "Intro to Software",
+              "hours": "3"
+            },
+            {
+              "course": "CSE 3320",
+              "title": "Operating Systems",
+              "hours": "3"
+            },
+            {
+              "course": "MATH 2326",
+              "title": "Calculus III",
+              "hours": "3"
+            },
+            {
+              "course": "COMS 2302",
+              "title": "Prof. & Technical Comm",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-CSE.pdf",
+          "chunk_id": "chunk-afc1573ed23ba573f0ce2207d7c69a4c",
+          "search_text": "Spring Semester – 15 Total Hours CSE 3380 Linear Algebra for CSE 3 CSE 3310 Intro to Software 3 CSE 3320 Operating Systems 3 MATH 2326 Calculus III 3 COMS 2302 Prof. & Technical Comm 3",
+          "season": "spring",
+          "year": 2
+        },
+        {
+          "semester": "Spring Semester – 15 Total Hours",
+          "courses": [
+            {
+              "course": "CSE 4308",
+              "title": "Artificial Intelligence",
+              "hours": "3"
+            },
+            {
+              "course": "CSE 4344",
+              "title": "Computer Networks",
+              "hours": "3"
+            },
+            {
+              "course": "Technical Elective 1",
+              "title": "Technical Elective 1",
+              "hours": "3"
+            },
+            {
+              "course": "Technical Elective 2",
+              "title": "Technical Elective 2",
+              "hours": "3"
+            },
+            {
+              "course": "POLS 2312",
+              "title": "State & Local Government",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-CSE.pdf",
+          "chunk_id": "chunk-c3b3fea645af881300e3c9b4dc446b86",
+          "search_text": "Spring Semester – 15 Total Hours CSE 4308 Artificial Intelligence 3 CSE 4344 Computer Networks 3 Technical Elective 1 Technical Elective 1 3 Technical Elective 2 Technical Elective 2 3 POLS 2312 State & Local Government 3",
+          "season": "spring",
+          "year": 3
+        },
+        {
+          "semester": "Spring Semester – 15 Total Hours",
+          "courses": [
+            {
+              "course": "CSE 4317",
+              "title": "Senior Design 2",
+              "hours": "3"
+            },
+            {
+              "course": "CSE 4380",
+              "title": "Info Security OR CSE 4381 – Info Security 2 OR CSE 4382 – Secure Programming",
+              "hours": "3"
+            },
+            {
+              "course": "Technical Elective 4",
+              "title": "Technical Elective 4",
+              "hours": "3"
+            },
+            {
+              "course": "Technical Elective 5",
+              "title": "Technical Elective 5",
+              "hours": "3"
+            },
+            {
+              "course": "Creative Arts Elective",
+              "title": "Creative Arts Elective",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-CSE.pdf",
+          "chunk_id": "chunk-ee5edbcf03e718cce8610365444b6e56",
+          "search_text": "Spring Semester – 15 Total Hours CSE 4317 Senior Design 2 3 CSE 4380 Info Security OR CSE 4381 – Info Security 2 OR CSE 4382 – Secure Programming 3 Technical Elective 4 Technical Elective 4 3 Technical Elective 5 Technical Elective 5 3 Creative Arts Elective Creative Arts Elective 3",
+          "season": "spring",
+          "year": 4
+        }
+      ],
+      "notes": [
+        {
+          "text": "Each course taken can be used to satisfy only one degree plan requirement. For example, you can CSE 4380 as your security elective, but it will not also count as a technical elective. If you take CSE 4380 and CSE 4381, CSE 4380 can satisfy your security elective and CSE 4381 can count as a technical elective. We will accept either CSE 3380 or MATH 3330 as the linear algebra class that you need for your degree plan. The pre-req for MATH 3330 is MATH 2425, and it’s taught in summer, fall, and spring. We will accept either IE 3301 or MATH 3313 as the statistics class that you need for your degree plan. The pre-req for MATH 3313 is MATH 2326 and it is only taught in the fall. Technical Electives",
+          "source": "2025-CSE.pdf",
+          "chunk_id": "chunk-e8c84ddaff89b85073b6eef90a231939",
+          "search_text": "Each course taken can be used to satisfy only one degree plan requirement. For example, you can CSE 4380 as your security elective, but it will not also count as a technical elective. If you take CSE 4380 and CSE 4381, CSE 4380 can satisfy your security elective and CSE 4381 can count as a technical elective. We will accept either CSE 3380 or MATH 3330 as the linear algebra class that you need for your degree plan. The pre-req for MATH 3330 is MATH 2425, and it’s taught in summer, fall, and spring. We will accept either IE 3301 or MATH 3313 as the statistics class that you need for your degree plan. The pre-req for MATH 3313 is MATH 2326 and it is only taught in the fall. Technical Electives"
+        },
+        {
+          "text": "CSE 4303 – Computer Graphics pre-reqs: CSE 3318 and CSE 3380 or MATH 3330 (Fall & Spring)",
+          "source": "2025-CSE.pdf",
+          "chunk_id": "chunk-b1cfc7b3c466206ebb5f143853688af1",
+          "search_text": "CSE 4303 – Computer Graphics pre-reqs: CSE 3318 and CSE 3380 or MATH 3330 (Fall & Spring)"
+        },
+        {
+          "text": "CSE 4304 – Game Design and Development pre-reqs: CSE 3380 or MATH 3330 (Fall only)",
+          "source": "2025-CSE.pdf",
+          "chunk_id": "chunk-b1cfc7b3c466206ebb5f143853688af1",
+          "search_text": "CSE 4304 – Game Design and Development pre-reqs: CSE 3380 or MATH 3330 (Fall only)"
+        },
+        {
+          "text": "CSE 4305 – Compilers pre-reqs: CSE 3302 and CSE 3315 (Fall & Spring)",
+          "source": "2025-CSE.pdf",
+          "chunk_id": "chunk-b1cfc7b3c466206ebb5f143853688af1",
+          "search_text": "CSE 4305 – Compilers pre-reqs: CSE 3302 and CSE 3315 (Fall & Spring)"
+        },
+        {
+          "text": "CSE 4309 – Fundamentals of Machine Learning pre-reqs: CSE 3318, MATH 2326 or the consent of the instructor, IE 3301 or MATH 3313, and CSE 3380 or MATH 3330 (Fall only)",
+          "source": "2025-CSE.pdf",
+          "chunk_id": "chunk-b1cfc7b3c466206ebb5f143853688af1",
+          "search_text": "CSE 4309 – Fundamentals of Machine Learning pre-reqs: CSE 3318, MATH 2326 or the consent of the instructor, IE 3301 or MATH 3313, and CSE 3380 or MATH 3330 (Fall only)"
+        },
+        {
+          "text": "CSE 4310 - Fundamentals of Computer Vision pre-reqs: CSE 3318, IE 3301 or MATH 3313, and CSE 3380 or MATH 3330 (Spring only)",
+          "source": "2025-CSE.pdf",
+          "chunk_id": "chunk-b1cfc7b3c466206ebb5f143853688af1",
+          "search_text": "CSE 4310 - Fundamentals of Computer Vision pre-reqs: CSE 3318, IE 3301 or MATH 3313, and CSE 3380 or MATH 3330 (Spring only)"
+        },
+        {
+          "text": "CSE 4311 – Neural Networks and Deep Learning pre-reqs: CSE 3380 or MATH 3330 and IE 3301 or MATH 3313 (Spring only)",
+          "source": "2025-CSE.pdf",
+          "chunk_id": "chunk-b1cfc7b3c466206ebb5f143853688af1",
+          "search_text": "CSE 4311 – Neural Networks and Deep Learning pre-reqs: CSE 3380 or MATH 3330 and IE 3301 or MATH 3313 (Spring only)"
+        },
+        {
+          "text": "CSE 4321 – Software Testing and Maintenance pre-reqs: CSE 3310 (Fall, Spring, & Summer)",
+          "source": "2025-CSE.pdf",
+          "chunk_id": "chunk-b1cfc7b3c466206ebb5f143853688af1",
+          "search_text": "CSE 4321 – Software Testing and Maintenance pre-reqs: CSE 3310 (Fall, Spring, & Summer)"
+        },
+        {
+          "text": "CSE 4322 – Software Project Management pre-reqs: CSE 3310 (Fall & Spring)",
+          "source": "2025-CSE.pdf",
+          "chunk_id": "chunk-b1cfc7b3c466206ebb5f143853688af1",
+          "search_text": "CSE 4322 – Software Project Management pre-reqs: CSE 3310 (Fall & Spring)"
+        },
+        {
+          "text": "CSE 4323 – Quantitative Computer Architecture pre-reqs: CSE 3320 (Fall & Spring)",
+          "source": "2025-CSE.pdf",
+          "chunk_id": "chunk-b1cfc7b3c466206ebb5f143853688af1",
+          "search_text": "CSE 4323 – Quantitative Computer Architecture pre-reqs: CSE 3320 (Fall & Spring)"
+        },
+        {
+          "text": "CSE 4331 – Database Implementation and Theory pre-reqs: CSE 3330 (Fall, Spring, & Summer)",
+          "source": "2025-CSE.pdf",
+          "chunk_id": "chunk-b1cfc7b3c466206ebb5f143853688af1",
+          "search_text": "CSE 4331 – Database Implementation and Theory pre-reqs: CSE 3330 (Fall, Spring, & Summer)"
+        },
+        {
+          "text": "CSE 4333 – Cloud Computing Fundamentals and Applications pre-reqs: CSE 3320 and CSE 3330 (Fall only)",
+          "source": "2025-CSE.pdf",
+          "chunk_id": "chunk-b1cfc7b3c466206ebb5f143853688af1",
+          "search_text": "CSE 4333 – Cloud Computing Fundamentals and Applications pre-reqs: CSE 3320 and CSE 3330 (Fall only)"
+        },
+        {
+          "text": "CSE 4334 – Datamining pre-reqs: IE 3301 or MATH 3313 and co-req: CSE 3330 (Fall & Spring)",
+          "source": "2025-CSE.pdf",
+          "chunk_id": "chunk-b1cfc7b3c466206ebb5f143853688af1",
+          "search_text": "CSE 4334 – Datamining pre-reqs: IE 3301 or MATH 3313 and co-req: CSE 3330 (Fall & Spring)"
+        },
+        {
+          "text": "CSE 4345 – Computational Methods pre-reqs: CSE 3318, IE 3301 or MATH 3313, and CSE 3380 or MATH 3330 (Fall & Spring)",
+          "source": "2025-CSE.pdf",
+          "chunk_id": "chunk-b1cfc7b3c466206ebb5f143853688af1",
+          "search_text": "CSE 4345 – Computational Methods pre-reqs: CSE 3318, IE 3301 or MATH 3313, and CSE 3380 or MATH 3330 (Fall & Spring)"
+        },
+        {
+          "text": "CSE 4351 – Parallel Processing pre-reqs: CSE 3320 (Fall & Spring)",
+          "source": "2025-CSE.pdf",
+          "chunk_id": "chunk-4870949ec68ce5dafdb3cf98e2908a26",
+          "search_text": "CSE 4351 – Parallel Processing pre-reqs: CSE 3320 (Fall & Spring)"
+        },
+        {
+          "text": "CSE 4360 - Autonomous Robot Design and Programming pre-reqs: CSE 3318, CSE 3320, and CSE 3380 or MATH 3330 (Fall only)",
+          "source": "2025-CSE.pdf",
+          "chunk_id": "chunk-4870949ec68ce5dafdb3cf98e2908a26",
+          "search_text": "CSE 4360 - Autonomous Robot Design and Programming pre-reqs: CSE 3318, CSE 3320, and CSE 3380 or MATH 3330 (Fall only)"
+        },
+        {
+          "text": "CSE 4361 – Software Design Patterns pre-reqs: CSE 3311 (Fall & Spring)",
+          "source": "2025-CSE.pdf",
+          "chunk_id": "chunk-4870949ec68ce5dafdb3cf98e2908a26",
+          "search_text": "CSE 4361 – Software Design Patterns pre-reqs: CSE 3311 (Fall & Spring)"
+        },
+        {
+          "text": "CSE 4373 – General Purpose GPU Programming pre-reqs: CSE 3320 (Fall only)",
+          "source": "2025-CSE.pdf",
+          "chunk_id": "chunk-4870949ec68ce5dafdb3cf98e2908a26",
+          "search_text": "CSE 4373 – General Purpose GPU Programming pre-reqs: CSE 3320 (Fall only)"
+        },
+        {
+          "text": "CSE 4376 – Digital Communication Systems pre-reqs: CSE 3313 (Fall only)",
+          "source": "2025-CSE.pdf",
+          "chunk_id": "chunk-4870949ec68ce5dafdb3cf98e2908a26",
+          "search_text": "CSE 4376 – Digital Communication Systems pre-reqs: CSE 3313 (Fall only)"
+        },
+        {
+          "text": "CSE 4378 – Intro to Unmanned Vehicles pre-reqs: Department consent (Fall only)",
+          "source": "2025-CSE.pdf",
+          "chunk_id": "chunk-4870949ec68ce5dafdb3cf98e2908a26",
+          "search_text": "CSE 4378 – Intro to Unmanned Vehicles pre-reqs: Department consent (Fall only)"
+        },
+        {
+          "text": "CSE 4379 – Unmanned Vehicles Development pre-reqs: B or better in CSE 4378 (Spring only)",
+          "source": "2025-CSE.pdf",
+          "chunk_id": "chunk-4870949ec68ce5dafdb3cf98e2908a26",
+          "search_text": "CSE 4379 – Unmanned Vehicles Development pre-reqs: B or better in CSE 4378 (Spring only)"
+        },
+        {
+          "text": "CSE 4380 – Information Security pre-reqs: CSE 3320 (Fall & Spring)",
+          "source": "2025-CSE.pdf",
+          "chunk_id": "chunk-4870949ec68ce5dafdb3cf98e2908a26",
+          "search_text": "CSE 4380 – Information Security pre-reqs: CSE 3320 (Fall & Spring)"
+        },
+        {
+          "text": "CSE 4381 – Information Security 2 pre-reqs: CSE 3320 and co-req CSE 4344 (Fall & Spring)",
+          "source": "2025-CSE.pdf",
+          "chunk_id": "chunk-4870949ec68ce5dafdb3cf98e2908a26",
+          "search_text": "CSE 4381 – Information Security 2 pre-reqs: CSE 3320 and co-req CSE 4344 (Fall & Spring)"
+        },
+        {
+          "text": "CSE 4382 – Secure Programming pre-reqs: CSE 3320 (Fall & Spring)",
+          "source": "2025-CSE.pdf",
+          "chunk_id": "chunk-4870949ec68ce5dafdb3cf98e2908a26",
+          "search_text": "CSE 4382 – Secure Programming pre-reqs: CSE 3320 (Fall & Spring)"
+        },
+        {
+          "text": "CSE 3311 – Object-oriented Software Engineering pre-reqs: CSE 1325, CSE 3318, and CSE 3310 (Fall & Spring)",
+          "source": "2025-CSE.pdf",
+          "chunk_id": "chunk-4870949ec68ce5dafdb3cf98e2908a26",
+          "search_text": "CSE 3311 – Object-oriented Software Engineering pre-reqs: CSE 1325, CSE 3318, and CSE 3310 (Fall & Spring)"
+        },
+        {
+          "text": "CSE 3313 – Signal Processing pre-reqs: CSE 3318 and CSE 3380 or MATH 3330 (Fall & Spring)",
+          "source": "2025-CSE.pdf",
+          "chunk_id": "chunk-4870949ec68ce5dafdb3cf98e2908a26",
+          "search_text": "CSE 3313 – Signal Processing pre-reqs: CSE 3318 and CSE 3380 or MATH 3330 (Fall & Spring)"
+        },
+        {
+          "text": "CSE 3340 – Intro to Human Computer Interaction pre-reqs: CSE 3318 and CSE 3310 (Spring only)",
+          "source": "2025-CSE.pdf",
+          "chunk_id": "chunk-4870949ec68ce5dafdb3cf98e2908a26",
+          "search_text": "CSE 3340 – Intro to Human Computer Interaction pre-reqs: CSE 3318 and CSE 3310 (Spring only)"
+        },
+        {
+          "text": "ENGR 4302 – Engineering Entrepreneurship pre-reqs: Admitted to an engineering prof. program (Fall only)",
+          "source": "2025-CSE.pdf",
+          "chunk_id": "chunk-4870949ec68ce5dafdb3cf98e2908a26",
+          "search_text": "ENGR 4302 – Engineering Entrepreneurship pre-reqs: Admitted to an engineering prof. program (Fall only)"
+        },
+        {
+          "text": "IE 3315 – Operations Research I pre-reqs: co-req MATH 2326 (Fall & Spring)",
+          "source": "2025-CSE.pdf",
+          "chunk_id": "chunk-4870949ec68ce5dafdb3cf98e2908a26",
+          "search_text": "IE 3315 – Operations Research I pre-reqs: co-req MATH 2326 (Fall & Spring)"
+        }
+      ]
+    },
+    "CIVILE": {
+      "label": "Civil Engineering",
+      "semester_plans": [],
+      "notes": [
+        {
+          "text": "First Year Fall Semester – 15 Semester Credit Hours CE 1105 Introduction to Civil Engineering CHEM 1465 Chemistry for Engineers ENGL 1301 Rhetoric and Composition I CE 1252 Computer Tools-AutoCAD ENGR 1101 Entrance to Engineering for Transfer Students or UNIV 1131 MATH 1426 Calculus I Second Year Fall Semester – 17 Semester Credit Hours CE 2311 Statics CE 2153 Computer Tools -CIVL 3D COMS 2302 Professional & Technical Communications for Scientists & Engineers HIST 13XX U.S. History Elective MATH 2326 Calculus III PHYS 1444 General Technical Physics II Third Year Fall Semester – 18 Semester Credit Hours CE 3210 CE Communications CE 3253 Applications of Computer-Based Design Programs in CE CE ",
+          "source": "2025-CivilE.pdf",
+          "chunk_id": "chunk-5c7652649440e30c1268c024bdf908ff",
+          "search_text": "First Year Fall Semester – 15 Semester Credit Hours CE 1105 Introduction to Civil Engineering CHEM 1465 Chemistry for Engineers ENGL 1301 Rhetoric and Composition I CE 1252 Computer Tools-AutoCAD ENGR 1101 Entrance to Engineering for Transfer Students or UNIV 1131 MATH 1426 Calculus I Second Year Fall Semester – 17 Semester Credit Hours CE 2311 Statics CE 2153 Computer Tools -CIVL 3D COMS 2302 Professional & Technical Communications for Scientists & Engineers HIST 13XX U.S. History Elective MATH 2326 Calculus III PHYS 1444 General Technical Physics II Third Year Fall Semester – 18 Semester Credit Hours CE 3210 CE Communications CE 3253 Applications of Computer-Based Design Programs in CE CE "
+        },
+        {
+          "text": "ICAN AMERICAN STUDIES PHIL 1304 CONTEMPORARY MORAL PROBLEMS PHIL 2300 INTRODUCTION TO PHILOSOPHY PORT 2314 INTERMEDIATE PORTUGUESE II RUSS 2310 RUSSIAN CULTURE IN THE WORLD RUSS 2314 INTERMEDIATE RUSSIAN II SOCI/INTS 1310 INTRODUCTION TO POPULAR CULTURE SPAN 2314 INTERMEDIATE SPANISH II SPAN 2310 HISPANIC CULTURE IN THE WORLD SPAN 2315 INTERM SPAN HERITAGE SPEAKERS Freshman Year, Fall Semester 15 Semester Credit Hours Pre-Professional Courses: CE 1105 Introduction to Civil Engineering CHEM 1465 Chemistry for Engineers – Corequisite: MATH 1421 ENGL 1301 Rhetoric and Composition I CE 1252 Computer Tools- Corequisite: MATH 1402 UNIV 1131 or ENGR 1101 Entrance to Engineering for Transfer Student",
+          "source": "2025-CivilE.pdf",
+          "chunk_id": "chunk-be765d85aee298a09f00f68a3fdd34f9",
+          "search_text": "ICAN AMERICAN STUDIES PHIL 1304 CONTEMPORARY MORAL PROBLEMS PHIL 2300 INTRODUCTION TO PHILOSOPHY PORT 2314 INTERMEDIATE PORTUGUESE II RUSS 2310 RUSSIAN CULTURE IN THE WORLD RUSS 2314 INTERMEDIATE RUSSIAN II SOCI/INTS 1310 INTRODUCTION TO POPULAR CULTURE SPAN 2314 INTERMEDIATE SPANISH II SPAN 2310 HISPANIC CULTURE IN THE WORLD SPAN 2315 INTERM SPAN HERITAGE SPEAKERS Freshman Year, Fall Semester 15 Semester Credit Hours Pre-Professional Courses: CE 1105 Introduction to Civil Engineering CHEM 1465 Chemistry for Engineers – Corequisite: MATH 1421 ENGL 1301 Rhetoric and Composition I CE 1252 Computer Tools- Corequisite: MATH 1402 UNIV 1131 or ENGR 1101 Entrance to Engineering for Transfer Student"
+        }
+      ]
+    },
+    "COMPE": {
+      "label": "Computer Engineering",
+      "semester_plans": [
+        {
+          "semester": "Fall Semester – 17 Total Hours",
+          "courses": [
+            {
+              "course": "CSE 1310",
+              "title": "Intro to Programming",
+              "hours": "3"
+            },
+            {
+              "course": "ENGR 1101",
+              "title": "Intro to Engineering",
+              "hours": "1"
+            },
+            {
+              "course": "UNIV 1131",
+              "title": "Student Success",
+              "hours": ""
+            },
+            {
+              "course": "MATH 1426",
+              "title": "Calculus 1",
+              "hours": "4"
+            },
+            {
+              "course": "Language, Philosophy, Culture Elective",
+              "title": "Language, Philosophy, Culture Elective",
+              "hours": "3"
+            },
+            {
+              "course": "ENGL 1301",
+              "title": "Rhetoric & Composition",
+              "hours": "3"
+            },
+            {
+              "course": "U.S. History Elective 1",
+              "title": "U.S. History Elective 1",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-CompE.pdf",
+          "chunk_id": "chunk-af7379b8a3b2714dc9ad8cff5c94888b",
+          "search_text": "Fall Semester – 17 Total Hours CSE 1310 Intro to Programming 3 ENGR 1101 Intro to Engineering 1 UNIV 1131 Student Success MATH 1426 Calculus 1 4 Language, Philosophy, Culture Elective Language, Philosophy, Culture Elective 3 ENGL 1301 Rhetoric & Composition 3 U.S. History Elective 1 U.S. History Elective 1 3",
+          "season": "fall",
+          "year": 1
+        },
+        {
+          "semester": "Fall Semester – 16 Total Hours",
+          "courses": [
+            {
+              "course": "CSE 1326",
+              "title": "Object-Oriented Programming in C++",
+              "hours": "3"
+            },
+            {
+              "course": "CSE 2312",
+              "title": "Computer Organization",
+              "hours": "3"
+            },
+            {
+              "course": "CSE 3318",
+              "title": "Algorithms and Data Structures",
+              "hours": "3"
+            },
+            {
+              "course": "PHYS 1444",
+              "title": "General Technical Physics 2",
+              "hours": "4"
+            },
+            {
+              "course": "U.S. History Elective 2",
+              "title": "U.S. History Elective 2",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-CompE.pdf",
+          "chunk_id": "chunk-1ef835a3143e160793c49a2c570ddff5",
+          "search_text": "Fall Semester – 16 Total Hours CSE 1326 Object-Oriented Programming in C++ 3 CSE 2312 Computer Organization 3 CSE 3318 Algorithms and Data Structures 3 PHYS 1444 General Technical Physics 2 4 U.S. History Elective 2 U.S. History Elective 2 3",
+          "season": "fall",
+          "year": 2
+        },
+        {
+          "semester": "Fall Semester – 16 Total Hours",
+          "courses": [
+            {
+              "course": "IE 3301",
+              "title": "Probability and Statistics",
+              "hours": "3"
+            },
+            {
+              "course": "CSE 3320",
+              "title": "Operating Systems",
+              "hours": "3"
+            },
+            {
+              "course": "CSE 3323",
+              "title": "Electronics",
+              "hours": "3"
+            },
+            {
+              "course": "CSE 3442",
+              "title": "Embedded Systems",
+              "hours": "4"
+            },
+            {
+              "course": "POLS 2311",
+              "title": "Govt of the United States",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-CompE.pdf",
+          "chunk_id": "chunk-773844e26426e88566997e87982a4e06",
+          "search_text": "Fall Semester – 16 Total Hours IE 3301 Probability and Statistics 3 CSE 3320 Operating Systems 3 CSE 3323 Electronics 3 CSE 3442 Embedded Systems 4 POLS 2311 Govt of the United States 3",
+          "season": "fall",
+          "year": 3
+        },
+        {
+          "semester": "Fall Semester – 15 Total Hours",
+          "courses": [
+            {
+              "course": "CSE 3314",
+              "title": "Professional Practices",
+              "hours": "3"
+            },
+            {
+              "course": "CSE 4316",
+              "title": "Senior Design I",
+              "hours": "3"
+            },
+            {
+              "course": "CSE 4342",
+              "title": "Embedded Systems",
+              "hours": "3"
+            },
+            {
+              "course": "Technical Elective 1",
+              "title": "Technical Elective 1",
+              "hours": "3"
+            },
+            {
+              "course": "Creative Arts Elective",
+              "title": "Creative Arts Elective",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-CompE.pdf",
+          "chunk_id": "chunk-9e939f7cc01ae13c6f3d606120dc1886",
+          "search_text": "Fall Semester – 15 Total Hours CSE 3314 Professional Practices 3 CSE 4316 Senior Design I 3 CSE 4342 Embedded Systems 3 Technical Elective 1 Technical Elective 1 3 Creative Arts Elective Creative Arts Elective 3",
+          "season": "fall",
+          "year": 3
+        },
+        {
+          "semester": "Spring Semester – 15 Total Hours",
+          "courses": [
+            {
+              "course": "CSE 1106",
+              "title": "Intro to CSE",
+              "hours": "1"
+            },
+            {
+              "course": "CSE 1320",
+              "title": "Intermediate Programming",
+              "hours": "3"
+            },
+            {
+              "course": "MATH 2425",
+              "title": "Calculus 2",
+              "hours": "4"
+            },
+            {
+              "course": "PHYS 1443",
+              "title": "General Technical Physics 1",
+              "hours": "4"
+            },
+            {
+              "course": "CSE 2315",
+              "title": "Discrete Structures",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-CompE.pdf",
+          "chunk_id": "chunk-310649b75f7cfc1478a7369df9b46d30",
+          "search_text": "Spring Semester – 15 Total Hours CSE 1106 Intro to CSE 1 CSE 1320 Intermediate Programming 3 MATH 2425 Calculus 2 4 PHYS 1443 General Technical Physics 1 4 CSE 2315 Discrete Structures 3",
+          "season": "spring",
+          "year": 1
+        },
+        {
+          "semester": "Spring Semester – 17 Total Hours",
+          "courses": [
+            {
+              "course": "CSE 3380",
+              "title": "Linear Algebra for CSE",
+              "hours": "3"
+            },
+            {
+              "course": "CSE 2440",
+              "title": "Circuit Analysis",
+              "hours": "4"
+            },
+            {
+              "course": "CSE 2441",
+              "title": "Digital Logic",
+              "hours": "4"
+            },
+            {
+              "course": "MATH 2326",
+              "title": "Calculus III",
+              "hours": "3"
+            },
+            {
+              "course": "COMS 2302",
+              "title": "Prof. & Technical Comm",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-CompE.pdf",
+          "chunk_id": "chunk-cd70f34b9c603e36d43ea52c012629ac",
+          "search_text": "Spring Semester – 17 Total Hours CSE 3380 Linear Algebra for CSE 3 CSE 2440 Circuit Analysis 4 CSE 2441 Digital Logic 4 MATH 2326 Calculus III 3 COMS 2302 Prof. & Technical Comm 3",
+          "season": "spring",
+          "year": 2
+        },
+        {
+          "semester": "Spring Semester – 15 Total Hours",
+          "courses": [
+            {
+              "course": "CSE 3313",
+              "title": "Signal Processing",
+              "hours": "3"
+            },
+            {
+              "course": "CSE 3341",
+              "title": "Digital Logic 2",
+              "hours": "3"
+            },
+            {
+              "course": "CSE 4323",
+              "title": "Quantitative Computer Arch",
+              "hours": "3"
+            },
+            {
+              "course": "POLS 2312",
+              "title": "State & Local Government",
+              "hours": "3"
+            },
+            {
+              "course": "ECON 2305",
+              "title": "Principles of Macroeconomics",
+              "hours": "3"
+            },
+            {
+              "course": "IE 2308",
+              "title": "Economics for Engineers",
+              "hours": ""
+            }
+          ],
+          "source": "2025-CompE.pdf",
+          "chunk_id": "chunk-ff696320c5071d76f05634a537bd2d3f",
+          "search_text": "Spring Semester – 15 Total Hours CSE 3313 Signal Processing 3 CSE 3341 Digital Logic 2 3 CSE 4323 Quantitative Computer Arch 3 POLS 2312 State & Local Government 3 ECON 2305 Principles of Macroeconomics 3 IE 2308 Economics for Engineers",
+          "season": "spring",
+          "year": 2
+        },
+        {
+          "semester": "Spring Semester – 13 Total Hours",
+          "courses": [
+            {
+              "course": "CSE 4317",
+              "title": "Senior Design 2",
+              "hours": "3"
+            },
+            {
+              "course": "Technical Elective 2",
+              "title": "Technical Elective 2",
+              "hours": "3"
+            },
+            {
+              "course": "Technical Elective 3",
+              "title": "Technical Elective 3",
+              "hours": "3"
+            },
+            {
+              "course": "Science Elective",
+              "title": "Science Elective",
+              "hours": "4"
+            }
+          ],
+          "source": "2025-CompE.pdf",
+          "chunk_id": "chunk-ccce9a320bd6567cdf4f35a25cba4b84",
+          "search_text": "Spring Semester – 13 Total Hours CSE 4317 Senior Design 2 3 Technical Elective 2 Technical Elective 2 3 Technical Elective 3 Technical Elective 3 3 Science Elective Science Elective 4",
+          "season": "spring",
+          "year": 4
+        }
+      ],
+      "notes": [
+        {
+          "text": "We will accept either CSE 3380 or MATH 3330 as the linear algebra class that you need for your degree plan. The pre-req for MATH 3330 is MATH 2425, and it’s taught in summer, fall, and spring. We will accept either IE 3301 or MATH 3313 as the statistics class that you need for your degree plan. The pre-req for MATH 3313 is MATH 2326 and it is only taught in the fall. Science Electives Technical Electives Language, Philosophy & Culture Elective Creative Arts Elective History Electives 2025-2026 Bachelor of Science in Computer Engineering University of Texas at Arlington – Four Year Course Sequence First Year Second Year Third Year Fourth Year Notes: Visit the UTA Transfer Guide to view Texas ",
+          "source": "2025-CompE.pdf",
+          "chunk_id": "chunk-085c2824c15579a65e6fc4606bc8c6b8",
+          "search_text": "We will accept either CSE 3380 or MATH 3330 as the linear algebra class that you need for your degree plan. The pre-req for MATH 3330 is MATH 2425, and it’s taught in summer, fall, and spring. We will accept either IE 3301 or MATH 3313 as the statistics class that you need for your degree plan. The pre-req for MATH 3313 is MATH 2326 and it is only taught in the fall. Science Electives Technical Electives Language, Philosophy & Culture Elective Creative Arts Elective History Electives 2025-2026 Bachelor of Science in Computer Engineering University of Texas at Arlington – Four Year Course Sequence First Year Second Year Third Year Fourth Year Notes: Visit the UTA Transfer Guide to view Texas "
+        },
+        {
+          "text": "BIOL 1441 – Biology I for Science Majors (Fall, Spring, & Summer) pre-req: None",
+          "source": "2025-CompE.pdf",
+          "chunk_id": "chunk-43c486693bab75bf8261f295706e060b",
+          "search_text": "BIOL 1441 – Biology I for Science Majors (Fall, Spring, & Summer) pre-req: None"
+        },
+        {
+          "text": "CHEM 1441 – General Chemistry (Fall, Spring, & Summer) pre-req: MATH 1302 or MATH 1402",
+          "source": "2025-CompE.pdf",
+          "chunk_id": "chunk-43c486693bab75bf8261f295706e060b",
+          "search_text": "CHEM 1441 – General Chemistry (Fall, Spring, & Summer) pre-req: MATH 1302 or MATH 1402"
+        },
+        {
+          "text": "CHEM 1465 – Chemistry for Engineers (Fall, Spring, & Summer) co-req: MATH 1421",
+          "source": "2025-CompE.pdf",
+          "chunk_id": "chunk-43c486693bab75bf8261f295706e060b",
+          "search_text": "CHEM 1465 – Chemistry for Engineers (Fall, Spring, & Summer) co-req: MATH 1421"
+        },
+        {
+          "text": "PHYS 3313 & PHYS 3183 – Intro to Modern Physics (Fall & Spring) pre-req: MATH 2425 and PHYS 1444",
+          "source": "2025-CompE.pdf",
+          "chunk_id": "chunk-43c486693bab75bf8261f295706e060b",
+          "search_text": "PHYS 3313 & PHYS 3183 – Intro to Modern Physics (Fall & Spring) pre-req: MATH 2425 and PHYS 1444"
+        },
+        {
+          "text": "CSE 4352 – IoT and Networking pre-reqs: CSE 3442 (Spring only)",
+          "source": "2025-CompE.pdf",
+          "chunk_id": "chunk-5d94cc64dfc0e9b76f6d6b6bbc050b63",
+          "search_text": "CSE 4352 – IoT and Networking pre-reqs: CSE 3442 (Spring only)"
+        },
+        {
+          "text": "CSE 4354 – Real-time Operating Systems pre-reqs: CSE 3320 and CSE 3442 (Fall only)",
+          "source": "2025-CompE.pdf",
+          "chunk_id": "chunk-5d94cc64dfc0e9b76f6d6b6bbc050b63",
+          "search_text": "CSE 4354 – Real-time Operating Systems pre-reqs: CSE 3320 and CSE 3442 (Fall only)"
+        },
+        {
+          "text": "CSE 4355 – Electromechanical Systems and Sensors pre-reqs: CSE 3323 and CSE 3442 (Fall only)",
+          "source": "2025-CompE.pdf",
+          "chunk_id": "chunk-5d94cc64dfc0e9b76f6d6b6bbc050b63",
+          "search_text": "CSE 4355 – Electromechanical Systems and Sensors pre-reqs: CSE 3323 and CSE 3442 (Fall only)"
+        },
+        {
+          "text": "CSE 4356 – System on Chip (SoC) Design pre-reqs: CSE 3442 (Fall only)",
+          "source": "2025-CompE.pdf",
+          "chunk_id": "chunk-5d94cc64dfc0e9b76f6d6b6bbc050b63",
+          "search_text": "CSE 4356 – System on Chip (SoC) Design pre-reqs: CSE 3442 (Fall only)"
+        },
+        {
+          "text": "CSE 4358 – Microprocessor Systems pre-reqs: CSE 3442 (Summer only)",
+          "source": "2025-CompE.pdf",
+          "chunk_id": "chunk-5d94cc64dfc0e9b76f6d6b6bbc050b63",
+          "search_text": "CSE 4358 – Microprocessor Systems pre-reqs: CSE 3442 (Summer only)"
+        },
+        {
+          "text": "CSE 4372 – RISC Processor Design pre-reqs: CSE 3442 (Spring only)",
+          "source": "2025-CompE.pdf",
+          "chunk_id": "chunk-5d94cc64dfc0e9b76f6d6b6bbc050b63",
+          "search_text": "CSE 4372 – RISC Processor Design pre-reqs: CSE 3442 (Spring only)"
+        },
+        {
+          "text": "CSE 4373 – General Purpose GPU Programming pre-reqs: CSE 3320 (Fall only)",
+          "source": "2025-CompE.pdf",
+          "chunk_id": "chunk-5d94cc64dfc0e9b76f6d6b6bbc050b63",
+          "search_text": "CSE 4373 – General Purpose GPU Programming pre-reqs: CSE 3320 (Fall only)"
+        },
+        {
+          "text": "CSE 4376 – Digital Communication Systems pre-reqs: CSE 3313 (Fall only)",
+          "source": "2025-CompE.pdf",
+          "chunk_id": "chunk-5d94cc64dfc0e9b76f6d6b6bbc050b63",
+          "search_text": "CSE 4376 – Digital Communication Systems pre-reqs: CSE 3313 (Fall only)"
+        },
+        {
+          "text": "CSE 4377 – Wireless Communication Systems pre-reqs: CSE 3313 and CSE 3442 (Spring only)",
+          "source": "2025-CompE.pdf",
+          "chunk_id": "chunk-5d94cc64dfc0e9b76f6d6b6bbc050b63",
+          "search_text": "CSE 4377 – Wireless Communication Systems pre-reqs: CSE 3313 and CSE 3442 (Spring only)"
+        }
+      ]
+    },
+    "IE": {
+      "label": "Industrial Engineering",
+      "semester_plans": [],
+      "notes": [
+        {
+          "text": "BS in Industrial Engineering - Course Requirement Details Freshman Fall – 16 Hours Pre-Professional Courses: UNIV 1131 or ENGR 1101 IE 1110 – Corequisite: IE 1325 IE 1325 MATH 1426 CHEM 1441 or CHEM 1465 ENGL 1301 Freshman Spring – 18 Hours Pre-Professional Courses: IE 2305– Prerequisite: IE 1325 MAE 1351– Corequisite: MATH 1426 MATH 2425– Prerequisite: MATH 1426 PHYS 1443– Prerequisite: MATH 1426 CHEM 1442 or science elective– Prerequisite: CHEM 1441 or CHEM 1465 Sophomore Fall – 16 Hours Pre-Professional Courses: IE 2308– Corequisite: MATH 1426 IE 3301– Prerequisite: MATH 2425 MATH 2326– Prerequisite: MATH 2425 PHYS 1444– Prerequisite: PHYS 1443 General Education Courses: COMS 2302 – Prere",
+          "source": "2025-IE.pdf",
+          "chunk_id": "chunk-11ea8ae6f975f252a16dea4b683e4346",
+          "search_text": "BS in Industrial Engineering - Course Requirement Details Freshman Fall – 16 Hours Pre-Professional Courses: UNIV 1131 or ENGR 1101 IE 1110 – Corequisite: IE 1325 IE 1325 MATH 1426 CHEM 1441 or CHEM 1465 ENGL 1301 Freshman Spring – 18 Hours Pre-Professional Courses: IE 2305– Prerequisite: IE 1325 MAE 1351– Corequisite: MATH 1426 MATH 2425– Prerequisite: MATH 1426 PHYS 1443– Prerequisite: MATH 1426 CHEM 1442 or science elective– Prerequisite: CHEM 1441 or CHEM 1465 Sophomore Fall – 16 Hours Pre-Professional Courses: IE 2308– Corequisite: MATH 1426 IE 3301– Prerequisite: MATH 2425 MATH 2326– Prerequisite: MATH 2425 PHYS 1444– Prerequisite: PHYS 1443 General Education Courses: COMS 2302 – Prere"
+        }
+      ]
+    },
+    "ME": {
+      "label": "Mechanical Engineering",
+      "semester_plans": [
+        {
+          "semester": "Fall Semester – 16 Total Hours",
+          "courses": [
+            {
+              "course": "MAE 1107",
+              "title": "Intro to Mechanical Engineering",
+              "hours": "1"
+            },
+            {
+              "course": "ENGR 1101",
+              "title": "Intro to Engineering",
+              "hours": "1"
+            },
+            {
+              "course": "UNIV 1131",
+              "title": "Student Success",
+              "hours": ""
+            },
+            {
+              "course": "MATH 1426",
+              "title": "Calculus 1",
+              "hours": "4"
+            },
+            {
+              "course": "CHEM 1465",
+              "title": "Chemistry for Engineers",
+              "hours": "4"
+            },
+            {
+              "course": "ENGL 1301",
+              "title": "Rhetoric & Composition",
+              "hours": "3"
+            },
+            {
+              "course": "U.S. History Elective",
+              "title": "U.S. History Elective",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-ME.pdf",
+          "chunk_id": "chunk-64804feec4101fcc08770c985c474d32",
+          "search_text": "Fall Semester – 16 Total Hours MAE 1107 Intro to Mechanical Engineering 1 ENGR 1101 Intro to Engineering 1 UNIV 1131 Student Success MATH 1426 Calculus 1 4 CHEM 1465 Chemistry for Engineers 4 ENGL 1301 Rhetoric & Composition 3 U.S. History Elective U.S. History Elective 3",
+          "season": "fall",
+          "year": 1
+        },
+        {
+          "semester": "Fall Semester – 16 Total Hours",
+          "courses": [
+            {
+              "course": "MAE 1312",
+              "title": "Engineering Statics",
+              "hours": "3"
+            },
+            {
+              "course": "MATH 3330",
+              "title": "Intro to Linear Algebra",
+              "hours": "3"
+            },
+            {
+              "course": "MATH 2326",
+              "title": "Calculus 3",
+              "hours": "3"
+            },
+            {
+              "course": "PHYS 1444",
+              "title": "General Technical Physics II",
+              "hours": "4"
+            },
+            {
+              "course": "MAE 2381",
+              "title": "MAE 2381–Experimental Methods/Measure",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-ME.pdf",
+          "chunk_id": "chunk-c90a81a4171115a40d45f37c7ca6d48e",
+          "search_text": "Fall Semester – 16 Total Hours MAE 1312 Engineering Statics 3 MATH 3330 Intro to Linear Algebra 3 MATH 2326 Calculus 3 3 PHYS 1444 General Technical Physics II 4 MAE 2381 MAE 2381–Experimental Methods/Measure 3",
+          "season": "fall",
+          "year": 2
+        },
+        {
+          "semester": "Fall Semester – 16 Total Hours",
+          "courses": [
+            {
+              "course": "MAE 3242",
+              "title": "Mechanical Design 1",
+              "hours": "2"
+            },
+            {
+              "course": "MAE 3318",
+              "title": "Kinematics & Dynamics",
+              "hours": "3"
+            },
+            {
+              "course": "MAE 3181",
+              "title": "Materials & Structures Lab",
+              "hours": "1"
+            },
+            {
+              "course": "MAE 3313",
+              "title": "Fluid Mechanics",
+              "hours": "3"
+            },
+            {
+              "course": "MAE 3311",
+              "title": "Thermodynamics 2",
+              "hours": "3"
+            },
+            {
+              "course": "MAE 3185",
+              "title": "Intro to Mechatronics",
+              "hours": "1"
+            },
+            {
+              "course": "U.S. History Elective",
+              "title": "U.S. History Elective",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-ME.pdf",
+          "chunk_id": "chunk-569b70f0e8525d87a46c859d2069014c",
+          "search_text": "Fall Semester – 16 Total Hours MAE 3242 Mechanical Design 1 2 MAE 3318 Kinematics & Dynamics 3 MAE 3181 Materials & Structures Lab 1 MAE 3313 Fluid Mechanics 3 MAE 3311 Thermodynamics 2 3 MAE 3185 Intro to Mechatronics 1 U.S. History Elective U.S. History Elective 3",
+          "season": "fall",
+          "year": 3
+        },
+        {
+          "semester": "Fall Semester – 15 Total Hours",
+          "courses": [
+            {
+              "course": "Technical Elective 1",
+              "title": "Technical Elective 1",
+              "hours": "3"
+            },
+            {
+              "course": "MAE 4287",
+              "title": "Design Project 1",
+              "hours": "2"
+            },
+            {
+              "course": "MAE 4342",
+              "title": "Mechanical Design 2",
+              "hours": "3"
+            },
+            {
+              "course": "MAE 3183",
+              "title": "Measurements Laboratory 2",
+              "hours": "1"
+            },
+            {
+              "course": "ECON 2305",
+              "title": "Principles of Macroeconomics",
+              "hours": "3"
+            },
+            {
+              "course": "IE 2308",
+              "title": "Economics for Engineers",
+              "hours": ""
+            },
+            {
+              "course": "POLS 2312",
+              "title": "State & Local Government",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-ME.pdf",
+          "chunk_id": "chunk-ebab584975222bb13fb277bbeeccfbaa",
+          "search_text": "Fall Semester – 15 Total Hours Technical Elective 1 Technical Elective 1 3 MAE 4287 Design Project 1 2 MAE 4342 Mechanical Design 2 3 MAE 3183 Measurements Laboratory 2 1 ECON 2305 Principles of Macroeconomics 3 IE 2308 Economics for Engineers POLS 2312 State & Local Government 3",
+          "season": "fall",
+          "year": 3
+        },
+        {
+          "semester": "Spring Semester – 15 Total Hours",
+          "courses": [
+            {
+              "course": "MAE 1140",
+              "title": "Problems in MAE",
+              "hours": "1"
+            },
+            {
+              "course": "MAE 2360",
+              "title": "Numerical Analysis/Programming",
+              "hours": "3"
+            },
+            {
+              "course": "MATH 2425",
+              "title": "Calculus 2",
+              "hours": "4"
+            },
+            {
+              "course": "PHYS 1443",
+              "title": "General Technical Physics 1",
+              "hours": "4"
+            },
+            {
+              "course": "MAE 1351",
+              "title": "Intro to Engineering Design",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-ME.pdf",
+          "chunk_id": "chunk-b2f79f403e4badcb2b56e227a8082940",
+          "search_text": "Spring Semester – 15 Total Hours MAE 1140 Problems in MAE 1 MAE 2360 Numerical Analysis/Programming 3 MATH 2425 Calculus 2 4 PHYS 1443 General Technical Physics 1 4 MAE 1351 Intro to Engineering Design 3",
+          "season": "spring",
+          "year": 1
+        },
+        {
+          "semester": "Spring Semester – 18 Total Hours",
+          "courses": [
+            {
+              "course": "MAE 2312",
+              "title": "Solid Mechanics",
+              "hours": "3"
+            },
+            {
+              "course": "MAE 2323",
+              "title": "Dynamics",
+              "hours": "3"
+            },
+            {
+              "course": "MAE 3324",
+              "title": "Struc & Mech Behavior Material",
+              "hours": "3"
+            },
+            {
+              "course": "MAE 3310",
+              "title": "Thermodynamics 1",
+              "hours": "3"
+            },
+            {
+              "course": "MAE 3360",
+              "title": "Engineering Analysis",
+              "hours": "3"
+            },
+            {
+              "course": "EE 2320",
+              "title": "Circuit Analysis",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-ME.pdf",
+          "chunk_id": "chunk-90f717f7d5ce4c3665fee3dd36d75356",
+          "search_text": "Spring Semester – 18 Total Hours MAE 2312 Solid Mechanics 3 MAE 2323 Dynamics 3 MAE 3324 Struc & Mech Behavior Material 3 MAE 3310 Thermodynamics 1 3 MAE 3360 Engineering Analysis 3 EE 2320 Circuit Analysis 3",
+          "season": "spring",
+          "year": 2
+        },
+        {
+          "semester": "Spring Semester – 18 Total Hours",
+          "courses": [
+            {
+              "course": "MAE 3344",
+              "title": "Intro to Manufacturing",
+              "hours": "3"
+            },
+            {
+              "course": "MAE 4344",
+              "title": "Computer-Aided Engineering",
+              "hours": "3"
+            },
+            {
+              "course": "MAE 3314",
+              "title": "Heat Transfer",
+              "hours": "3"
+            },
+            {
+              "course": "MAE 3319",
+              "title": "Dynamic Systems Modeling",
+              "hours": "3"
+            },
+            {
+              "course": "POLS 2311",
+              "title": "Govt of the United States",
+              "hours": "3"
+            },
+            {
+              "course": "COMS 2302",
+              "title": "Prof. & Technical Comm",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-ME.pdf",
+          "chunk_id": "chunk-ba567f1f4d25d51a8509f5392d9a28a6",
+          "search_text": "Spring Semester – 18 Total Hours MAE 3344 Intro to Manufacturing 3 MAE 4344 Computer-Aided Engineering 3 MAE 3314 Heat Transfer 3 MAE 3319 Dynamic Systems Modeling 3 POLS 2311 Govt of the United States 3 COMS 2302 Prof. & Technical Comm 3",
+          "season": "spring",
+          "year": 3
+        },
+        {
+          "semester": "Spring Semester – 16 Total Hours",
+          "courses": [
+            {
+              "course": "Technical Elective 2",
+              "title": "Technical Elective 2",
+              "hours": "3"
+            },
+            {
+              "course": "Technical Elective 3",
+              "title": "Technical Elective 3",
+              "hours": "3"
+            },
+            {
+              "course": "MAE 4188",
+              "title": "Design Project 2",
+              "hours": "1"
+            },
+            {
+              "course": "MAE 4310",
+              "title": "Intro to Automatic Control",
+              "hours": "3"
+            },
+            {
+              "course": "Creative Arts Elective",
+              "title": "Creative Arts Elective",
+              "hours": "3"
+            },
+            {
+              "course": "Language, Philosophy, Culture Elective",
+              "title": "Language, Philosophy, Culture Elective",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-ME.pdf",
+          "chunk_id": "chunk-fa70112ae9afa34ef915625c790c273d",
+          "search_text": "Spring Semester – 16 Total Hours Technical Elective 2 Technical Elective 2 3 Technical Elective 3 Technical Elective 3 3 MAE 4188 Design Project 2 1 MAE 4310 Intro to Automatic Control 3 Creative Arts Elective Creative Arts Elective 3 Language, Philosophy, Culture Elective Language, Philosophy, Culture Elective 3",
+          "season": "spring",
+          "year": 4
+        }
+      ],
+      "notes": [
+        {
+          "text": "2025-2026 Bachelor of Science in Mechanical Engineering University of Texas at Arlington – Four Year Course Sequence First Year Second Year Third Year Fourth Year Notes: Visit the UTA Transfer Guide to view Texas Common Core Number course number equivalents. Visit the UTA Catalog to view general core curriculum requirements for elective courses.",
+          "source": "2025-ME.pdf",
+          "chunk_id": "chunk-5988e3c0ef68302dc71c77634a7379fc",
+          "search_text": "2025-2026 Bachelor of Science in Mechanical Engineering University of Texas at Arlington – Four Year Course Sequence First Year Second Year Third Year Fourth Year Notes: Visit the UTA Transfer Guide to view Texas Common Core Number course number equivalents. Visit the UTA Catalog to view general core curriculum requirements for elective courses."
+        }
+      ]
+    },
+    "SE": {
+      "label": "Software Engineering",
+      "semester_plans": [
+        {
+          "semester": "Fall Semester – 17 Total Hours",
+          "courses": [
+            {
+              "course": "CSE 1310",
+              "title": "Intro to Programming",
+              "hours": "3"
+            },
+            {
+              "course": "ENGR 1101",
+              "title": "Intro to Engineering",
+              "hours": "1"
+            },
+            {
+              "course": "UNIV 1131",
+              "title": "Student Success",
+              "hours": ""
+            },
+            {
+              "course": "MATH 1426",
+              "title": "Calculus 1",
+              "hours": "4"
+            },
+            {
+              "course": "Language, Philosophy, Culture Elective",
+              "title": "Language, Philosophy, Culture Elective",
+              "hours": "3"
+            },
+            {
+              "course": "ENGL 1301",
+              "title": "Rhetoric & Composition",
+              "hours": "3"
+            },
+            {
+              "course": "U.S. History Elective 1",
+              "title": "U.S. History Elective 1",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-SE.pdf",
+          "chunk_id": "chunk-5091f3765b1a495e236bca74d7f5a0b3",
+          "search_text": "Fall Semester – 17 Total Hours CSE 1310 Intro to Programming 3 ENGR 1101 Intro to Engineering 1 UNIV 1131 Student Success MATH 1426 Calculus 1 4 Language, Philosophy, Culture Elective Language, Philosophy, Culture Elective 3 ENGL 1301 Rhetoric & Composition 3 U.S. History Elective 1 U.S. History Elective 1 3",
+          "season": "fall",
+          "year": 1
+        },
+        {
+          "semester": "Fall Semester – 16 Total Hours",
+          "courses": [
+            {
+              "course": "CSE 1325",
+              "title": "Object-Oriented Programming",
+              "hours": "3"
+            },
+            {
+              "course": "CSE 2312",
+              "title": "Computer Organization",
+              "hours": "3"
+            },
+            {
+              "course": "CSE 3318",
+              "title": "Algorithms and Data Structures",
+              "hours": "3"
+            },
+            {
+              "course": "PHYS 1444",
+              "title": "General Technical Physics 2",
+              "hours": "4"
+            },
+            {
+              "course": "U.S. History Elective 2",
+              "title": "U.S. History Elective 2",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-SE.pdf",
+          "chunk_id": "chunk-482c68b077b6dd4755f06a1ccf907a20",
+          "search_text": "Fall Semester – 16 Total Hours CSE 1325 Object-Oriented Programming 3 CSE 2312 Computer Organization 3 CSE 3318 Algorithms and Data Structures 3 PHYS 1444 General Technical Physics 2 4 U.S. History Elective 2 U.S. History Elective 2 3",
+          "season": "fall",
+          "year": 2
+        },
+        {
+          "semester": "Fall Semester – 15 Total Hours",
+          "courses": [
+            {
+              "course": "CSE 3302",
+              "title": "Programming Languages",
+              "hours": "3"
+            },
+            {
+              "course": "CSE 3330",
+              "title": "Databases",
+              "hours": "3"
+            },
+            {
+              "course": "IE 3301",
+              "title": "Probability and Statistics",
+              "hours": "3"
+            },
+            {
+              "course": "CSE 3311",
+              "title": "Object-Oriented Software",
+              "hours": "3"
+            },
+            {
+              "course": "POLS 2311",
+              "title": "Govt of the United States",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-SE.pdf",
+          "chunk_id": "chunk-e63bec69d1f883adc1dcb26fdc295ec4",
+          "search_text": "Fall Semester – 15 Total Hours CSE 3302 Programming Languages 3 CSE 3330 Databases 3 IE 3301 Probability and Statistics 3 CSE 3311 Object-Oriented Software 3 POLS 2311 Govt of the United States 3",
+          "season": "fall",
+          "year": 3
+        },
+        {
+          "semester": "Fall Semester – 16 Total Hours",
+          "courses": [
+            {
+              "course": "CSE 3314",
+              "title": "Professional Practices",
+              "hours": "3"
+            },
+            {
+              "course": "CSE 4316",
+              "title": "Senior Design I",
+              "hours": "3"
+            },
+            {
+              "course": "CSE 4361",
+              "title": "Software Design Patterns",
+              "hours": "3"
+            },
+            {
+              "course": "Technical Elective 2",
+              "title": "Technical Elective 2",
+              "hours": "3"
+            },
+            {
+              "course": "Science Elective",
+              "title": "Science Elective",
+              "hours": "4"
+            }
+          ],
+          "source": "2025-SE.pdf",
+          "chunk_id": "chunk-5fffa8b5cb402acb3ef5940dd4d444d4",
+          "search_text": "Fall Semester – 16 Total Hours CSE 3314 Professional Practices 3 CSE 4316 Senior Design I 3 CSE 4361 Software Design Patterns 3 Technical Elective 2 Technical Elective 2 3 Science Elective Science Elective 4",
+          "season": "fall",
+          "year": 3
+        },
+        {
+          "semester": "Spring Semester – 15 Total Hours",
+          "courses": [
+            {
+              "course": "CSE 1106",
+              "title": "Intro to CSE",
+              "hours": "1"
+            },
+            {
+              "course": "CSE 1320",
+              "title": "Intermediate Programming",
+              "hours": "3"
+            },
+            {
+              "course": "MATH 2425",
+              "title": "Calculus 2",
+              "hours": "4"
+            },
+            {
+              "course": "PHYS 1443",
+              "title": "General Technical Physics 1",
+              "hours": "4"
+            },
+            {
+              "course": "CSE 2315",
+              "title": "Discrete Structures",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-SE.pdf",
+          "chunk_id": "chunk-4716f54f265f89a24037b079fcec4484",
+          "search_text": "Spring Semester – 15 Total Hours CSE 1106 Intro to CSE 1 CSE 1320 Intermediate Programming 3 MATH 2425 Calculus 2 4 PHYS 1443 General Technical Physics 1 4 CSE 2315 Discrete Structures 3",
+          "season": "spring",
+          "year": 1
+        },
+        {
+          "semester": "Spring Semester – 15 Total Hours",
+          "courses": [
+            {
+              "course": "CSE 3380",
+              "title": "Linear Algebra for CSE",
+              "hours": "3"
+            },
+            {
+              "course": "CSE 3310",
+              "title": "Intro to Software",
+              "hours": "3"
+            },
+            {
+              "course": "CSE 3320",
+              "title": "Operating Systems",
+              "hours": "3"
+            },
+            {
+              "course": "MATH 2326",
+              "title": "Calculus III",
+              "hours": "3"
+            },
+            {
+              "course": "COMS 2302",
+              "title": "Prof. & Technical Comm",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-SE.pdf",
+          "chunk_id": "chunk-d801e5a2e953d8bde8c22277880b22fe",
+          "search_text": "Spring Semester – 15 Total Hours CSE 3380 Linear Algebra for CSE 3 CSE 3310 Intro to Software 3 CSE 3320 Operating Systems 3 MATH 2326 Calculus III 3 COMS 2302 Prof. & Technical Comm 3",
+          "season": "spring",
+          "year": 2
+        },
+        {
+          "semester": "Spring Semester – 15 Total Hours",
+          "courses": [
+            {
+              "course": "CSE 4321",
+              "title": "Software Testing",
+              "hours": "3"
+            },
+            {
+              "course": "CSE 4380",
+              "title": "Information Security",
+              "hours": "3"
+            },
+            {
+              "course": "CSE 3315",
+              "title": "Theoretical CS",
+              "hours": "3"
+            },
+            {
+              "course": "Technical Elective 1",
+              "title": "Technical Elective 1",
+              "hours": "3"
+            },
+            {
+              "course": "POLS 2312",
+              "title": "State & Local Government",
+              "hours": "3"
+            }
+          ],
+          "source": "2025-SE.pdf",
+          "chunk_id": "chunk-29ce2d8ba16d47966f25ce534b4d9029",
+          "search_text": "Spring Semester – 15 Total Hours CSE 4321 Software Testing 3 CSE 4380 Information Security 3 CSE 3315 Theoretical CS 3 Technical Elective 1 Technical Elective 1 3 POLS 2312 State & Local Government 3",
+          "season": "spring",
+          "year": 3
+        },
+        {
+          "semester": "Spring Semester – 15 Total Hours",
+          "courses": [
+            {
+              "course": "CSE 4317",
+              "title": "Senior Design 2",
+              "hours": "3"
+            },
+            {
+              "course": "CSE 4322",
+              "title": "Software Project Management",
+              "hours": "3"
+            },
+            {
+              "course": "Technical Elective 3",
+              "title": "Technical Elective 3",
+              "hours": "3"
+            },
+            {
+              "course": "Creative Arts Elective",
+              "title": "Creative Arts Elective",
+              "hours": "3"
+            },
+            {
+              "course": "ECON 2305",
+              "title": "Principles of Macroeconomics",
+              "hours": "3"
+            },
+            {
+              "course": "IE 2308",
+              "title": "Economics for Engineers",
+              "hours": ""
+            }
+          ],
+          "source": "2025-SE.pdf",
+          "chunk_id": "chunk-f40b278aa2ee08b6c9f38e8fcaa4cfa6",
+          "search_text": "Spring Semester – 15 Total Hours CSE 4317 Senior Design 2 3 CSE 4322 Software Project Management 3 Technical Elective 3 Technical Elective 3 3 Creative Arts Elective Creative Arts Elective 3 ECON 2305 Principles of Macroeconomics 3 IE 2308 Economics for Engineers",
+          "season": "spring",
+          "year": 3
+        }
+      ],
+      "notes": [
+        {
+          "text": "We will accept either CSE 3380 or MATH 3330 as the linear algebra class that you need for your degree plan. The pre-req for MATH 3330 is MATH 2425, and it’s taught in summer, fall, and spring. We will accept either IE 3301 or MATH 3313 as the statistics class that you need for your degree plan. The pre-req for MATH 3313 is MATH 2326 and it is only taught in the fall. Science Electives Technical Electives Language, Philosophy & Culture Electives Creative Arts Electives History Electives 2025-2026 Bachelor of Science in Software Engineering University of Texas at Arlington – Four Year Course Sequence First Year Second Year Third Year Fourth Year Notes: Visit the UTA Transfer Guide to view Texa",
+          "source": "2025-SE.pdf",
+          "chunk_id": "chunk-1b523e9112f19ea9e3cc53047ec15e99",
+          "search_text": "We will accept either CSE 3380 or MATH 3330 as the linear algebra class that you need for your degree plan. The pre-req for MATH 3330 is MATH 2425, and it’s taught in summer, fall, and spring. We will accept either IE 3301 or MATH 3313 as the statistics class that you need for your degree plan. The pre-req for MATH 3313 is MATH 2326 and it is only taught in the fall. Science Electives Technical Electives Language, Philosophy & Culture Electives Creative Arts Electives History Electives 2025-2026 Bachelor of Science in Software Engineering University of Texas at Arlington – Four Year Course Sequence First Year Second Year Third Year Fourth Year Notes: Visit the UTA Transfer Guide to view Texa"
+        },
+        {
+          "text": "BIOL 1441 – Biology I for Science Majors (Fall, Spring, & Summer) pre-req: None",
+          "source": "2025-SE.pdf",
+          "chunk_id": "chunk-6e09a4935836c112ea456740d6a01ccc",
+          "search_text": "BIOL 1441 – Biology I for Science Majors (Fall, Spring, & Summer) pre-req: None"
+        },
+        {
+          "text": "CHEM 1441 – General Chemistry (Fall, Spring, & Summer) prereq: MATH 1302 or MATH 1402",
+          "source": "2025-SE.pdf",
+          "chunk_id": "chunk-6e09a4935836c112ea456740d6a01ccc",
+          "search_text": "CHEM 1441 – General Chemistry (Fall, Spring, & Summer) prereq: MATH 1302 or MATH 1402"
+        },
+        {
+          "text": "CHEM 1465 – Chemistry for Engineers (Fall, Spring, & Summer) co-req: MATH 1421",
+          "source": "2025-SE.pdf",
+          "chunk_id": "chunk-6e09a4935836c112ea456740d6a01ccc",
+          "search_text": "CHEM 1465 – Chemistry for Engineers (Fall, Spring, & Summer) co-req: MATH 1421"
+        },
+        {
+          "text": "PHYS 3313 & PHYS 3183 – Intro to Modern Physics (Fall & Spring) pre-req: MATH 2425 and PHYS 1444",
+          "source": "2025-SE.pdf",
+          "chunk_id": "chunk-6e09a4935836c112ea456740d6a01ccc",
+          "search_text": "PHYS 3313 & PHYS 3183 – Intro to Modern Physics (Fall & Spring) pre-req: MATH 2425 and PHYS 1444"
+        },
+        {
+          "text": "CSE 4303 – Computer Graphics pre-reqs: CSE 3318 and CSE 3380 or MATH 3330 (Fall & Spring)",
+          "source": "2025-SE.pdf",
+          "chunk_id": "chunk-a9c55f520cd311c582a240f9b6badb28",
+          "search_text": "CSE 4303 – Computer Graphics pre-reqs: CSE 3318 and CSE 3380 or MATH 3330 (Fall & Spring)"
+        },
+        {
+          "text": "CSE 4304 – Game Design and Development pre-reqs: CSE 3380 or MATH 3330 (Fall only)",
+          "source": "2025-SE.pdf",
+          "chunk_id": "chunk-a9c55f520cd311c582a240f9b6badb28",
+          "search_text": "CSE 4304 – Game Design and Development pre-reqs: CSE 3380 or MATH 3330 (Fall only)"
+        },
+        {
+          "text": "CSE 4305 – Compilers pre-reqs: CSE 3302 and CSE 3315 (Fall & Spring)",
+          "source": "2025-SE.pdf",
+          "chunk_id": "chunk-a9c55f520cd311c582a240f9b6badb28",
+          "search_text": "CSE 4305 – Compilers pre-reqs: CSE 3302 and CSE 3315 (Fall & Spring)"
+        },
+        {
+          "text": "CSE 4308 – Artificial Intelligence pre-reqs: CSE 3318 and IE 3301 or MATH 3313 (Fall, Spring, & Summer)",
+          "source": "2025-SE.pdf",
+          "chunk_id": "chunk-a9c55f520cd311c582a240f9b6badb28",
+          "search_text": "CSE 4308 – Artificial Intelligence pre-reqs: CSE 3318 and IE 3301 or MATH 3313 (Fall, Spring, & Summer)"
+        },
+        {
+          "text": "CSE 4309 – Fundamentals of Machine Learning pre-reqs: CSE 3318, MATH 2326 or the consent of the instructor, IE 3301 or MATH 3313, and CSE 3380 or MATH 3330 (Fall only)",
+          "source": "2025-SE.pdf",
+          "chunk_id": "chunk-a9c55f520cd311c582a240f9b6badb28",
+          "search_text": "CSE 4309 – Fundamentals of Machine Learning pre-reqs: CSE 3318, MATH 2326 or the consent of the instructor, IE 3301 or MATH 3313, and CSE 3380 or MATH 3330 (Fall only)"
+        },
+        {
+          "text": "CSE 4310 - Fundamentals of Computer Vision pre-reqs: CSE 3318, IE 3301 or MATH 3313, and CSE 3380 or MATH 3330 (Spring only)",
+          "source": "2025-SE.pdf",
+          "chunk_id": "chunk-a9c55f520cd311c582a240f9b6badb28",
+          "search_text": "CSE 4310 - Fundamentals of Computer Vision pre-reqs: CSE 3318, IE 3301 or MATH 3313, and CSE 3380 or MATH 3330 (Spring only)"
+        },
+        {
+          "text": "CSE 4311 – Neural Networks and Deep Learning pre-reqs: CSE 3380 or MATH 3330 and IE 3301 or MATH 3313 (Spring only)",
+          "source": "2025-SE.pdf",
+          "chunk_id": "chunk-a9c55f520cd311c582a240f9b6badb28",
+          "search_text": "CSE 4311 – Neural Networks and Deep Learning pre-reqs: CSE 3380 or MATH 3330 and IE 3301 or MATH 3313 (Spring only)"
+        },
+        {
+          "text": "CSE 4323 – Quantitative Computer Architecture pre-reqs: CSE 3320 (Fall & Spring)",
+          "source": "2025-SE.pdf",
+          "chunk_id": "chunk-a9c55f520cd311c582a240f9b6badb28",
+          "search_text": "CSE 4323 – Quantitative Computer Architecture pre-reqs: CSE 3320 (Fall & Spring)"
+        },
+        {
+          "text": "CSE 4331 – Database Implementation and Theory pre-reqs: CSE 3330 (Fall, Spring, & Summer)",
+          "source": "2025-SE.pdf",
+          "chunk_id": "chunk-a9c55f520cd311c582a240f9b6badb28",
+          "search_text": "CSE 4331 – Database Implementation and Theory pre-reqs: CSE 3330 (Fall, Spring, & Summer)"
+        },
+        {
+          "text": "CSE 4333 – Cloud Computing Fundamentals and Application pre-reqs: CSE 3320 and CSE 3330 (Fall only)",
+          "source": "2025-SE.pdf",
+          "chunk_id": "chunk-a9c55f520cd311c582a240f9b6badb28",
+          "search_text": "CSE 4333 – Cloud Computing Fundamentals and Application pre-reqs: CSE 3320 and CSE 3330 (Fall only)"
+        },
+        {
+          "text": "CSE 4334 – Datamining pre-reqs: IE 3301 or MATH 3313 and co-req: CSE 3330 (Fall & Spring)",
+          "source": "2025-SE.pdf",
+          "chunk_id": "chunk-a9c55f520cd311c582a240f9b6badb28",
+          "search_text": "CSE 4334 – Datamining pre-reqs: IE 3301 or MATH 3313 and co-req: CSE 3330 (Fall & Spring)"
+        },
+        {
+          "text": "CSE 4344 – Computer Network Organization pre-reqs: CSE 3320 (Fall, Spring, & Summer)",
+          "source": "2025-SE.pdf",
+          "chunk_id": "chunk-922dfd2e6027aafc018d650534a1d762",
+          "search_text": "CSE 4344 – Computer Network Organization pre-reqs: CSE 3320 (Fall, Spring, & Summer)"
+        },
+        {
+          "text": "CSE 4345 – Computational Methods pre-reqs: CSE 3318, IE 3301 or MATH 3313, and CSE 3380 or MATH 3330 (Fall & Spring)",
+          "source": "2025-SE.pdf",
+          "chunk_id": "chunk-922dfd2e6027aafc018d650534a1d762",
+          "search_text": "CSE 4345 – Computational Methods pre-reqs: CSE 3318, IE 3301 or MATH 3313, and CSE 3380 or MATH 3330 (Fall & Spring)"
+        },
+        {
+          "text": "CSE 4351 – Parallel Processing pre-reqs: CSE 3320 (Fall & Spring)",
+          "source": "2025-SE.pdf",
+          "chunk_id": "chunk-922dfd2e6027aafc018d650534a1d762",
+          "search_text": "CSE 4351 – Parallel Processing pre-reqs: CSE 3320 (Fall & Spring)"
+        },
+        {
+          "text": "CSE 4360 - Autonomous Robot Design and Programming pre-reqs: CSE 3318, CSE 3320, and CSE 3380 or MATH 3330 (Fall only)",
+          "source": "2025-SE.pdf",
+          "chunk_id": "chunk-922dfd2e6027aafc018d650534a1d762",
+          "search_text": "CSE 4360 - Autonomous Robot Design and Programming pre-reqs: CSE 3318, CSE 3320, and CSE 3380 or MATH 3330 (Fall only)"
+        },
+        {
+          "text": "CSE 4378 – Intro to Unmanned Vehicles pre-reqs: Department consent (Fall only)",
+          "source": "2025-SE.pdf",
+          "chunk_id": "chunk-922dfd2e6027aafc018d650534a1d762",
+          "search_text": "CSE 4378 – Intro to Unmanned Vehicles pre-reqs: Department consent (Fall only)"
+        },
+        {
+          "text": "CSE 4381 – Information Security 2 pre-reqs: CSE 3320 and co-req CSE 4344 (Fall & Spring)",
+          "source": "2025-SE.pdf",
+          "chunk_id": "chunk-922dfd2e6027aafc018d650534a1d762",
+          "search_text": "CSE 4381 – Information Security 2 pre-reqs: CSE 3320 and co-req CSE 4344 (Fall & Spring)"
+        },
+        {
+          "text": "CSE 4382 – Secure Programming pre-reqs: CSE 3320 (Fall & Spring)",
+          "source": "2025-SE.pdf",
+          "chunk_id": "chunk-922dfd2e6027aafc018d650534a1d762",
+          "search_text": "CSE 4382 – Secure Programming pre-reqs: CSE 3320 (Fall & Spring)"
+        },
+        {
+          "text": "CSE 3313 – Signal Processing pre-reqs: CSE 3318 and CSE 3380 or MATH 3330 (Fall & Spring)",
+          "source": "2025-SE.pdf",
+          "chunk_id": "chunk-922dfd2e6027aafc018d650534a1d762",
+          "search_text": "CSE 3313 – Signal Processing pre-reqs: CSE 3318 and CSE 3380 or MATH 3330 (Fall & Spring)"
+        },
+        {
+          "text": "CSE 3340 – Intro to Human Computer Interaction pre-reqs: CSE 3318 and CSE 3310 (Spring only)",
+          "source": "2025-SE.pdf",
+          "chunk_id": "chunk-922dfd2e6027aafc018d650534a1d762",
+          "search_text": "CSE 3340 – Intro to Human Computer Interaction pre-reqs: CSE 3318 and CSE 3310 (Spring only)"
+        },
+        {
+          "text": "ENGR 4302 – Engineering Entrepreneurship pre-reqs: Admitted to an engineering professional program (Fall only)",
+          "source": "2025-SE.pdf",
+          "chunk_id": "chunk-922dfd2e6027aafc018d650534a1d762",
+          "search_text": "ENGR 4302 – Engineering Entrepreneurship pre-reqs: Admitted to an engineering professional program (Fall only)"
+        },
+        {
+          "text": "IE 3315 – Operations Research I pre-reqs: co-req MATH 2326 (Fall & Spring)",
+          "source": "2025-SE.pdf",
+          "chunk_id": "chunk-922dfd2e6027aafc018d650534a1d762",
+          "search_text": "IE 3315 – Operations Research I pre-reqs: co-req MATH 2326 (Fall & Spring)"
+        }
+      ]
+    }
+  }
+}

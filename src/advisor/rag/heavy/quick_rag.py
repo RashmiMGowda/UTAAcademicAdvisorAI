@@ -4,17 +4,17 @@ quick_rag.py
 Minimal, dependable CLI over your LightRAG/Nano-VectorDB JSON artifacts.
 
 Features:
-- Reads embeddings from rag_storage/vdb_chunks.json (supports 'matrix' base64 blob or per-item 'vector')
-- Reads text chunks from rag_storage/kv_store_text_chunks.json
+- Reads embeddings from storage/rag_storage/vdb_chunks.json (supports 'matrix' base64 blob or per-item 'vector')
+- Reads text chunks from storage/rag_storage/kv_store_text_chunks.json
 - Embeds the query with OpenAI (model dim is inferred from index)
 - Cosine similarity retrieval with optional literal-phrase boosting
 - Prints RAW snippets and (optionally) an LLM-grounded summary strictly from those snippets
 - Loads .env so you don't have to set env vars manually
 
 Usage:
-  python -m src.cli.quick_rag --inspect
-  python -m src.cli.quick_rag -q "your question" -k 30 --raw-only
-  python -m src.cli.quick_rag -q "your question" -k 40 --contains "road diet" "4u-2t" --snippet-chars 900 --with-summary
+  python -m src.advisor.rag.heavy.quick_rag --inspect
+  python -m src.advisor.rag.heavy.quick_rag -q "your question" -k 30 --raw-only
+  python -m src.advisor.rag.heavy.quick_rag -q "your question" -k 40 --contains "road diet" "4u-2t" --snippet-chars 900 --with-summary
 """
 
 import os
@@ -27,9 +27,18 @@ from typing import Tuple, List, Dict
 
 import numpy as np
 
-from src.core.openai_utils import create_openai_client, load_env
+# --- .env loader (no-op if missing) ---
+try:
+    from dotenv import load_dotenv  # type: ignore
+    load_dotenv()
+except Exception:
+    pass
 
-load_env()
+# --- OpenAI client (v1) ---
+try:
+    from openai import OpenAI
+except Exception:
+    OpenAI = None  # handled later
 
 
 # ------------------------
@@ -143,8 +152,14 @@ def load_kv(kv_path: Path) -> Dict[str, Dict]:
 # OpenAI helpers
 # ------------------------
 
-def openai_client():
-    return create_openai_client()
+def openai_client() -> OpenAI:
+    if OpenAI is None:
+        raise RuntimeError("openai package not installed. `pip install openai python-dotenv`")
+    api_key = _get_env("OPENAI_API_KEY")
+    if not api_key:
+        raise RuntimeError("OPENAI_API_KEY not set (in env or .env).")
+    base_url = _get_env("OPENAI_BASE_URL", "https://api.openai.com/v1")
+    return OpenAI(api_key=api_key, base_url=base_url)
 
 
 def embed_query_openai(text: str, expected_dim: int) -> np.ndarray:
@@ -199,7 +214,7 @@ def summarize_with_llm(question: str, raw_blocks: List[str]) -> str:
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("-q", "--question", type=str, default="")
-    ap.add_argument("--rag-dir", type=str, default=_get_env("WORKING_DIR", "./rag_storage"))
+    ap.add_argument("--rag-dir", type=str, default=_get_env("WORKING_DIR", "./storage/rag_storage"))
     ap.add_argument("-k", "--topk", type=int, default=int(_get_env("TOP_K", "10")))
     ap.add_argument("--raw-only", action="store_true", help="print only raw context")
     ap.add_argument("--with-summary", action="store_true", help="also ask LLM to summarize strictly from raw context")

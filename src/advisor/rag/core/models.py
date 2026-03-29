@@ -3,14 +3,14 @@ import os
 from dotenv import load_dotenv
 
 import numpy as np
+from openai import AsyncOpenAI
 
 from lightrag.llm.openai import openai_complete_if_cache
 from lightrag.utils import EmbeddingFunc
-from src.core.openai_utils import create_async_openai_client, get_openai_api_key
 
 load_dotenv()
 
-API_KEY = get_openai_api_key()
+API_KEY = os.getenv("OPENAI_API_KEY", "")
 BASE_URL = os.getenv("OPENAI_BASE_URL", None) or None
 
 LLM_MODEL = os.getenv("LLM_MODEL", "gpt-4o-mini")
@@ -99,7 +99,7 @@ def vision_model_func(
 # ---------------------------
 # Embeddings (FIXED): bypass lightrag.openai_embed and return numpy array
 # ---------------------------
-_client = create_async_openai_client()
+_client = AsyncOpenAI(api_key=API_KEY, base_url=BASE_URL)
 
 async def _embed_texts(texts):
     """

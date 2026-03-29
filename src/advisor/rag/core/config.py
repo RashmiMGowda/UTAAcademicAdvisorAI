@@ -2,7 +2,7 @@
 import os
 
 # Storage
-WORKING_DIR = os.getenv("WORKING_DIR", "./rag_storage")
+WORKING_DIR = os.getenv("WORKING_DIR", "./storage/rag_storage")
 DATA_SOURCES_DIR = os.getenv("DATA_SOURCES_DIR", "./data/sources")
 
 # Models
