@@ -5,15 +5,22 @@ import { PATH_ADVISOR, PATH_REGISTER } from "../routes/paths";
 
 export function LoginPage() {
   const [email, setEmail] = useState("");
-  const [name, setName] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState<string | null>(null);
   const { login, loading } = useAuth();
   const navigate = useNavigate();
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    if (email && name) {
-      await login(email, name);
-      navigate(PATH_ADVISOR);
+    setError(null);
+    
+    if (email && password) {
+      const { error: loginError } = await login(email, password);
+      if (loginError) {
+        setError(loginError.message);
+      } else {
+        navigate(PATH_ADVISOR);
+      }
     }
   };
 
@@ -24,17 +31,9 @@ export function LoginPage() {
         <h1>Welcome Back</h1>
         <p className="auth-subtitle">Sign in to access your AI academic advisor.</p>
         
+        {error && <div className="error-message">{error}</div>}
+        
         <form onSubmit={handleSubmit} className="auth-form">
-          <label className="field">
-            <span>Full Name</span>
-            <input
-              type="text"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              placeholder="Enter your name"
-              required
-            />
-          </label>
           <label className="field">
             <span>Email Address</span>
             <input
@@ -42,6 +41,16 @@ export function LoginPage() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="student@uta.edu"
+              required
+            />
+          </label>
+          <label className="field">
+            <span>Password</span>
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="••••••••"
               required
             />
           </label>

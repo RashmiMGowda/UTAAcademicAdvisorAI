@@ -5,17 +5,26 @@ import { PATH_ADVISOR, PATH_LOGIN } from "../routes/paths";
 
 export function RegisterPage() {
   const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [name, setName] = useState("");
   const [program, setProgram] = useState("CSE");
-  const { login, loading } = useAuth();
+  const [error, setError] = useState<string | null>(null);
+  const { signUp, loading } = useAuth();
   const navigate = useNavigate();
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    if (email && name) {
-      // Mock registration
-      await login(email, name);
-      navigate(PATH_ADVISOR);
+    setError(null);
+    
+    if (email && password && name) {
+      const { error: signUpError } = await signUp(email, password, name);
+      if (signUpError) {
+        setError(signUpError.message);
+      } else {
+        // In Supabase, if email confirmation is required, the user might not be signed in yet.
+        // But for a demo, redirecting is fine or we could show a check email message.
+        navigate(PATH_ADVISOR);
+      }
     }
   };
 
@@ -25,6 +34,8 @@ export function RegisterPage() {
         <div className="brand-mark">UTA</div>
         <h1>Create Account</h1>
         <p className="auth-subtitle">Get personalized degree guidance at UTA.</p>
+        
+        {error && <div className="error-message">{error}</div>}
         
         <form onSubmit={handleSubmit} className="auth-form">
           <label className="field">
@@ -44,6 +55,16 @@ export function RegisterPage() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="student@uta.edu"
+              required
+            />
+          </label>
+          <label className="field">
+            <span>Password</span>
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="••••••••"
               required
             />
           </label>
