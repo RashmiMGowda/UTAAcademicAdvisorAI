@@ -1,0 +1,2872 @@
+[
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "First Year "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                53,
+                93,
+                179,
+                113
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Fall Semester – 16 Semester Credit Hours "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                53,
+                114,
+                383,
+                130
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 1311 Construction Drafting "
+                    }
+                ]
+            },
+            "bbox": [
+                53,
+                136,
+                269,
+                152
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "ENGL 1301 Rhetoric and Composition I "
+                    }
+                ]
+            },
+            "bbox": [
+                53,
+                157,
+                326,
+                172
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "ENGR 1101 Entrance to Engineering for Transfer Students or UNIV 1131 "
+                    }
+                ]
+            },
+            "bbox": [
+                53,
+                181,
+                450,
+                207
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "HIST 13XX U.S. History Elective "
+                    }
+                ]
+            },
+            "bbox": [
+                53,
+                208,
+                279,
+                222
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "MATH 1302 College Algebra "
+                    }
+                ]
+            },
+            "bbox": [
+                53,
+                228,
+                267,
+                244
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Creative Arts Elective "
+                    }
+                ]
+            },
+            "bbox": [
+                53,
+                251,
+                227,
+                265
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Second Year "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                53,
+                297,
+                218,
+                316
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Fall Semester – 16 Semester Credit Hours "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                53,
+                318,
+                383,
+                334
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "ACCT 2301 Principles of Accounting I "
+                    }
+                ]
+            },
+            "bbox": [
+                53,
+                340,
+                315,
+                356
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 2311 Introduction to Construction Management "
+                    }
+                ]
+            },
+            "bbox": [
+                53,
+                363,
+                400,
+                378
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 2315 Introduction to Mechanics for Construction "
+                    }
+                ]
+            },
+            "bbox": [
+                53,
+                385,
+                403,
+                400
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "PHYS 1442 General College Physics II "
+                    }
+                ]
+            },
+            "bbox": [
+                53,
+                407,
+                321,
+                422
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Foundation Component Elective "
+                    }
+                ]
+            },
+            "bbox": [
+                53,
+                429,
+                310,
+                445
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Third Year "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                53,
+                473,
+                189,
+                493
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Fall Semester – 15 Semester Credit Hours "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                53,
+                494,
+                383,
+                510
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 3315 Construction Law & Ethics "
+                    }
+                ]
+            },
+            "bbox": [
+                53,
+                517,
+                300,
+                531
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 3331 Mechanical & Electrical Systems "
+                    }
+                ]
+            },
+            "bbox": [
+                53,
+                539,
+                341,
+                554
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 3335 Soils & Foundations in Construction "
+                    }
+                ]
+            },
+            "bbox": [
+                53,
+                561,
+                362,
+                575
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "MANA 3318 Managing Organizational Behavior "
+                    }
+                ]
+            },
+            "bbox": [
+                53,
+                583,
+                379,
+                599
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "POLS 2312 State and Local Government "
+                    }
+                ]
+            },
+            "bbox": [
+                53,
+                604,
+                336,
+                619
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Fourth Year "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                53,
+                650,
+                207,
+                670
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Fall Semester – 15 Semester Credit Hours "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                53,
+                671,
+                383,
+                686
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 43XX CM Elective (1) "
+                    }
+                ]
+            },
+            "bbox": [
+                53,
+                694,
+                233,
+                709
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 4317 Construction Scheduling "
+                    }
+                ]
+            },
+            "bbox": [
+                53,
+                715,
+                287,
+                731
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 4315 Construction Estimating II "
+                    }
+                ]
+            },
+            "bbox": [
+                53,
+                738,
+                297,
+                753
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 4351 Building Information Modeling "
+                    }
+                ]
+            },
+            "bbox": [
+                53,
+                760,
+                323,
+                775
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 4357 Sustainable Construction Practices "
+                    }
+                ]
+            },
+            "bbox": [
+                53,
+                782,
+                357,
+                796
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Spring Semester – 16 Semester Credit Hours "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                524,
+                113,
+                879,
+                128
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 1331 Construction Surveying "
+                    }
+                ]
+            },
+            "bbox": [
+                524,
+                135,
+                751,
+                151
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "HIST 13XX U.S. History Elective "
+                    }
+                ]
+            },
+            "bbox": [
+                524,
+                157,
+                750,
+                172
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "MATH 1303 Trigonometry "
+                    }
+                ]
+            },
+            "bbox": [
+                524,
+                180,
+                707,
+                195
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "PHYS 1441 General College Physics I "
+                    }
+                ]
+            },
+            "bbox": [
+                524,
+                200,
+                787,
+                217
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Communication Elective "
+                    }
+                ]
+            },
+            "bbox": [
+                524,
+                223,
+                718,
+                238
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Spring Semester – 15 Semester Credit Hours "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                524,
+                306,
+                877,
+                323
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 2313 Construction Materials & Methods "
+                    }
+                ]
+            },
+            "bbox": [
+                524,
+                330,
+                821,
+                344
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 2331 Construction Documents & Contracts "
+                    }
+                ]
+            },
+            "bbox": [
+                524,
+                352,
+                841,
+                366
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "MATH 1308 Elementary Statistical Analysis "
+                    }
+                ]
+            },
+            "bbox": [
+                524,
+                375,
+                823,
+                388
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "POLS 2311 Government of the United States "
+                    }
+                ]
+            },
+            "bbox": [
+                524,
+                396,
+                833,
+                410
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Language, Philosophy, and Culture Elective "
+                    }
+                ]
+            },
+            "bbox": [
+                524,
+                417,
+                870,
+                434
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Spring Semester – 15 Semester Credit Hours "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                524,
+                502,
+                877,
+                518
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 3313 Construction Estimating I "
+                    }
+                ]
+            },
+            "bbox": [
+                524,
+                523,
+                800,
+                540
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 3341 Construction Design "
+                    }
+                ]
+            },
+            "bbox": [
+                524,
+                546,
+                759,
+                561
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 3337 Construction Administration & Economics "
+                    }
+                ]
+            },
+            "bbox": [
+                524,
+                568,
+                929,
+                583
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 3339 Construction Safety "
+                    }
+                ]
+            },
+            "bbox": [
+                524,
+                590,
+                754,
+                606
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Social & Behavioral Science Elective "
+                    }
+                ]
+            },
+            "bbox": [
+                524,
+                612,
+                815,
+                627
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Spring Semester – 12 Semester Credit Hours "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                524,
+                676,
+                877,
+                691
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 4331 Construction Management Capstone "
+                    }
+                ]
+            },
+            "bbox": [
+                524,
+                698,
+                885,
+                714
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 43XX CM Elective (2) "
+                    }
+                ]
+            },
+            "bbox": [
+                524,
+                720,
+                704,
+                734
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 43XX CM Elective (3) "
+                    }
+                ]
+            },
+            "bbox": [
+                524,
+                742,
+                704,
+                758
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 43XX CM Elective (4) "
+                    }
+                ]
+            },
+            "bbox": [
+                524,
+                763,
+                704,
+                780
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "COE Foreign Language Requirement: Two years of same foreign language in high school or six semester credit hours of the same foreign language. "
+                    }
+                ]
+            },
+            "bbox": [
+                522,
+                806,
+                929,
+                878
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "CONSTRUCTION MANAGEMENT ADVISING AND COURSE SELECTION GUIDE"
+                    }
+                ]
+            },
+            "bbox": [
+                53,
+                54,
+                606,
+                68
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 2022 "
+                    }
+                ]
+            },
+            "bbox": [
+                741,
+                46,
+                864,
+                68
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "General Core Requirements "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                398,
+                61,
+                596,
+                75
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The UTA Construction Management Program requires one (three SCH) Creative Arts Elective. This elective can be chosen from the following list of courses offered at UTA. "
+                    }
+                ]
+            },
+            "bbox": [
+                107,
+                75,
+                892,
+                102
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "ARCH 1301 Introduction to Architecture & Interior Design "
+                    }
+                ]
+            },
+            "bbox": [
+                349,
+                103,
+                759,
+                116
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "ART 1301 Art Appreciation "
+                    }
+                ]
+            },
+            "bbox": [
+                349,
+                116,
+                575,
+                128
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "ART 1309 Art of the Western World I "
+                    }
+                ]
+            },
+            "bbox": [
+                349,
+                128,
+                640,
+                141
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "ART 1310 Art of the West II "
+                    }
+                ]
+            },
+            "bbox": [
+                349,
+                142,
+                581,
+                154
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "MUSI 1300 Music Appreciation "
+                    }
+                ]
+            },
+            "bbox": [
+                349,
+                155,
+                594,
+                167
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "THEA 1342 Theatre and Film Appreciation "
+                    }
+                ]
+            },
+            "bbox": [
+                349,
+                169,
+                666,
+                181
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "THEA 1343 Introduction to Theatre "
+                    }
+                ]
+            },
+            "bbox": [
+                349,
+                181,
+                617,
+                194
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "MUSI 1302 Jazz Appreciation "
+                    }
+                ]
+            },
+            "bbox": [
+                349,
+                195,
+                586,
+                207
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "MUSI 2300 Intro to World Music "
+                    }
+                ]
+            },
+            "bbox": [
+                349,
+                208,
+                602,
+                219
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "MUSI 2301 Film Music Appreciation "
+                    }
+                ]
+            },
+            "bbox": [
+                349,
+                220,
+                625,
+                234
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The UTA Construction Management Program requires one (three SCH) Social & Behavioral Sciences Elective. This elective can be chosen from the following list of courses offered at UTA. "
+                    }
+                ]
+            },
+            "bbox": [
+                107,
+                246,
+                895,
+                272
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "PSYC 1315 Intro to Psychology "
+                    }
+                ]
+            },
+            "bbox": [
+                372,
+                273,
+                620,
+                286
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "SOCI 1311 Introduction to Sociology "
+                    }
+                ]
+            },
+            "bbox": [
+                374,
+                287,
+                655,
+                299
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "ECON 2305 Principles of Macroeconomics "
+                    }
+                ]
+            },
+            "bbox": [
+                374,
+                300,
+                689,
+                311
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "ECON 2306 Principles of Microeconomics "
+                    }
+                ]
+            },
+            "bbox": [
+                374,
+                313,
+                684,
+                325
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "ECON 2337 Economics of Social Issues "
+                    }
+                ]
+            },
+            "bbox": [
+                374,
+                325,
+                673,
+                337
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "FINA 2330 Money, Finance and the Modern Consumer "
+                    }
+                ]
+            },
+            "bbox": [
+                374,
+                339,
+                777,
+                351
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "MANA 2302 Communication in Organizations "
+                    }
+                ]
+            },
+            "bbox": [
+                374,
+                352,
+                705,
+                364
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The UTA Construction Management Program requires one (three SCH) Foundational Component Elective. This elective can be chosen from any course that satisfies the University Core Curriculum requirement from any area. "
+                    }
+                ]
+            },
+            "bbox": [
+                107,
+                378,
+                901,
+                405
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The UTA Construction Management Program requires one (three SCH) Communication Elective. This elective can be chosen from the following list of courses offered at UTA. "
+                    }
+                ]
+            },
+            "bbox": [
+                107,
+                417,
+                908,
+                445
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "COMS 1301 "
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                457,
+                197,
+                470
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Fundamentals of Public Speaking "
+                    }
+                ]
+            },
+            "bbox": [
+                230,
+                457,
+                454,
+                472
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "ENGL 1302 "
+                    }
+                ]
+            },
+            "bbox": [
+                524,
+                457,
+                611,
+                470
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Rhetoric and Composition II "
+                    }
+                ]
+            },
+            "bbox": [
+                643,
+                457,
+                828,
+                470
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The UTA Construction Management Program requires one (three SCH) Language, Philosophy & Culture Elective. This elective can be chosen from the following list of courses offered at UTA. "
+                    }
+                ]
+            },
+            "bbox": [
+                107,
+                484,
+                916,
+                511
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/3a040de0c01a810a1abd4a45b352f598a76623e7605dbf8e648ea081169fad75.jpg"
+                },
+                "table_caption": [],
+                "table_footnote": [],
+                "html": "<table><tr><td>ANTH 2322</td><td>Global Cultures</td><td>HIST 2377</td><td>Flight Culture and the Human Experience</td></tr><tr><td>ARAB 2310</td><td>Arabic Culture in the World</td><td>INTS 1310</td><td>Introduction to Popular Culture</td></tr><tr><td>ARAB 2314</td><td>Intermediate Arabic II</td><td>KORE 2310</td><td>Korean Culture in the World</td></tr><tr><td>ARCH 2300</td><td>Masterworks of Western Architecture</td><td>KORE 2314</td><td>Intermediate Korean II</td></tr><tr><td>ART 1317</td><td>The Art of Non-Western Traditions</td><td>LATN 2314</td><td>Latin Level IV</td></tr><tr><td>CHIN 2310</td><td>Chinese Culture in the World</td><td>LING 2371</td><td>Language in a Multicultural USA</td></tr><tr><td>CHIN 2314</td><td>Intermediate Chinese II</td><td>MAS 2300</td><td>Intro to Mexican American Studies</td></tr><tr><td>CLAS 1300</td><td>Introduction to Classical Mythology</td><td>PHIL 1304</td><td>Contemporary Moral Problems</td></tr><tr><td>ENGL 2303</td><td>Topics in Literature</td><td>PHIL 2300</td><td>Introduction to Philosophy</td></tr><tr><td>ENGL 2309</td><td>World Literature</td><td>PORT 2314</td><td>Intermediate Portuguese II</td></tr><tr><td>ENGL 2319</td><td>British Literature</td><td>RUSS 2310</td><td>Russian Culture in the World</td></tr><tr><td>ENGL 2329</td><td>American Literature</td><td>RUSS 2314</td><td>Intermediate Russian II</td></tr><tr><td>FREN 2310</td><td>French and Francophone Cultures in the World</td><td>SOCI 1310</td><td>Introduction to Popular Culture (proposed)</td></tr><tr><td>World</td><td></td><td>SPAN 2310</td><td>Hispanic Culture in the World</td></tr><tr><td>FREN 2314</td><td>Intermediate French II</td><td>SPAN 2314</td><td>Intermediate Spanish II</td></tr><tr><td>GERM 2310</td><td>German Culture in the World</td><td>WOMS 2310</td><td>Intro to Women&#x27;s &amp; Gender Studies</td></tr><tr><td>GERM 2314</td><td>Intermediate German II</td><td></td><td></td></tr><tr><td>GLOBAL 2301</td><td>Introduction to Global Studies</td><td></td><td></td></tr><tr><td>GREK 2314</td><td>Greek Level IV</td><td></td><td></td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                76,
+                523,
+                900,
+                772
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Senior Elective "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                442,
+                773,
+                553,
+                785
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Construction Management majors must select 4 3-hour courses from the following list of CM Electives: "
+                    }
+                ]
+            },
+            "bbox": [
+                163,
+                786,
+                833,
+                799
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 4304 Construction Contracts "
+                    }
+                ]
+            },
+            "bbox": [
+                374,
+                806,
+                643,
+                818
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 4332 Construction Field Operations "
+                    }
+                ]
+            },
+            "bbox": [
+                374,
+                819,
+                689,
+                832
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 4335 Geo-Technical Aspects of Construction "
+                    }
+                ]
+            },
+            "bbox": [
+                374,
+                833,
+                750,
+                845
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 4337 Land and Site Development "
+                    }
+                ]
+            },
+            "bbox": [
+                374,
+                845,
+                676,
+                858
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 4353 Residential and Commercial Construction "
+                    }
+                ]
+            },
+            "bbox": [
+                374,
+                859,
+                764,
+                871
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 4359 Industrial Internship I "
+                    }
+                ]
+            },
+            "bbox": [
+                374,
+                872,
+                630,
+                883
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 4360 Industrial Internship II "
+                    }
+                ]
+            },
+            "bbox": [
+                374,
+                885,
+                633,
+                898
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "CONSTRUCTION MANAGEMENT ADVISING AND COURSE SELECTION GUIDE"
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                37,
+                630,
+                50
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 2022 "
+                    }
+                ]
+            },
+            "bbox": [
+                764,
+                29,
+                887,
+                51
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Construction Management Curriculum & Requisites – 2022 "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                78,
+                45,
+                816,
+                69
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Freshman Year, Fall Semester "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                78,
+                90,
+                410,
+                109
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "16 Semester Credit Hours "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                111,
+                271,
+                125
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Pre-Professional Courses: "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                78,
+                140,
+                328,
+                157
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 1311 Construction Drafting "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                157,
+                330,
+                174
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "ENGL 1301 Rhetoric & Composition I "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                174,
+                380,
+                189
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "MATH 1302 College Algebra "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                190,
+                310,
+                205
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "UNIV 1101 or ENGR 1101 Entrance to Engineering for Transfer Students "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                205,
+                665,
+                222
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "General Education Courses: "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                78,
+                223,
+                344,
+                238
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Creative Arts Elective "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                239,
+                254,
+                253
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "US History Elective "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                255,
+                236,
+                272
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Freshman Year, Spring Semester "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                78,
+                301,
+                444,
+                320
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "16 Semester Credit Hours "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                320,
+                271,
+                334
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Pre-Professional Courses: "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                78,
+                349,
+                328,
+                364
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 1331 Construction Surveying – Prerequisite: CM 1311 "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                367,
+                526,
+                383
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "MATH 1303 Trigonometry – Prerequisite: MATH 1302 or MATH 1315 "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                383,
+                602,
+                398
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "PHYS 1441 General College Physics I "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                398,
+                388,
+                415
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Communication Elective "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                415,
+                276,
+                430
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "General Education Courses: "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                78,
+                431,
+                344,
+                446
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "US History Elective "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                448,
+                236,
+                464
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Sophomore Year, Fall Semester "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                78,
+                496,
+                428,
+                515
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "16 Semester Credit Hours "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                516,
+                271,
+                530
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Pre-Professional Courses: "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                78,
+                545,
+                328,
+                561
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "ACCT 2301 Principles of Accounting I – Prerequisite: 30 Semester Credit Hours "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                561,
+                687,
+                579
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 2311 Introduction to Construction Management "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                579,
+                491,
+                595
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 2315 Introduction to Mechanics for Construction – Prerequisite: MATH 1303 & PHYS 1441 "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                595,
+                803,
+                611
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "PHYS 1442 General College Physics II – Prerequisite: PHYS 1441 "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                611,
+                593,
+                627
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "General Education Courses: "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                78,
+                627,
+                344,
+                643
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Foundational Component Elective "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                643,
+                352,
+                660
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Sophomore Year, Spring Semester "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                78,
+                690,
+                460,
+                709
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "15 Semester Credit Hours "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                710,
+                271,
+                723
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Pre-Professional Courses: "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                78,
+                738,
+                328,
+                755
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 2313 Construction Materials & Methods – Prerequisite: CM 2311 "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                756,
+                611,
+                772
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 2331 Construction Documents & Contracts – Prerequisite: CM 2311 "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                772,
+                635,
+                787
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "MATH 1308 Elementary Statistical Analysis "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                787,
+                429,
+                804
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "General Education Courses: "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                78,
+                805,
+                344,
+                820
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Language, Philosophy, and Culture Elective "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                821,
+                431,
+                838
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "POLS 2311 Government of the US "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                838,
+                359,
+                852
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Construction Management Curriculum & Requisites – 2022 "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                78,
+                45,
+                816,
+                69
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Junior Year, Fall Semester "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                78,
+                90,
+                370,
+                111
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "15 Semester Credit Hours "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                112,
+                271,
+                125
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Professional Courses: "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                80,
+                141,
+                289,
+                157
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 3315 Construction Law & Ethics – Prerequisite: CM 2311 & CM 2313 "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                157,
+                638,
+                172
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 3331 Mechanical & Electrical Systems – Prerequisite: PHYS 1442 "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                175,
+                620,
+                189
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 3335 Soils and Foundations in Construction – Prerequisite: CM 2315 "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                190,
+                643,
+                205
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "MANA 3318 Managing Organizational Behavior – Prerequisite: 60 Semester Credit Hours "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                205,
+                763,
+                222
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "General Education Courses: "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                80,
+                223,
+                344,
+                238
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "POLS 2312 State and Local Government "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                239,
+                410,
+                253
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Junior Year, Spring Semester "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                78,
+                285,
+                403,
+                304
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "15 Semester Credit Hours "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                305,
+                271,
+                319
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Professional Courses: "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                80,
+                334,
+                289,
+                349
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 3313 Construction Estimating I – Prerequisite: CM 2311 & CM 2331 "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                351,
+                651,
+                367
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 3341 Construction Design – Prerequisite: CM 2313 & CM 2315 "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                368,
+                616,
+                383
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 3337 Construction Administration & Economics – Prerequisite: CM 2331 & MATH 1303 "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                383,
+                805,
+                398
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 3339 Construction Safety – Prerequisite: CM 2331 "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                400,
+                514,
+                415
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "General Education Courses: "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                80,
+                416,
+                344,
+                431
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Social & Behavioral Sciences Elective "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                433,
+                383,
+                446
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Senior Year, Fall Semester "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                78,
+                478,
+                370,
+                496
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "15 Semester Credit Hours "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                498,
+                271,
+                511
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Professional Courses: "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                80,
+                527,
+                289,
+                542
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 43XX CM Elective (1) "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                545,
+                285,
+                560
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 4317 Construction Scheduling – Prerequisite: CM 3313 "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                561,
+                553,
+                575
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 4315 Construction Estimating II – Prerequisite: ACCT 2301 & CM 3313 "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                577,
+                679,
+                592
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 4351 Building Information Modeling – Prerequisite: CM 3341 "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                593,
+                594,
+                608
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 4357 Sustainable Building Practices "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                609,
+                401,
+                625
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Senior Year, Spring Semester "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                78,
+                654,
+                403,
+                672
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "12 Semester Credit Hours "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                674,
+                271,
+                686
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Professional Courses: "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                80,
+                703,
+                289,
+                718
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 4331 Construction Management Capstone "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                720,
+                452,
+                736
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 43XX CM Elective (2) "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                737,
+                285,
+                752
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 43XX CM Elective (3) "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                753,
+                285,
+                768
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CM 43XX CM Elective (4) "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                768,
+                285,
+                784
+            ]
+        }
+    ]
+]
