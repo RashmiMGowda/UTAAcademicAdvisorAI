@@ -1,4 +1,11 @@
-import json, re, pathlib
+# This script checks for the presence of a specific phrase in the text chunks stored in the
+# JSON file at "storage/rag_storage/kv_store_text_chunks.json". It reads the JSON data,
+# iterates through the text chunks, and counts how many times the specified phrase appears.
+# If it finds a hit, it prints the key and a snippet of the text.
+# Finally, it prints the total number of hits found.
+import json
+import re
+import pathlib
 
 PHRASE = "If an employee is injured because he or she trips on the family dog while rushing to answer a work phone call, the case is not considered work-related.".lower()
 

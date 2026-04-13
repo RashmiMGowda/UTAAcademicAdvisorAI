@@ -7,6 +7,7 @@ if __name__ == "__main__" and __package__ is None:
     if src_root not in sys.path: sys.path.insert(0, src_root)
 
 import os, sys, time, asyncio
+from pathlib import Path
 from dotenv import load_dotenv
 
 # Windows event loop fix
@@ -20,6 +21,21 @@ from raganything import RAGAnything, RAGAnythingConfig
 from ..core.models import llm_model_func, vision_model_func, embedding_func
 
 HEARTBEAT_SECS = int(os.getenv("PROGRESS_HEARTBEAT_SECS", "30"))
+
+
+def _prefer_current_working_dir(raw_value: str | None) -> str:
+    value = (raw_value or "").strip()
+    if not value or value == "./rag_storage":
+        return "./storage/rag_storage"
+    return value
+
+
+def _ensure_local_cli_tools_on_path() -> None:
+    venv_bin = Path(sys.prefix) / ("Scripts" if sys.platform.startswith("win") else "bin")
+    current_path = os.environ.get("PATH", "")
+    parts = current_path.split(os.pathsep) if current_path else []
+    if str(venv_bin) not in parts:
+        os.environ["PATH"] = os.pathsep.join([str(venv_bin), current_path]) if current_path else str(venv_bin)
 
 def _progress_bar(i, n, width=28):
     done = int(width * (i / max(1, n)))
@@ -44,12 +60,14 @@ async def _await_with_heartbeat(coro, label: str):
 
 async def main():
     load_dotenv()
+    _ensure_local_cli_tools_on_path()
     sources = os.getenv("SOURCES_DIR","./data/sources")
     parsed  = os.getenv("PARSED_DIR","./data/parsed_cache")
+    working_dir = _prefer_current_working_dir(os.getenv("WORKING_DIR"))
 
     rag = RAGAnything(
         config=RAGAnythingConfig(
-            working_dir=os.getenv("WORKING_DIR","./storage/rag_storage"),
+            working_dir=working_dir,
             parser=os.getenv("PARSER","mineru"),
             parse_method=os.getenv("PARSE_METHOD","auto"),
             enable_image_processing=True,
@@ -78,6 +96,9 @@ async def main():
 
     print(f"Found {total} file(s) in {sources}")
     os.makedirs(parsed, exist_ok=True)
+    os.makedirs(working_dir, exist_ok=True)
+    print(f"Using working directory: {working_dir}")
+    print(f"Using parsed cache: {parsed}")
 
     for i, fpath in enumerate(files, 1):
         bar = _progress_bar(i, total)

@@ -1,3 +1,10 @@
+# This script evaluates the performance of a Retrieval-Augmented Generation (RAG) system
+#  using the Ragas evaluation framework. It loads a validation dataset from a specified
+# CSV file, processes the data to fit the requirements of Ragas, and then runs the
+# evaluation using specified metrics (faithfulness, answer relevancy, and context recall).
+# The results are saved to an Excel file, and a summary of the mean scores is printed
+#  to the console. The script also handles potential encoding issues when reading the
+# CSV file and ensures that the output is well-formatted for analysis.
 import os
 import pandas as pd
 from datasets import Dataset
@@ -8,13 +15,14 @@ from ragas import evaluate
 from ragas.metrics import faithfulness, answer_relevancy, context_recall
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 
+
 def main():
     load_dotenv()
-    
+
     # 1. Path to your specific file
     file_path = r'D:\RAG\data\evaluation\validation_set.csv'
     print(f"Loading data from: {file_path}")
-    
+
     if not os.path.exists(file_path):
         print(f"❌ Error: File not found at {file_path}")
         return
@@ -42,10 +50,10 @@ def main():
 
     # 4. Run Evaluation
     print(f"Starting Ragas evaluation for {len(df)} rows...")
-    
+
     # Use the metric objects directly
     metrics = [faithfulness, answer_relevancy, context_recall]
-    
+
     result = evaluate(
         dataset,
         metrics=metrics,
@@ -57,17 +65,19 @@ def main():
     df_result = result.to_pandas()
     output_excel = "ragas_eval_results.xlsx"
     df_result.to_excel(output_excel, index=False)
-    
+
     # 6. Calculate and Print the Mean Scores (Fixes AttributeError)
     print("\n" + "="*45)
     print("        RAG EVALUATION SUMMARY (MEAN)")
     print("="*45)
-    
+
     # Printing the result object directly shows the summary in recent Ragas versions
-    print(result) 
-    
+    print(result)
+
     print("="*45)
-    print(f"Individual scores for each question saved to:\n{os.getcwd()}\\{output_excel}")
+    print(
+        f"Individual scores for each question saved to:\n{os.getcwd()}\\{output_excel}")
+
 
 if __name__ == "__main__":
     main()

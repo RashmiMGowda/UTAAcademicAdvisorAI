@@ -1,3 +1,11 @@
+# This script evaluates the performance of a Retrieval-Augmented Generation (RAG) system
+# using the Ragas evaluation framework. It loads a dataset from a specified CSV file,
+# maps the columns to the required format for Ragas,
+# and then runs evaluations using three metrics: Faithfulness, Answer Relevancy,
+# and Context Recall. The results are saved to an Excel file,
+# and a summary of the mean scores for each metric is printed to the console.
+# The script also handles potential encoding issues when reading the CSV file and
+# ensures that all inputs are treated as strings to avoid errors during evaluation.
 import os
 import pandas as pd
 from datasets import Dataset
@@ -8,14 +16,15 @@ from ragas import evaluate
 from ragas.metrics import Faithfulness, AnswerRelevancy, ContextRecall
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 
+
 def main():
     # Load your OpenAI API Key from your .env file
     load_dotenv()
-    
+
     # 1. Path to your specific file
     file_path = r'D:\RAG\data\evaluation\validation_set.csv'
     print(f"Loading data from: {file_path}")
-    
+
     if not os.path.exists(file_path):
         print(f"❌ Error: File not found at {file_path}")
         return
@@ -45,9 +54,9 @@ def main():
 
     # 4. Run Evaluation
     print(f"Starting Ragas evaluation for {len(df)} rows...")
-    
+    # Initialize metrics and assign LLM and embeddings where needed
     metrics = [Faithfulness(), AnswerRelevancy(), ContextRecall()]
-    
+    # Assign the LLM and embeddings to metrics that require them
     for metric in metrics:
         metric.llm = llm
         if hasattr(metric, "embeddings"):
@@ -62,7 +71,7 @@ def main():
     df_result = result.to_pandas()
     output_excel = "ragas_eval_detailed_results.xlsx"
     df_result.to_excel(output_excel, index=False)
-    
+
     # 6. Calculate and Print the Mean Scores
     print("\n" + "="*45)
     print("        RAG EVALUATION SUMMARY (MEAN)")
@@ -71,6 +80,7 @@ def main():
         print(f"{metric_name:25}: {score:.4f}")
     print("="*45)
     print(f"Individual scores saved to: {os.getcwd()}\\{output_excel}")
+
 
 if __name__ == "__main__":
     main()

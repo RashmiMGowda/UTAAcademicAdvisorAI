@@ -1,29 +1,46 @@
 import { useEffect, useState } from "react";
+import { LoginPage } from "./components/auth/LoginPage";
+import { useAuth } from "./context/AuthContext";
+import { askAdvisor } from "./lib/api";
 import {
-  askAdvisor,
-  fetchCurrentUser,
-  fetchHistory,
-  loginWithPassword,
-  logout
-} from "./lib/api";
-
-const programOptions = [
-  { value: "CSE", label: "Computer Science" },
-  { value: "SE", label: "Software Engineering" },
-  { value: "CompE", label: "Computer Engineering" },
-  { value: "EE", label: "Electrical Engineering" },
-  { value: "ME", label: "Mechanical Engineering" },
-  { value: "IE", label: "Industrial Engineering" },
-  { value: "CivilE", label: "Civil Engineering" },
-  { value: "AREN", label: "Architectural Engineering" }
-];
+  createChatSession,
+  deleteChatSession,
+  listChatMessages,
+  listChatSessions,
+  saveChatMessage,
+  updateChatSession,
+} from "./lib/chatHistory";
 
 const starterPrompts = [
-  "What are the recommended spring courses for a third-year Computer Science student?",
-  "If I take CSE 4344 in fall, what should I take in spring?",
+  "What are the admission criteria for MSCS?",
+  "What can I take after CSE 4344?",
+  "What are AI-related courses in MSCS?",
   "What courses need CSE 3318 as a prerequisite?",
-  "Give me a smart junior-year plan for Software Engineering."
 ];
+
+const defaultWelcomeMessage = {
+  id: "welcome",
+  role: "assistant",
+  summary:
+    "I can help with UTA degree planning, prerequisites, graduate course options, and semester guidance using the advising PDFs in this project.",
+  recommendations: [],
+  notes: [
+    "Your chat history is saved to your Supabase account, so you can come back to it later.",
+    "Try 'What are the admission criteria for MSCS?', 'What can I take after CSE 4344?', or 'What are AI-related courses in MSCS?'.",
+  ],
+  sources: [],
+};
+
+function createSessionTitle(question) {
+  const cleaned = question.trim().replace(/\s+/g, " ");
+  if (!cleaned) {
+    return "New chat";
+  }
+  if (cleaned.length <= 52) {
+    return cleaned;
+  }
+  return `${cleaned.slice(0, 52).trimEnd()}...`;
+}
 
 function AssistantMessage({ message }) {
   return (
@@ -37,22 +54,13 @@ function AssistantMessage({ message }) {
             <article className="course-card" key={`${item.course}-${item.title}`}>
               <div className="course-code">{item.course}</div>
               <div className="course-title">{item.title}</div>
-              <div className="course-hours">{item.hours} hrs</div>
+              {item.prereq ? <div className="course-prereq">Prerequisite: {item.prereq}</div> : null}
+              {item.hours ? <div className="course-hours">{item.hours} hrs</div> : null}
             </article>
           ))}
         </div>
       ) : null}
 
-      {message.notes?.length ? (
-        <div className="notes-block">
-          <div className="section-kicker">Helpful Notes</div>
-          <ul>
-            {message.notes.map((note) => (
-              <li key={note}>{note}</li>
-            ))}
-          </ul>
-        </div>
-      ) : null}
     </div>
   );
 }
@@ -66,235 +74,233 @@ function UserMessage({ message }) {
   );
 }
 
-const SESSION_KEY = "uta_rag_session_token";
-
-function LoginScreen({ error, onLogin }) {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-
-  return (
-    <div className="login-shell">
-      <section className="login-card">
-        <div className="login-brand">UTA</div>
-        <p className="section-kicker">Advisor Login</p>
-        <h1>Sign in to your advisor workspace</h1>
-        <p className="login-copy">
-          Use the demo login to open the advisor chat and save your conversation history.
-        </p>
-        <form
-          className="login-form"
-          onSubmit={(event) => {
-            event.preventDefault();
-            onLogin(username, password);
-          }}
-        >
-          <label className="field">
-            <span>Username</span>
-            <input
-              value={username}
-              onChange={(event) => setUsername(event.target.value)}
-              placeholder="Enter username"
-            />
-          </label>
-          <label className="field">
-            <span>Password</span>
-            <input
-              type="password"
-              value={password}
-              onChange={(event) => setPassword(event.target.value)}
-              placeholder="Enter password"
-            />
-          </label>
-          <button className="send-button login-button" type="submit">
-            Login
-          </button>
-        </form>
-        <p className="login-hint">
-          Demo credentials: username <code>aiproj</code> and password <code>333</code>
-        </p>
-        {error ? <p className="login-error">{error}</p> : null}
-      </section>
-    </div>
-  );
-}
-
 export default function App() {
-  const [program, setProgram] = useState("");
-  const [courseFilter, setCourseFilter] = useState("");
+  const { user, isAuthenticated, initializing, logout } = useAuth();
   const [question, setQuestion] = useState("");
   const [loading, setLoading] = useState(false);
-  const [authLoading, setAuthLoading] = useState(true);
-  const [authError, setAuthError] = useState("");
-  const [sessionToken, setSessionToken] = useState(
-    () => window.localStorage.getItem(SESSION_KEY) || ""
-  );
-  const [user, setUser] = useState(null);
-  const [messages, setMessages] = useState([
-    {
-      id: "welcome",
-      role: "assistant",
-      summary:
-        "Ask about a semester plan, prerequisites, or what to take next. I’ll answer from the extracted UTA advising PDFs.",
-      recommendations: [],
-      notes: [
-        "Program selection is optional, so you can just ask naturally.",
-        "Use a course code like CSE 3318 or CSE 4344 when you want a more precise answer."
-      ],
-      sources: []
-    }
-  ]);
+  const [historyLoading, setHistoryLoading] = useState(false);
+  const [historyError, setHistoryError] = useState("");
+  const [activeSessionId, setActiveSessionId] = useState(null);
+  const [sessions, setSessions] = useState([]);
+  const [messages, setMessages] = useState([defaultWelcomeMessage]);
 
   useEffect(() => {
-    async function bootstrap() {
-      if (!sessionToken) {
-        setAuthLoading(false);
-        return;
-      }
+    if (!isAuthenticated || !user) {
+      return undefined;
+    }
 
+    let cancelled = false;
+
+    async function loadInitialHistory() {
+      setHistoryLoading(true);
+      setHistoryError("");
       try {
-        const [{ user: currentUser }, { messages: history }] = await Promise.all([
-          fetchCurrentUser(sessionToken),
-          fetchHistory(sessionToken)
-        ]);
-        setUser(currentUser);
-        if (history?.length) {
-          setMessages(
-            history.map((message, index) => ({
-              id: `${message.role}-${index}-${message.created_at || Date.now()}`,
-              ...message
-            }))
-          );
+        const savedSessions = await listChatSessions(user.id);
+        if (cancelled) {
+          return;
         }
+        setSessions(savedSessions);
+
+        if (!savedSessions.length) {
+          setActiveSessionId(null);
+          setMessages([defaultWelcomeMessage]);
+          return;
+        }
+
+        const firstSession = savedSessions[0];
+        setActiveSessionId(firstSession.id);
+        const savedMessages = await listChatMessages(firstSession.id);
+        if (cancelled) {
+          return;
+        }
+        setMessages(savedMessages.length ? savedMessages : [defaultWelcomeMessage]);
       } catch (error) {
-        window.localStorage.removeItem(SESSION_KEY);
-        setSessionToken("");
-        setUser(null);
+        if (!cancelled) {
+          setHistoryError(String(error.message || error));
+          setMessages([defaultWelcomeMessage]);
+        }
       } finally {
-        setAuthLoading(false);
+        if (!cancelled) {
+          setHistoryLoading(false);
+        }
       }
     }
 
-    bootstrap();
-  }, [sessionToken]);
+    loadInitialHistory();
+    return () => {
+      cancelled = true;
+    };
+  }, [isAuthenticated, user]);
 
-  async function handleLogin(username, password) {
-    setAuthError("");
+  async function handleLogout() {
+    await logout();
+    setActiveSessionId(null);
+    setSessions([]);
+    setMessages([defaultWelcomeMessage]);
+    setHistoryError("");
+  }
+
+  function startNewChat() {
+    setActiveSessionId(null);
+    setMessages([defaultWelcomeMessage]);
+    setQuestion("");
+    setHistoryError("");
+  }
+
+  async function openSession(session) {
+    if (!session?.id) {
+      return;
+    }
+    setHistoryLoading(true);
+    setHistoryError("");
     try {
-      const result = await loginWithPassword(username, password);
-      window.localStorage.setItem(SESSION_KEY, result.session_token);
-      setSessionToken(result.session_token);
-      setUser(result.user);
-      setMessages([
-        {
-          id: "welcome",
-          role: "assistant",
-          summary: `Hi ${result.user.name.split(" ")[0]}! Ask about degree plans, prerequisites, or course sequencing and I’ll search the advising PDFs for you.`,
-          recommendations: [],
-          notes: [
-            "Program selection is optional.",
-            "Questions like 'third-year spring for CSE' work well."
-          ],
-          sources: []
-        }
-      ]);
+      const savedMessages = await listChatMessages(session.id);
+      setActiveSessionId(session.id);
+      setMessages(savedMessages.length ? savedMessages : [defaultWelcomeMessage]);
     } catch (error) {
-      setAuthError(String(error.message || error));
+      setHistoryError(String(error.message || error));
+    } finally {
+      setHistoryLoading(false);
     }
   }
 
-  async function handleLogout() {
+  function upsertSession(updatedSession) {
+    setSessions((current) => {
+      const remaining = current.filter((session) => session.id !== updatedSession.id);
+      return [updatedSession, ...remaining];
+    });
+  }
+
+  async function handleDeleteSession(sessionId, event) {
+    event.stopPropagation();
+    if (!sessionId) {
+      return;
+    }
+
+    setHistoryError("");
     try {
-      if (sessionToken) {
-        await logout(sessionToken);
+      await deleteChatSession(sessionId);
+      setSessions((current) => current.filter((session) => session.id !== sessionId));
+
+      if (activeSessionId !== sessionId) {
+        return;
+      }
+
+      const remainingSessions = sessions.filter((session) => session.id !== sessionId);
+      const nextSession = remainingSessions[0];
+
+      if (nextSession) {
+        await openSession(nextSession);
+      } else {
+        startNewChat();
       }
     } catch (error) {
-      // Best effort logout.
+      setHistoryError(String(error.message || error));
     }
-    window.localStorage.removeItem(SESSION_KEY);
-    setSessionToken("");
-    setUser(null);
-    setMessages([
-      {
-        id: "welcome",
-        role: "assistant",
-        summary:
-          "Ask about a semester plan, prerequisites, or what to take next. I’ll answer from the extracted UTA advising PDFs.",
-        recommendations: [],
-        notes: [
-          "Program selection is optional, so you can just ask naturally.",
-          "Use a course code like CSE 3318 or CSE 4344 when you want a more precise answer."
-        ],
-        sources: []
-      }
-    ]);
+  }
+
+  async function ensureSession(questionText) {
+    if (activeSessionId) {
+      const updated = await updateChatSession({
+        sessionId: activeSessionId,
+        program: "",
+        courseFilter: "",
+      });
+      upsertSession(updated);
+      return updated.id;
+    }
+
+    const created = await createChatSession({
+      userId: user.id,
+      title: createSessionTitle(questionText),
+      program: "",
+      courseFilter: "",
+    });
+    setActiveSessionId(created.id);
+    upsertSession(created);
+    return created.id;
   }
 
   async function submitQuery(nextQuestion) {
     const text = (nextQuestion ?? question).trim();
-    if (!text || loading || !sessionToken) {
+    if (!text || loading || historyLoading || !user) {
       return;
     }
 
-    const userEntry = {
-      id: `user-${Date.now()}`,
-      role: "user",
-      text
-    };
-
-    setMessages((current) => [...current, userEntry]);
+    setHistoryError("");
     setQuestion("");
     setLoading(true);
 
     try {
+      const sessionId = await ensureSession(text);
+
+      const savedUserMessage = await saveChatMessage({
+        sessionId,
+        userId: user.id,
+        role: "user",
+        content: text,
+      });
+      setMessages((current) => [...current.filter((message) => message.id !== "welcome"), savedUserMessage]);
+
       const result = await askAdvisor({
-        program,
+        program: "",
         question: text,
-        courseFilter,
-        sessionToken
+        courseFilter: "",
       });
 
-      setMessages((current) => [
-        ...current,
-        {
-          id: `assistant-${Date.now()}`,
-          role: "assistant",
-          summary: result.summary,
+      const savedAssistantMessage = await saveChatMessage({
+        sessionId,
+        userId: user.id,
+        role: "assistant",
+        content: result.summary,
+        payload: {
           recommendations: result.recommendations || [],
           notes: result.notes || [],
-          sources: result.sources || []
-        }
-      ]);
+          sources: result.sources || [],
+        },
+      });
+
+      setMessages((current) => [...current, savedAssistantMessage]);
+
+      const refreshedSession = await updateChatSession({
+        sessionId,
+        title: createSessionTitle(text),
+        program: "",
+        courseFilter: "",
+      });
+      upsertSession(refreshedSession);
     } catch (error) {
+      setHistoryError(String(error.message || error));
       setMessages((current) => [
         ...current,
         {
           id: `assistant-error-${Date.now()}`,
           role: "assistant",
           summary:
-            "I could not fetch a response right now. Please check the backend or try again.",
-            recommendations: [],
-            notes: [String(error.message || error)],
-            sources: []
-        }
+            "I could not complete that request right now. Your login worked, but saving or retrieving this chat hit an error.",
+          recommendations: [],
+          notes: [String(error.message || error)],
+          sources: [],
+        },
       ]);
     } finally {
       setLoading(false);
     }
   }
 
-  if (authLoading) {
+  if (initializing) {
     return (
-      <div className="login-shell">
-        <section className="login-card">
-          <div className="login-brand">UTA</div>
+      <div className="auth-page">
+        <section className="auth-card">
+          <div className="brand-mark">UTA</div>
           <h1>Loading your advisor workspace...</h1>
         </section>
       </div>
     );
   }
 
-  if (!sessionToken || !user) {
-    return <LoginScreen error={authError} onLogin={handleLogin} />;
+  if (!isAuthenticated || !user) {
+    return <LoginPage />;
   }
 
   return (
@@ -302,32 +308,49 @@ export default function App() {
       <aside className="hero-panel">
         <div className="brand-mark">UTA</div>
         <h1>RAG Advisor</h1>
-        <p className="hero-copy">
-          A smarter student-facing planner for degree-path questions, semester
-          choices, and course-sequence guidance.
-        </p>
+        <p className="hero-copy">Ask focused UTA advising questions and get PDF-grounded answers.</p>
 
-        <div className="control-card">
-          <label className="field">
-            <span>Program</span>
-            <select value={program} onChange={(event) => setProgram(event.target.value)}>
-              <option value="">Search all programs</option>
-              {programOptions.map((option) => (
-                <option key={option.value} value={option.value}>
-                  {option.label}
-                </option>
-              ))}
-            </select>
-          </label>
+        {/* <div className="control-card">
+          <p className="control-copy">
+          </p>
+          <button className="ghost-button full-width" type="button" onClick={startNewChat}>
+            New Chat
+          </button>
+        </div> */}
 
-          <label className="field">
-            <span>Course Filter</span>
-            <input
-              value={courseFilter}
-              onChange={(event) => setCourseFilter(event.target.value)}
-              placeholder="Example: CSE 4344"
-            />
-          </label>
+        <div className="history-card">
+          <div className="history-header">
+            <div className="section-kicker">Saved Chats</div>
+            <span className="history-count">{sessions.length}</span>
+          </div>
+          {historyError ? <div className="error-message">{historyError}</div> : null}
+          <div className="history-list">
+            {sessions.length ? (
+              sessions.map((session) => (
+                <div
+                  className={`history-item ${session.id === activeSessionId ? "is-active" : ""}`}
+                  key={session.id}
+                >
+                  <button className="history-open" type="button" onClick={() => openSession(session)}>
+                    <strong>{session.title || "New chat"}</strong>
+                    <span>
+                      PDF-grounded advisor chat
+                    </span>
+                  </button>
+                  <button
+                    className="history-delete"
+                    type="button"
+                    aria-label={`Delete ${session.title || "chat"}`}
+                    onClick={(event) => handleDeleteSession(session.id, event)}
+                  >
+                    Delete
+                  </button>
+                </div>
+              ))
+            ) : (
+              <p className="history-empty">No saved chats yet. Start a question and this panel will fill in.</p>
+            )}
+          </div>
         </div>
 
         <div className="prompt-card">
@@ -353,7 +376,16 @@ export default function App() {
           </div>
           <div className="chat-header-actions">
             <div className="user-pill">{user.name}</div>
-            <div className="status-pill">{loading ? "Thinking..." : "Ready"}</div>
+            <button
+              className="ghost-button"
+              type="button"
+              onClick={startNewChat}
+            >
+              New Chat
+            </button>
+            {/* <div className="status-pill">
+              {historyLoading ? "Loading history..." : loading ? "Thinking..." : "Ready"}
+            </div> */}
             <button className="ghost-button" type="button" onClick={handleLogout}>
               Sign out
             </button>
@@ -380,10 +412,16 @@ export default function App() {
           <textarea
             value={question}
             onChange={(event) => setQuestion(event.target.value)}
-            placeholder="Ask about a semester plan, prerequisites, or what to take after a specific course."
+            onKeyDown={(event) => {
+              if (event.key === "Enter" && !event.shiftKey) {
+                event.preventDefault();
+                submitQuery();
+              }
+            }}
+            placeholder="Ask about a UTA course, program, semester plan, prerequisite, or admissions detail."
             rows={4}
           />
-          <button className="send-button" type="submit" disabled={loading}>
+          <button className="send-button" type="submit" disabled={loading || historyLoading}>
             {loading ? "Working..." : "Ask Advisor"}
           </button>
         </form>

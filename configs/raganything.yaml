@@ -1,23 +1,31 @@
-parser: ${PARSER}
-parse_method: ${PARSE_METHOD}
-enable_image_processing: true
-enable_table_processing: true
-enable_equation_processing: true
+# User Query → Parsing → Embedding → Retrieval → Generation → Response
 
-working_dir: ${WORKING_DIR}
-parsed_dir: ${PARSED_DIR}
+# This is a configuration file for the RAG (Retrieval-Augmented Generation) system.
+# It specifies various settings for the parser, embedding, retrieval, and generation components of the system. 
+# The values for these settings are provided as environment variables (e.g., ${PARSER}, ${EMBED_MODEL}, etc.), 
+#which allows for flexibility and easy configuration without modifying the code. 
+#The configuration also enables processing of images, tables, and equations, and sets parameters for the embedding model and retrieval mode.
+parser: ${PARSER} # e.g., "layoutlmv3", "pdfplumber", "tesseract", "custom_parser"
+parse_method: ${PARSE_METHOD} # e.g., "default", "ocr", "layout_analysis", "custom_method"
+enable_image_processing: true # Enable image processing for visual content in documents
+enable_table_processing: true # Enable table processing for structured content in documents
+enable_equation_processing: true # Enable equation processing for mathematical content in documents
 
+working_dir: ${WORKING_DIR} # Directory for intermediate files and outputs
+parsed_dir: ${PARSED_DIR} # Directory to store parsed documents (text, images, tables, equations)
+cache_dir: ${CACHE_DIR} # Directory for caching embeddings and retrieval results
+# Optional: Specify a directory for storing generated responses or logs
 embedding:
-  provider: openai
-  model: ${EMBED_MODEL}
-  dim: 3072
-  max_token_size: 8192
+  provider: openai # e.g., "openai", "huggingface", "custom_provider"
+  model: ${EMBED_MODEL} # e.g., "text-embedding-3-small", "text-embedding-3-large", "custom_embedding_model"
+  dim: 3072 # Dimensionality of the embedding vectors (e.g., 768, 1024, 2048, 3072)
+  max_token_size: 8192 # Maximum token size for input to the embedding model (e.g., 512, 1024, 2048, 4096, 8192)
 
 retrieval:
-  top_k: ${TOP_K}
+  top_k: ${TOP_K} # Number of top passages to retrieve (e.g., 3, 5, 10)
   mode: hybrid   # hybrid | local | global | naive (repo query modes)
 
 generation:
-  llm_provider: openai
-  llm_model: ${LLM_MODEL}
+  llm_provider: openai # e.g., "openai", "huggingface", "custom_provider"
+  llm_model: ${LLM_MODEL} #` e.g., "gpt-4-0613", "gpt-3.5-turbo-0613", "custom_llm_model"
   multimodal: true   # VLM enhanced when vision model is provided
