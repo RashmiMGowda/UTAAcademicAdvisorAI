@@ -1,8 +1,9 @@
 from __future__ import annotations
 
-# --- path bootstrap (safe for python -m and direct) ---
+
 if __name__ == "__main__" and __package__ is None:
-    import sys, pathlib
+    import sys
+    import pathlib
     project_root = str(pathlib.Path(__file__).resolve().parents[4])
     if project_root not in sys.path:
         sys.path.insert(0, project_root)
@@ -59,14 +60,17 @@ def _find_cached_output(pdf_path: Path, parsed_dir: Path) -> tuple[list[dict], s
         candidate_roots.append(output_dir)
 
     for root in candidate_roots:
-        content_list, md_content = MineruParser._read_output_files(root, stem, method=method_hint)
+        content_list, md_content = MineruParser._read_output_files(
+            root, stem, method=method_hint)
         if content_list:
             return content_list, md_content
 
         matches = sorted(root.glob(f"{stem}_*/**/{stem}_content_list.json"))
         for match in matches:
-            subdir = match.parent.parent if match.parent.name in {"ocr", "auto", "txt", "hybrid_auto"} else match.parent
-            content_list, md_content = MineruParser._read_output_files(subdir, stem, method=method_hint)
+            subdir = match.parent.parent if match.parent.name in {
+                "ocr", "auto", "txt", "hybrid_auto"} else match.parent
+            content_list, md_content = MineruParser._read_output_files(
+                subdir, stem, method=method_hint)
             if content_list:
                 return content_list, md_content
 
@@ -96,7 +100,8 @@ async def main():
         embedding_func=embedding_func,
     )
 
-    files = sorted(path for path in sources.iterdir() if path.is_file() and path.suffix.lower() == ".pdf")
+    files = sorted(path for path in sources.iterdir()
+                   if path.is_file() and path.suffix.lower() == ".pdf")
     if not files:
         print(f"No PDF files found in {sources}")
         return

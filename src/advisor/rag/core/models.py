@@ -1,4 +1,3 @@
-# src/core/models.py
 import os
 from dotenv import load_dotenv
 
@@ -16,13 +15,11 @@ BASE_URL = os.getenv("OPENAI_BASE_URL", None) or None
 LLM_MODEL = os.getenv("LLM_MODEL", "gpt-4o-mini")
 EMB_MODEL = os.getenv("EMBED_MODEL", "text-embedding-3-large")
 
-# If you switch embedding models, update these to match
+# embedding models
 EMB_DIM = int(os.getenv("EMBED_DIM", "3072"))
 EMB_MAXTOK = int(os.getenv("EMBED_MAXTOK", "8192"))
 
-# ---------------------------
-# LLM (text) function
-# ---------------------------
+
 def llm_model_func(prompt, system_prompt=None, history_messages=None, **kwargs):
     if history_messages is None:
         history_messages = []
@@ -36,9 +33,7 @@ def llm_model_func(prompt, system_prompt=None, history_messages=None, **kwargs):
         **kwargs,
     )
 
-# ---------------------------
-# Vision function (matches your existing behavior)
-# ---------------------------
+
 def vision_model_func(
     prompt,
     system_prompt=None,
@@ -50,7 +45,7 @@ def vision_model_func(
     if history_messages is None:
         history_messages = []
 
-    # If messages present, pass through (RAG-Anything example style)
+    # RAG-Anything
     if messages:
         return openai_complete_if_cache(
             "gpt-4o",
@@ -63,7 +58,7 @@ def vision_model_func(
             **kwargs,
         )
 
-    # If image_data present, build a multimodal message
+    # build a multimodal message
     if image_data:
         mm_messages = []
         if system_prompt:
@@ -92,21 +87,18 @@ def vision_model_func(
             base_url=BASE_URL,
             **kwargs,
         )
-
-    # Fallback to text LLM
     return llm_model_func(prompt, system_prompt, history_messages, **kwargs)
 
-# ---------------------------
-# Embeddings (FIXED): bypass lightrag.openai_embed and return numpy array
-# ---------------------------
+
 _client = AsyncOpenAI(api_key=API_KEY, base_url=BASE_URL)
+
 
 async def _embed_texts(texts):
     """
     LightRAG expects a numpy array so it can use `.size` internally.
     Must return exactly one vector per input text.
     """
-    # Ensure we always pass a list[str]
+
     if isinstance(texts, str):
         texts = [texts]
 
@@ -118,7 +110,8 @@ async def _embed_texts(texts):
     vecs = [item.embedding for item in resp.data]
 
     if len(vecs) != len(texts):
-        raise ValueError(f"Embedding count mismatch: inputs={len(texts)} outputs={len(vecs)}")
+        raise ValueError(
+            f"Embedding count mismatch: inputs={len(texts)} outputs={len(vecs)}")
 
     arr = np.asarray(vecs, dtype=np.float32)
 
@@ -126,7 +119,8 @@ async def _embed_texts(texts):
     if arr.ndim != 2 or arr.shape[0] != len(texts):
         raise ValueError(f"Unexpected embedding array shape: {arr.shape}")
     if EMB_DIM and arr.shape[1] != EMB_DIM:
-        raise ValueError(f"Embedding dim mismatch: expected {EMB_DIM}, got {arr.shape[1]}")
+        raise ValueError(
+            f"Embedding dim mismatch: expected {EMB_DIM}, got {arr.shape[1]}")
 
     return arr
 

@@ -1,12 +1,18 @@
-# --- path bootstrap ---
 if __name__ == "__main__" and __package__ is None:
-    import os, sys, pathlib
+    import os
+    import sys
+    import pathlib
     project_root = str(pathlib.Path(__file__).resolve().parents[4])
-    if project_root not in sys.path: sys.path.insert(0, project_root)
+    if project_root not in sys.path:
+        sys.path.insert(0, project_root)
     src_root = str(pathlib.Path(__file__).resolve().parents[3])
-    if src_root not in sys.path: sys.path.insert(0, src_root)
+    if src_root not in sys.path:
+        sys.path.insert(0, src_root)
 
-import os, sys, time, asyncio
+import os
+import sys
+import time
+import asyncio
 from pathlib import Path
 from dotenv import load_dotenv
 from raganything import RAGAnything, RAGAnythingConfig
@@ -27,11 +33,14 @@ def _prefer_current_working_dir(raw_value: str | None) -> str:
 
 
 def _ensure_local_cli_tools_on_path() -> None:
-    venv_bin = Path(sys.prefix) / ("Scripts" if sys.platform.startswith("win") else "bin")
+    venv_bin = Path(sys.prefix) / \
+        ("Scripts" if sys.platform.startswith("win") else "bin")
     current_path = os.environ.get("PATH", "")
     parts = current_path.split(os.pathsep) if current_path else []
     if str(venv_bin) not in parts:
-        os.environ["PATH"] = os.pathsep.join([str(venv_bin), current_path]) if current_path else str(venv_bin)
+        os.environ["PATH"] = os.pathsep.join(
+            [str(venv_bin), current_path]) if current_path else str(venv_bin)
+
 
 async def _await_with_heartbeat(coro, label: str):
     task = asyncio.create_task(coro)
@@ -40,8 +49,10 @@ async def _await_with_heartbeat(coro, label: str):
         try:
             await asyncio.wait_for(asyncio.shield(task), timeout=HEARTBEAT_SECS)
         except asyncio.TimeoutError:
-            print(f"[{label}] still working… elapsed {time.perf_counter()-start:0.0f}s")
+            print(
+                f"[{label}] still working… elapsed {time.perf_counter()-start:0.0f}s")
     return await task
+
 
 async def main():
     load_dotenv()
@@ -55,8 +66,8 @@ async def main():
     rag = RAGAnything(
         config=RAGAnythingConfig(
             working_dir=working_dir,
-            parser=os.getenv("PARSER","mineru"),
-            parse_method=os.getenv("PARSE_METHOD","auto"),
+            parser=os.getenv("PARSER", "mineru"),
+            parse_method=os.getenv("PARSE_METHOD", "auto"),
             enable_image_processing=True,
             enable_table_processing=True,
             enable_equation_processing=True,
@@ -71,8 +82,8 @@ async def main():
     await _await_with_heartbeat(
         rag.process_document_complete(
             file_path=fpath,
-            output_dir=os.getenv("PARSED_DIR","./data/parsed_cache"),
-            parse_method=os.getenv("PARSE_METHOD","auto")
+            output_dir=os.getenv("PARSED_DIR", "./data/parsed_cache"),
+            parse_method=os.getenv("PARSE_METHOD", "auto")
         ),
         label=os.path.basename(fpath)
     )

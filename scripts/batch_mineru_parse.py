@@ -12,7 +12,8 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 SOURCE_DIR = PROJECT_ROOT / "data" / "sources"
 PARSED_DIR = PROJECT_ROOT / "data" / "parsed_cache"
 SUMMARY_PATH = PARSED_DIR / "batch_mineru_summary.json"
-MINERU_BIN = Path(sys.prefix) / ("Scripts" if sys.platform.startswith("win") else "bin") / "mineru"
+MINERU_BIN = Path(
+    sys.prefix) / ("Scripts" if sys.platform.startswith("win") else "bin") / "mineru"
 
 
 def run_one(pdf_path: Path, method: str, backend: str) -> dict[str, object]:
@@ -29,7 +30,8 @@ def run_one(pdf_path: Path, method: str, backend: str) -> dict[str, object]:
     ]
     start = time.perf_counter()
     try:
-        completed = subprocess.run(cmd, capture_output=True, text=True, check=False)
+        completed = subprocess.run(
+            cmd, capture_output=True, text=True, check=False)
         elapsed = round(time.perf_counter() - start, 2)
         return {
             "file": pdf_path.name,
@@ -60,7 +62,8 @@ def main() -> int:
         return 1
 
     PARSED_DIR.mkdir(parents=True, exist_ok=True)
-    pdfs = sorted(path for path in SOURCE_DIR.iterdir() if path.is_file() and path.suffix.lower() == ".pdf")
+    pdfs = sorted(path for path in SOURCE_DIR.iterdir()
+                  if path.is_file() and path.suffix.lower() == ".pdf")
     if not pdfs:
         print(f"No PDFs found in {SOURCE_DIR}")
         return 1

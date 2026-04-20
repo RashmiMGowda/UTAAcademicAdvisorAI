@@ -1,22 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-quick_rag.py
-Minimal, dependable CLI over your LightRAG/Nano-VectorDB JSON artifacts.
-
-Features:
-- Reads embeddings from storage/rag_storage/vdb_chunks.json (supports 'matrix' base64 blob or per-item 'vector')
-- Reads text chunks from storage/rag_storage/kv_store_text_chunks.json
-- Embeds the query with OpenAI (model dim is inferred from index)
-- Cosine similarity retrieval with optional literal-phrase boosting
-- Prints RAW snippets and (optionally) an LLM-grounded summary strictly from those snippets
-- Loads .env so you don't have to set env vars manually
-
-Usage:
-  python -m src.advisor.rag.heavy.quick_rag --inspect
-  python -m src.advisor.rag.heavy.quick_rag -q "your question" -k 30 --raw-only
-  python -m src.advisor.rag.heavy.quick_rag -q "your question" -k 40 --contains "road diet" "4u-2t" --snippet-chars 900 --with-summary
-"""
-
 import os
 import sys
 import json
@@ -27,23 +8,22 @@ from typing import Tuple, List, Dict
 
 import numpy as np
 
-# --- .env loader (no-op if missing) ---
+# .env loader
 try:
     from dotenv import load_dotenv  # type: ignore
     load_dotenv()
 except Exception:
     pass
 
-# --- OpenAI client (v1) ---
+# OpenAI client (v1)
 try:
     from openai import OpenAI
 except Exception:
     OpenAI = None  # handled later
 
 
-# ------------------------
 # Utility helpers
-# ------------------------
+
 
 def _b64_to_npfloat32(b64: str) -> np.ndarray:
     """Decode base64 -> float32 array."""
@@ -51,8 +31,10 @@ def _b64_to_npfloat32(b64: str) -> np.ndarray:
     arr = np.frombuffer(raw, dtype=np.float32)
     return arr
 
+
 def _as_np(x) -> np.ndarray:
     return np.array(x, dtype=np.float32)
+
 
 def _cosine_sim(q: np.ndarray, M: np.ndarray) -> np.ndarray:
     # q: (D,), M: (N,D)
@@ -60,23 +42,25 @@ def _cosine_sim(q: np.ndarray, M: np.ndarray) -> np.ndarray:
     Mn = M / (np.linalg.norm(M, axis=1, keepdims=True) + 1e-9)
     return Mn @ qn
 
+
 def _shorten(s: str, max_chars: int) -> str:
     if len(s) <= max_chars:
         return " ".join(s.split())
     return " ".join((s[:max_chars] + " ...").split())
 
+
 def _read_json(path: Path):
     with path.open("r", encoding="utf-8") as f:
         return json.load(f)
+
 
 def _get_env(name: str, default: str = "") -> str:
     v = os.getenv(name)
     return v if v is not None and v != "" else default
 
 
-# ------------------------
 # Load index files
-# ------------------------
+
 
 def load_vdb(vdb_path: Path) -> Tuple[np.ndarray, List[str], List[str], List[str]]:
     """
@@ -140,7 +124,8 @@ def load_vdb(vdb_path: Path) -> Tuple[np.ndarray, List[str], List[str], List[str
     embs = np.vstack(rows).astype(np.float32)
     if dim is not None and embs.shape[1] != dim:
         # Warn but continue
-        print(f"[warn] embedding_dim in file={dim}, detected={embs.shape[1]}", file=sys.stderr)
+        print(
+            f"[warn] embedding_dim in file={dim}, detected={embs.shape[1]}", file=sys.stderr)
     return embs, chunk_ids, contents, file_paths
 
 
@@ -148,13 +133,13 @@ def load_kv(kv_path: Path) -> Dict[str, Dict]:
     return _read_json(kv_path)
 
 
-# ------------------------
 # OpenAI helpers
-# ------------------------
+
 
 def openai_client() -> OpenAI:
     if OpenAI is None:
-        raise RuntimeError("openai package not installed. `pip install openai python-dotenv`")
+        raise RuntimeError(
+            "openai package not installed. `pip install openai python-dotenv`")
     api_key = _get_env("OPENAI_API_KEY")
     if not api_key:
         raise RuntimeError("OPENAI_API_KEY not set (in env or .env).")
@@ -207,18 +192,22 @@ def summarize_with_llm(question: str, raw_blocks: List[str]) -> str:
     return resp.choices[0].message.content.strip()
 
 
-# ------------------------
 # Main CLI
-# ------------------------
+
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("-q", "--question", type=str, default="")
-    ap.add_argument("--rag-dir", type=str, default=_get_env("WORKING_DIR", "./storage/rag_storage"))
-    ap.add_argument("-k", "--topk", type=int, default=int(_get_env("TOP_K", "10")))
-    ap.add_argument("--raw-only", action="store_true", help="print only raw context")
-    ap.add_argument("--with-summary", action="store_true", help="also ask LLM to summarize strictly from raw context")
-    ap.add_argument("--contains", nargs="*", default=[], help="literal phrases to boost/require in ranking")
+    ap.add_argument("--rag-dir", type=str,
+                    default=_get_env("WORKING_DIR", "./storage/rag_storage"))
+    ap.add_argument("-k", "--topk", type=int,
+                    default=int(_get_env("TOP_K", "10")))
+    ap.add_argument("--raw-only", action="store_true",
+                    help="print only raw context")
+    ap.add_argument("--with-summary", action="store_true",
+                    help="also ask LLM to summarize strictly from raw context")
+    ap.add_argument("--contains", nargs="*", default=[],
+                    help="literal phrases to boost/require in ranking")
     ap.add_argument("--snippet-chars", type=int, default=int(_get_env("RAW_SNIPPET_CHARS", "360")),
                     help="chars to show per snippet in RAW context")
     ap.add_argument("--inspect", action="store_true")
@@ -236,18 +225,22 @@ def main():
         keys = list(vdb.keys())
         print(f"VDB is a DICT with {len(keys)} keys. Sample keys: {keys[:3]}")
         data = vdb.get("data", [])
-        print(f" - 'data' length: {len(data)}, first 'data' keys: {list(data[0].keys()) if data else []}")
+        print(
+            f" - 'data' length: {len(data)}, first 'data' keys: {list(data[0].keys()) if data else []}")
         if vdb.get("matrix"):
             try:
                 # Try decode just to confirm
                 vecs = _b64_to_npfloat32(vdb["matrix"])
                 dim = vdb.get("embedding_dim", "(unknown)")
                 N = vecs.size // (dim if isinstance(dim, int) else 1)
-                print(f"\n[detect] using top-level 'matrix' (decoded). Detected ~{N} vectors. Emb dim={dim}")
+                print(
+                    f"\n[detect] using top-level 'matrix' (decoded). Detected ~{N} vectors. Emb dim={dim}")
             except Exception:
-                print("\n[detect] 'matrix' present but could not decode (ok if you use per-item 'vector').")
+                print(
+                    "\n[detect] 'matrix' present but could not decode (ok if you use per-item 'vector').")
         else:
-            has_numeric = any(isinstance(row.get("vector", None), list) for row in data)
+            has_numeric = any(isinstance(row.get("vector", None), list)
+                              for row in data)
             if has_numeric:
                 print("\nDetected per-item numeric vectors.")
             else:
@@ -258,7 +251,8 @@ def main():
         print(f"Sample KV keys: {list(any_item.keys()) if any_item else []}")
         if any_item:
             print(f" - file_path: {any_item.get('file_path','')}")
-            print(f" - content preview: {_shorten(any_item.get('content',''), 300)}")
+            print(
+                f" - content preview: {_shorten(any_item.get('content',''), 300)}")
         return
 
     if not args.question:

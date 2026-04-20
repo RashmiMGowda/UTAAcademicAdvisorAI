@@ -1,4 +1,3 @@
-# src/core/config.py
 import os
 
 # Storage

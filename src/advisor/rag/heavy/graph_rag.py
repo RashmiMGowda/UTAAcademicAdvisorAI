@@ -1,4 +1,3 @@
-# src/advisor/rag/heavy/graph_rag.py
 import os
 import json
 import zlib
@@ -32,11 +31,12 @@ except Exception as e:
     ) from e
 
 
-# ------------------------------ utils ------------------------------
+# utils
 
 def env_str(key: str, default: str = "") -> str:
     v = os.getenv(key)
     return v if (v is not None and v != "") else default
+
 
 def env_int(key: str, default: int) -> int:
     v = os.getenv(key)
@@ -44,6 +44,7 @@ def env_int(key: str, default: int) -> int:
         return int(v) if v is not None else default
     except Exception:
         return default
+
 
 def maybe_dump(obj, name: str, dump_dir: str):
     if not dump_dir:
@@ -53,6 +54,7 @@ def maybe_dump(obj, name: str, dump_dir: str):
     p = d / name
     with p.open("w", encoding="utf-8") as f:
         json.dump(obj, f, ensure_ascii=False, indent=2)
+
 
 def decode_matrix(matrix_field) -> np.ndarray:
     if isinstance(matrix_field, str):
@@ -69,6 +71,7 @@ def decode_matrix(matrix_field) -> np.ndarray:
         return np.array(matrix_field, dtype=np.float32)
     else:
         raise RuntimeError("Unsupported matrix format in vdb_chunks.json")
+
 
 def load_vdb(workdir: str) -> Tuple[np.ndarray, List[str], Dict[str, Dict]]:
     vdb_path = Path(workdir) / "vdb_chunks.json"
@@ -138,6 +141,7 @@ def cosine_sim(a: np.ndarray, b: np.ndarray) -> np.ndarray:
     b_norm = b / (np.linalg.norm(b, axis=1, keepdims=True) + 1e-8)
     return a_norm @ b_norm.T
 
+
 def embed_query_openai(text: str, ensure_dim: int) -> np.ndarray:
     model = env_str("EMBED_MODEL", "text-embedding-3-large")
     client = OpenAI()
@@ -151,7 +155,8 @@ def embed_query_openai(text: str, ensure_dim: int) -> np.ndarray:
             vec = vec[:ensure_dim]
     return vec
 
-# ------------------------------ graph helpers ------------------------------
+# graph
+
 
 def load_graph(graphml_path: str):
     if not graphml_path:
@@ -160,6 +165,7 @@ def load_graph(graphml_path: str):
     if not p.exists():
         raise FileNotFoundError(f"GraphML not found: {graphml_path}")
     return nx.read_graphml(p)
+
 
 def expand_with_graph(
     seed_chunk_ids: List[str],
@@ -192,7 +198,8 @@ def expand_with_graph(
     acc.difference_update(seed_chunk_ids)
     return acc
 
-# ------------------------------ print / summarize ------------------------------
+# summarize
+
 
 def print_raw(hits: List[Tuple[float, str]], kv: Dict[str, Dict]):
     max_chars = env_int("RAW_SNIPPET_CHARS", 360)
@@ -207,6 +214,7 @@ def print_raw(hits: List[Tuple[float, str]], kv: Dict[str, Dict]):
             f" {rank}. score={score:.4f}  id={cid}  file={file_path}\n"
             f"    {snippet}\n"
         )
+
 
 def summarize(question: str, hits: List[Tuple[float, str]], kv: Dict[str, Dict]) -> str:
     model = env_str("LLM_MODEL", "gpt-4o-mini")
@@ -231,10 +239,12 @@ def summarize(question: str, hits: List[Tuple[float, str]], kv: Dict[str, Dict])
         },
         {"role": "user", "content": f"Question: {question}\n\nContext:\n{ctx_text}\n\nAnswer:"},
     ]
-    resp = client.chat.completions.create(model=model, messages=messages, temperature=0.2)
+    resp = client.chat.completions.create(
+        model=model, messages=messages, temperature=0.2)
     return resp.choices[0].message.content.strip()
 
-# ------------------------------ main ------------------------------
+# main
+
 
 def main():
     load_dotenv(override=False)
@@ -242,13 +252,17 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("-q", "--question", type=str, required=True)
     parser.add_argument("-k", "--topk", type=int, default=env_int("TOP_K", 10))
-    parser.add_argument("--workdir", type=str, default=env_str("WORKING_DIR", "./storage/rag_storage"))
+    parser.add_argument("--workdir", type=str,
+                        default=env_str("WORKING_DIR", "./storage/rag_storage"))
     parser.add_argument("--with-summary", action="store_true")
-    parser.add_argument("--graphml", type=str, default=str(Path(env_str("WORKING_DIR", "./storage/rag_storage")) / "graph_chunk_entity_relation.graphml"))
+    parser.add_argument("--graphml", type=str, default=str(Path(env_str(
+        "WORKING_DIR", "./storage/rag_storage")) / "graph_chunk_entity_relation.graphml"))
     parser.add_argument("--hops", type=int, default=1)
     parser.add_argument("--graph-max-neighbors", type=int, default=4)
-    parser.add_argument("--graph-weight", type=float, default=0.3, help="0..1; blend weight for graph-boosted scores")
-    parser.add_argument("--dump-dir", type=str, default=env_str("DUMP_DIR", ""), help="Directory to write optional debug dumps; empty = no files")
+    parser.add_argument("--graph-weight", type=float, default=0.3,
+                        help="0..1; blend weight for graph-boosted scores")
+    parser.add_argument("--dump-dir", type=str, default=env_str("DUMP_DIR", ""),
+                        help="Directory to write optional debug dumps; empty = no files")
 
     args = parser.parse_args()
 
@@ -266,14 +280,13 @@ def main():
     try:
         g = load_graph(args.graphml) if args.graphml else None
     except Exception:
-        g = None  # stay robust
+        g = None
 
-    extra_ids = expand_with_graph([cid for _, cid in seed_hits], g, hops=args.hops, max_neighbors=args.graph_max_neighbors)
+    extra_ids = expand_with_graph(
+        [cid for _, cid in seed_hits], g, hops=args.hops, max_neighbors=args.graph_max_neighbors)
 
-    # blend graph neighbors with a modest boost; rank by blended score
     id2score = {cid: s for (s, cid) in seed_hits}
     for cid in extra_ids:
-        # If the neighbor wasn't in top-k, give it a fraction of the min seed score
         base = min(s for s, _ in seed_hits) if seed_hits else 0.0
         id2score[cid] = max(id2score.get(cid, 0.0), base * args.graph_weight)
 

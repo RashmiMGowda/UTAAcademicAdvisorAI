@@ -3,28 +3,29 @@ import { useAuth } from "../../context/AuthContext";
 
 const configError =
   import.meta.env.VITE_SUPABASE_URL?.includes("your-project-id.supabase.co") ||
-  !import.meta.env.VITE_SUPABASE_URL ||
-  !import.meta.env.VITE_SUPABASE_PUBLISHABLE_DEFAULT_KEY
-    ? "Supabase is not configured yet. Please open frontend/.env.local and replace the placeholder values with your real Supabase Project URL and your real Publishable key. Until those two values are correct, sign in and register will not work."
+    !import.meta.env.VITE_SUPABASE_URL ||
+    !import.meta.env.VITE_SUPABASE_PUBLISHABLE_DEFAULT_KEY
+    ? "Supabase isn’t set up yet.Please add your Project URL and Publishable Key in frontend/.env.local to enable sign in and registration."
     : "";
-
-const programOptions = [
-  { value: "CSE", label: "Computer Science" },
-  { value: "SE", label: "Software Engineering" },
-  { value: "CompE", label: "Computer Engineering" },
-  { value: "EE", label: "Electrical Engineering" },
-  { value: "ME", label: "Mechanical Engineering" },
-  { value: "IE", label: "Industrial Engineering" },
-  { value: "CivilE", label: "Civil Engineering" },
-  { value: "AREN", label: "Architectural Engineering" }
-];
+// // this code programOptions array is used to populate the dropdown 
+// // menu for selecting a program during registration.
+// const programOptions = [
+//   { value: "CSE", label: "Computer Science" },
+//   { value: "SE", label: "Software Engineering" },
+//   { value: "CompE", label: "Computer Engineering" },
+//   { value: "EE", label: "Electrical Engineering" },
+//   { value: "ME", label: "Mechanical Engineering" },
+//   { value: "IE", label: "Industrial Engineering" },
+//   { value: "CivilE", label: "Civil Engineering" },
+//   { value: "AREN", label: "Architectural Engineering" }
+// ];
 
 export function LoginPage() {
   const [mode, setMode] = useState("login");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [program, setProgram] = useState("CSE");
+  const [program, setProgram] = useState("UTA");
   const [error, setError] = useState(null);
   const { login, signUp, loading } = useAuth();
 
@@ -46,7 +47,7 @@ export function LoginPage() {
       return;
     }
 
-    setError("Account created. If email confirmation is enabled in Supabase, please confirm your email and then sign in.");
+    setError("Account created successfully!");
     setMode("login");
   }
 
@@ -57,8 +58,8 @@ export function LoginPage() {
         <h1>{mode === "login" ? "Welcome Back" : "Create Account"}</h1>
         <p className="auth-subtitle">
           {mode === "login"
-            ? "Sign in to access your AI academic advisor."
-            : "Create your account to save your advisor access."}
+            ? "Sign in to chat with your academic advisor"
+            : "Create an account to save your chats and start planning your courses."}
         </p>
 
         {configError ? (
@@ -96,7 +97,9 @@ export function LoginPage() {
             <strong>{mode === "login" ? "Login failed" : "Registration failed"}</strong>
             <div>{error}</div>
             <div className="error-hint">
-              If you already created an account, make sure you are using the same email and password. If your Supabase project requires email confirmation, confirm the email first and then try signing in again.
+              {mode === "login"
+                ? "Login failed. Check your email and password, and try again."
+                : "Registration failed. Please check your information and try again."}
             </div>
           </div>
         ) : null}
@@ -113,7 +116,7 @@ export function LoginPage() {
                   required
                 />
               </label>
-              <label className="field">
+              {/* <label className="field">
                 <span>Program</span>
                 <select value={program} onChange={(event) => setProgram(event.target.value)}>
                   {programOptions.map((option) => (
@@ -122,7 +125,7 @@ export function LoginPage() {
                     </option>
                   ))}
                 </select>
-              </label>
+              </label> */}
             </>
           ) : null}
 

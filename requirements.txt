@@ -1,9 +1,9 @@
-# ──────────────────────────────────────────────────────────────────────────────
+
 # Install these in the current conda/venv (Windows CMD uses double quotes):
 #   pip install "raganything[all]"     ← All optional features, includes MinerU integration
 #   pip install openai                 ← OpenAI client (LLM + embeddings)
 #   pip install mineru                 ← (Normally pulled in by [all], listed here for clarity)
-# ──────────────────────────────────────────────────────────────────────────────
+
 
 raganything[all]>=1.2.8
 openai>=1.54.0
