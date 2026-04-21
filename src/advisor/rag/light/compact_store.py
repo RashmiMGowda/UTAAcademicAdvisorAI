@@ -1262,7 +1262,7 @@ def query_compact_store(
 ) -> dict[str, Any]:
     if _is_greeting(question):
         return {
-            "summary": "Hi! How can I help you today?",
+            "summary": "Hello! I'm your UTA Academic Advisor AI. How can I assist you with your academic planning today?",
             "recommendations": [],
             "notes": [],
             "sources": [],
@@ -1270,7 +1270,7 @@ def query_compact_store(
         }
     if _is_offtopic_or_abusive(question):
         return {
-            "summary": "I can only help with UTA course, program, semester-plan, prerequisite, admissions, or other PDF-based academic advising questions.",
+            "summary": "I'm sorry, but I specialize in UTA academic advising. I can help with questions about courses, programs, semester plans, prerequisites, admissions, and other topics from our advising PDFs.",
             "recommendations": [],
             "notes": [],
             "sources": [],
@@ -1278,7 +1278,7 @@ def query_compact_store(
         }
     if _is_low_signal_query(question):
         return {
-            "summary": "I can help when the question is about a UTA course, program, semester plan, prerequisite, admissions detail, or another PDF-based advising topic.",
+            "summary": "I'd be happy to help! I can assist with questions about UTA courses, programs, semester plans, prerequisites, admissions details, and other academic advising topics from our PDF resources.",
             "recommendations": [],
             "notes": [],
             "sources": [],
@@ -1286,7 +1286,7 @@ def query_compact_store(
         }
     if _needs_clarification(question):
         return {
-            "summary": "You’re right. Please ask again with the exact program name, like MSCS, MSSE, or PhD CS, and I’ll answer from the matching PDF.",
+            "summary": "I understand. To provide the most accurate information, could you please specify the exact program name, such as MSCS, MSSE, or PhD CS? I'll then pull the relevant details from the matching PDF.",
             "recommendations": [],
             "notes": [
                 "Examples: 'good courses for MSCS' or 'admission criteria for MS Computer Science'.",
@@ -1387,25 +1387,25 @@ def query_compact_store(
         target_code = _extract_codes(question)[0]
         if _is_graduate_intent(question):
             summary = (
-                f"I found {target_code} in the graduate PDF scope, but I did not find a clear prerequisite-based next-course answer for it in the extracted notes."
+                f"I found {target_code} in the graduate PDF scope, but I couldn't identify clear prerequisite-based next-course recommendations from the extracted notes."
             )
             notes_out = [
-                "Try asking with your interest area, for example 'After CSE 5301, what AI-related courses should I consider next semester?'",
+                "Try specifying your area of interest, for example 'After CSE 5301, what AI-related courses should I consider next semester?'",
             ]
         else:
             summary = (
-                f"I found {target_code} in the advising PDFs, but I did not find a confident follow-up course rule for it in the extracted prerequisite notes."
+                f"I found {target_code} in the advising PDFs, but I couldn't find specific follow-up course recommendations in the prerequisite notes."
             )
             notes_out = [
-                "Try naming the program too, for example 'After CSE 4344 in CSE, what can I take next?'",
+                "Try including the program name, for example 'After CSE 4344 in CSE, what can I take next?'",
             ]
         recommendations = []
     elif admissions_query and admission_points:
         if program or inferred_program:
             program_label = programs.get(inferred_program, {}).get("label", inferred_program or "the selected program")
-            summary = f"The admission criteria I found in {program_label} are listed below."
+            summary = f"Based on the information from {program_label}, here are the admission criteria:"
         else:
-            summary = "The admission criteria I found in the matching graduate PDF are listed below."
+            summary = "Based on the matching graduate PDF, here are the admission criteria:"
         recommendations = [{"course": "", "title": point, "hours": ""} for point in admission_points]
         notes_out = []
     elif topic_courses:
@@ -1418,11 +1418,11 @@ def query_compact_store(
         ]
         if program or inferred_program:
             program_label = programs.get(inferred_program, {}).get("label", inferred_program or "the selected program")
-            summary = f"The courses I found in {program_label} for {topic_name} are listed below."
+            summary = f"Based on {program_label}, here are some recommended courses for {topic_name}:"
         else:
-            summary = f"The courses I found for {topic_name} across the advising PDFs are listed below."
+            summary = f"Across the advising PDFs, here are some courses related to {topic_name}:"
         if "prereq" in question.lower() or "prerequisite" in question.lower():
-            summary += " The course list is in the PDF, but prerequisites are not listed in that section."
+            summary += " Please note that prerequisites are not detailed in this section of the PDF."
         recommendations = topic_courses
         notes_out = []
     elif graduate_next_courses:
@@ -1432,13 +1432,13 @@ def query_compact_store(
         if topics:
             topic_note = f" with your interest in {topics[0].upper()}"
         summary = (
-            f"From {source_name}, these look like good next graduate courses to discuss for a coming semester{topic_note}."
+            f"From {source_name}, here are some excellent graduate courses to consider for your upcoming semester{topic_note}."
         )
         recommendations = graduate_next_courses
         notes_out = [
-            f"I used the graduate course and specialization lists in {source_name}, not the undergraduate semester plan.",
-            "This PDF lists strong MSCS options, but it does not guarantee which exact semester each course will be offered.",
-            "For a final semester-by-semester plan, confirm availability with the current course schedule and your advisor.",
+            f"I based this on the graduate course and specialization lists in {source_name}, not the undergraduate semester plans.",
+            "Please note that course offerings can vary by semester, so check the current schedule.",
+            "For personalized semester planning, consult with your academic advisor.",
         ]
     elif follow_up_courses:
         target_code = _extract_codes(question)[0] if _extract_codes(question) else "that course"
@@ -1449,8 +1449,7 @@ def query_compact_store(
                 f" {target_code} appears in {related_plan['semester']} for {related_plan['program_label']}."
             )
         summary = (
-            f"Based on the prerequisite notes in the advising PDFs, these are strong follow-up options after {target_code}."
-            f"{plan_hint}"
+            f"Based on the prerequisite information in our advising PDFs, here are some strong follow-up courses after {target_code}.{plan_hint}"
         )
         recommendations = [
             {"course": item["course"], "title": item["title"], "hours": item.get("season_note", "")}
@@ -1458,32 +1457,31 @@ def query_compact_store(
         ]
         notes_out = []
     elif "prereq" in question.lower() or "prerequisite" in question.lower() or "need " in question.lower():
-        summary = "These courses mention your target course in the extracted prerequisite notes from the advising PDFs."
+        summary = "Based on our advising PDFs, here are courses that mention your target course in their prerequisite notes."
         recommendations = prereq_matches
         notes_out = [] if prereq_matches else (top_note_texts[:2] or [
-            "I did not find a clear prerequisite match yet. Try adding an exact course code like CSE 3318.",
+            "I couldn't find a clear prerequisite match. Try including an exact course code like CSE 3318.",
         ])
     elif explicit_course_plans:
         target_code = _extract_codes(question)[0]
         matching_plan = explicit_course_plans[0]
         if matching_plan.get("semester"):
             summary = (
-                f"{target_code} shows up in {matching_plan['semester']} for {matching_plan['program_label']} "
-                f"in the advising PDF sequence."
+                f"According to the advising PDF, {target_code} is scheduled in {matching_plan['semester']} for the {matching_plan['program_label']} program."
             )
         else:
-            summary = f"{target_code} appears in the extracted course list for {matching_plan['program_label']}."
+            summary = f"{target_code} appears in the course list for {matching_plan['program_label']} in our advising PDFs."
         recommendations = matching_plan["courses"][:6]
         notes_out = []
     elif best_plan:
         summary = (
-            f"The closest match I found in the advising PDFs is {best_plan['semester']} "
-            f"for {best_plan['program_label']}."
+            f"The closest match I found in our advising PDFs is {best_plan['semester']} "
+            f"for the {best_plan['program_label']} program."
         )
         if best_plan.get("year"):
             summary = (
                 f"The closest match I found is {best_plan['semester']} for year {best_plan['year']} "
-                f"in {best_plan['program_label']}."
+                f"in the {best_plan['program_label']} program."
             )
         recommendations = best_plan["courses"][:6]
         notes_out = []
@@ -1500,14 +1498,14 @@ def query_compact_store(
         )
         if course_discovery and extracted_courses:
             summary = (
-                f"Based on the course options listed in {top_note['source']} for {top_note['program_label']}, "
-                "these look like strong courses to explore."
+                f"Based on the course options in {top_note['source']} for {top_note['program_label']}, "
+                "here are some excellent courses to consider."
             )
             notes_out = []
         else:
             summary = (
-                f"I found the closest match in {top_note['source']} for {top_note['program_label']} "
-                "and answered from the latest extracted PDF text."
+                f"I found the most relevant information in {top_note['source']} for {top_note['program_label']} "
+                "and pulled the answer from the latest PDF content."
             )
         recommendations = extracted_courses
         if not (course_discovery and extracted_courses):
@@ -1515,13 +1513,13 @@ def query_compact_store(
     else:
         if graduate_intent:
             summary = (
-                "I could not find a confident graduate-program match in the PDFs yet. "
-                "Try naming the exact program like MSCS, MSSE, MS Data Science, or PhD CS."
+                "I couldn't find a confident match in the graduate program PDFs. "
+                "Please try specifying the exact program name like MSCS, MSSE, MS Data Science, or PhD CS."
             )
         else:
             summary = (
-                "I searched the extracted advising content but did not find a confident match yet. "
-                "Try adding a program name, a semester, or an exact course code."
+                "I searched through the advising content but couldn't find a confident match. "
+                "Try including a program name, semester, or exact course code for better results."
             )
         recommendations = []
         notes_out = top_note_texts[:2] or [
